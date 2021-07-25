@@ -144,6 +144,8 @@ int jones_first_attempt() {
 		}
 	}
 
+	cout << "Colors used: " << to_string(color) << endl;
+
 	// int counter_3 = 1;
 	// for (auto i : node_color)
 	// {
