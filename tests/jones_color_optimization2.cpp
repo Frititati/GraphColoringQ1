@@ -84,6 +84,9 @@ int jones_first_attempt() {
 			bool is_highest = true;
 
 			set<int> colors_used_local;
+
+			int node_random_this = node_random[it->first - 1];
+			int node_key_this = it->first;
 			
 			for (auto i : connections)
 			{
@@ -91,7 +94,7 @@ int jones_first_attempt() {
 				// check if connections is colored
 				if (node_color[i - 1] == 0)
 				{
-					if (node_random[it->first - 1] < node_random[i - 1])
+					if (node_random_this < node_random[i - 1] || ((node_random_this == node_random[i - 1]) && (node_key_this < i)))
 					{
 						is_highest = false;
 						break;
@@ -104,16 +107,16 @@ int jones_first_attempt() {
 
 			if (is_highest)
 			{
-				// cout << "node " << it->first << " highest" << endl;
+				// cout << "node " << node_key_this << " highest" << endl;
 				if (first_iter)
 				{
-					to_be_evaluated.insert(std::pair<int, int>(it->first, color));
+					to_be_evaluated.insert(std::pair<int, int>(node_key_this, color));
 					first_iter = false;
 				} else {
 					std::set<int> colors_used_interation;
 					std::set_difference(colors_used_global.begin(), colors_used_global.end(), colors_used_local.begin(), colors_used_local.end(), std::inserter(colors_used_interation, colors_used_interation.end()));
 					auto choosen = colors_used_interation.begin();
-					to_be_evaluated.insert(std::pair<int, int>(it->first, *choosen));
+					to_be_evaluated.insert(std::pair<int, int>(node_key_this, *choosen));
 				}
 			}
 		}
@@ -236,6 +239,21 @@ int main(int argc, char** argv) {
 	cout << "Elapsed time in microseconds: "
 		<< chrono::duration_cast<chrono::microseconds>(end - start).count()
 		<< " µs" << endl;
+
+	fstream write_file;
+	write_file.open(argv[2], ios::out);
+
+	if (write_file.is_open())
+	{
+		// file exists write to file results
+		write_file << to_string(number_node) << " " << to_string(number_edge) << endl;
+		for (auto i : node_color)
+		{
+			write_file << to_string(i) << endl;
+		}
+	}
+
+	write_file.close();
 
 	return 0;
 }

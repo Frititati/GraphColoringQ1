@@ -71,6 +71,8 @@ int jones_first_attempt() {
 			vector<int> connections = it->second;
 
 			bool is_highest = true;
+
+			int node_rand_this = node_random[it->first - 1];
 			
 			for (auto i : connections)
 			{
@@ -78,10 +80,17 @@ int jones_first_attempt() {
 				// check if connections is colored
 				if (node_color[i - 1] == 0)
 				{
-					if (node_random[it->first - 1] < node_random[i - 1])
+					if (node_rand_this < node_random[i - 1])
 					{
 						is_highest = false;
 						break;
+					} else if (node_rand_this == node_random[i - 1])
+					{
+						if (it->first < i)
+						{
+							is_highest = false;
+							break;
+						}
 					}
 				}
 			}
@@ -106,12 +115,12 @@ int jones_first_attempt() {
 		color++;
 	}
 
-	int counter_3 = 1;
-	for (auto i : node_color)
-	{
-		cout << "node : " << to_string(counter_3) << " color " << i << " random " << node_random[counter_3 - 1] << endl;
-		counter_3++;
-	}
+	// int counter_3 = 1;
+	// for (auto i : node_color)
+	// {
+	// 	cout << "node : " << to_string(counter_3) << " color " << i << " random " << node_random[counter_3 - 1] << endl;
+	// 	counter_3++;
+	// }
 	
 
 }
@@ -119,7 +128,7 @@ int jones_first_attempt() {
 int main() {
 
 	fstream graph_file;
-	graph_file.open("t2.graph", ios::in);
+	graph_file.open("t1.graph", ios::in);
 	
 	string line;
 	int counter = 1;
@@ -177,6 +186,21 @@ int main() {
 	jones_first_attempt();
 
 	
+	fstream write_file;
+	write_file.open("test_first.log", ios::out);
+
+	if (write_file.is_open())
+	{
+		// file exists write to file results
+		write_file << to_string(number_node) << " " << to_string(number_edge) << endl;
+		for (auto i : node_color)
+		{
+			write_file << to_string(i) << endl;
+		}
+	}
+
+	write_file.close();
+
 	return 0;
 
 }

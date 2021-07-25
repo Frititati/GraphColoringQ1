@@ -83,6 +83,9 @@ int jones_first_attempt() {
 			bool is_highest = true;
 
 			vector<int> temp_color_remove;
+
+			int node_random_this = node_random[it->first - 1];
+			int node_key_this = it->first;
 			
 			for (auto i : connections)
 			{
@@ -90,7 +93,7 @@ int jones_first_attempt() {
 				// check if connections is colored
 				if (node_color[i - 1] == 0)
 				{
-					if (node_random[it->first - 1] < node_random[i - 1])
+					if (node_random_this < node_random[i - 1] || ((node_random_this == node_random[i - 1]) && (node_key_this < i)))
 					{
 						is_highest = false;
 						break;
@@ -103,8 +106,8 @@ int jones_first_attempt() {
 
 			if (is_highest)
 			{
-				// cout << "node " << it->first << " highest" << endl;
-				to_be_evaluated.push_back(it->first);
+				// cout << "node " << node_key_this << " highest" << endl;
+				to_be_evaluated.push_back(node_key_this);
 				
 				for (auto j : temp_color_remove)
 				{
@@ -243,7 +246,23 @@ int main(int argc, char** argv) {
 		<< chrono::duration_cast<chrono::microseconds>(end - start).count()
 		<< " µs" << endl;
 
-	
+	// write to file results
+
+	fstream write_file;
+	write_file.open(argv[2], ios::out);
+
+	if (write_file.is_open())
+	{
+		// file exists write to file results
+		write_file << to_string(number_node) << " " << to_string(number_edge) << endl;
+		for (auto i : node_color)
+		{
+			write_file << to_string(i) << endl;
+		}
+	}
+
+	write_file.close();
+
 	return 0;
 
 }
