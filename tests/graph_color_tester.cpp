@@ -60,6 +60,12 @@ int test_graph() {
 	{
 		int this_color = node_color[it->first - 1];
 
+		if (this_color == 0)
+		{
+			cout << "We have a mistake at node: " << to_string(it->first) << " color is 0" << endl;
+			counter_wrong++;
+		}
+
 		vector<int> connections = it->second;
 
 		for (auto i : connections)
@@ -168,6 +174,12 @@ int main(int argc, char** argv) {
 		}
 	}
 
+	while (node_edge_connections.size() != number_node)
+	{
+		node_edge_connections.insert(std::pair<int, vector<int>>(counter, {}));
+		counter++;
+	}
+
 	if(color_file.is_open()) {
 
 		// this is first line
@@ -187,7 +199,7 @@ int main(int argc, char** argv) {
 
 	color_file.close();
 
-	if (number_node != number_node_color)
+	if (number_node < number_node_color)
 	{
 		cout << "Are you comparing the same graph?" << endl;
 		return 1;
