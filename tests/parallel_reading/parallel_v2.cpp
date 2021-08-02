@@ -16,7 +16,7 @@
 
 using namespace std;
 
-map<int, vector<int>> node_edge_connections;
+// map<int, vector<int>> node_edge_connections;
 vector<int> node_random;
 vector<int> node_color;
 int number_of_threads = 1;
@@ -29,10 +29,10 @@ string graph;
 std::mutex mtx;
 std::condition_variable cv;
 bool ready = false;
-bool completed = false;
+// bool completed = false;
 
-std::mutex writingMutex;
-std::mutex readingMutex;
+// std::mutex writingMutex;
+// std::mutex readingMutex;
 
 
 /* struct thread_struct {
@@ -41,7 +41,7 @@ std::mutex readingMutex;
 	int name;
 }; */
 
-void wait_on_cv() {
+/* void wait_on_cv() {
 	std::unique_lock<std::mutex> lck(mtx);
 	num++;
 	if (num == number_of_threads) {
@@ -53,7 +53,7 @@ void wait_on_cv() {
 	}
 	// cout << "waiting1 " << name << " " << num << " " << number_of_threads << endl;
   	while (!completed) cv.wait(lck);
-}
+} */
 
 void wait_on_cv1(int name) {
 	std::unique_lock<std::mutex> lck(mtx);
@@ -160,15 +160,12 @@ map<int, vector<int> > reading_function(int thread_index) {
 		
 		// cout << "Sono il thread " << thread_index << " e leggo linea " << line << endl;
 		vector<int> temp = split_to_int(line, " ");
-		// readingMutex.lock();
-		// node_edge_connections.insert(std::pair<int, vector<int>>(i+position-1, temp));
 		node_assigned.insert(std::pair<int, vector<int>>(i+position-1, temp));
-		// readingMutex.unlock();
 
 	}
-	readingMutex.lock();
-	node_edge_connections.insert(node_assigned.begin(), node_assigned.end());
-	readingMutex.unlock();
+	// readingMutex.lock();
+	// node_edge_connections.insert(node_assigned.begin(), node_assigned.end());
+	// readingMutex.unlock();
 	
 	return node_assigned;
 }
@@ -177,7 +174,7 @@ void jones_thread(int thread_index) {
 
 	map<int, vector<int> > node_assigned = reading_function(thread_index);
 
-	wait_on_cv();
+	// wait_on_cv();
 
 	/*int multiplier = node_edge_connections.size() / number_of_threads;
 
@@ -263,10 +260,10 @@ void jones_thread(int thread_index) {
 		for(map<int, int >::const_iterator node_interator = to_be_evaluated.begin();
 			node_interator != to_be_evaluated.end(); ++node_interator)
 		{
-			writingMutex.lock();
+			// writingMutex.lock();
 			// cout << "Sono " << thread_index << " assegno " << node_interator->second << " a " << node_interator->first << endl;
 			node_color[node_interator->first - 1] = node_interator->second;
-			writingMutex.unlock();
+			// writingMutex.unlock();
 			node_assigned.erase(node_interator->first);
 			if (node_interator->second == color)
 			{
