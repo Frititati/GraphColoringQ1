@@ -160,12 +160,16 @@ map<int, vector<int> > reading_function(int thread_index) {
 		
 		// cout << "Sono il thread " << thread_index << " e leggo linea " << line << endl;
 		vector<int> temp = split_to_int(line, " ");
-		readingMutex.lock();
-		node_edge_connections.insert(std::pair<int, vector<int>>(i+position-1, temp));
+		// readingMutex.lock();
+		// node_edge_connections.insert(std::pair<int, vector<int>>(i+position-1, temp));
 		node_assigned.insert(std::pair<int, vector<int>>(i+position-1, temp));
-		readingMutex.unlock();
+		// readingMutex.unlock();
 
 	}
+	readingMutex.lock();
+	node_edge_connections.insert(node_assigned.begin(), node_assigned.end());
+	readingMutex.unlock();
+	
 	return node_assigned;
 }
 
@@ -262,8 +266,8 @@ void jones_thread(int thread_index) {
 			writingMutex.lock();
 			// cout << "Sono " << thread_index << " assegno " << node_interator->second << " a " << node_interator->first << endl;
 			node_color[node_interator->first - 1] = node_interator->second;
-			node_assigned.erase(node_interator->first);
 			writingMutex.unlock();
+			node_assigned.erase(node_interator->first);
 			if (node_interator->second == color)
 			{
 				color++;

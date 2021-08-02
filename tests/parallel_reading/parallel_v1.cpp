@@ -199,8 +199,8 @@ void jones_thread(int thread_index) {
 			writingMutex.lock();
 			// cout << "Sono " << thread_index << " assegno " << node_interator->second << " a " << node_interator->first << endl;
 			node_color[node_interator->first - 1] = node_interator->second;
-			node_assigned.erase(node_interator->first);
 			writingMutex.unlock();
+			node_assigned.erase(node_interator->first);
 			if (node_interator->second == color)
 			{
 				color++;
