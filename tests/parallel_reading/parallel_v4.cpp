@@ -16,13 +16,13 @@
 
 using namespace std;
 
-// map<int, vector<int>> node_edge_connections;
+map<int, vector<int> > node_edge_connections;
 vector<int> node_random;
 vector<int> node_color;
 int number_of_threads = 0;
 int num = 0;
 int exit_threads = 0;
-
+bool directed = 0;
 int number_nodes = 0;
 string graph;
 
@@ -33,7 +33,6 @@ bool ready = false;
 
 // std::mutex writingMutex;
 // std::mutex readingMutex;
-
 
 /* struct thread_struct {
 	int begin;
@@ -55,25 +54,30 @@ bool ready = false;
   	while (!completed) cv.wait(lck);
 } */
 
-void wait_on_cv1(int name) {
+void wait_on_cv1(int name)
+{
 	std::unique_lock<std::mutex> lck(mtx);
 	num++;
-	if (num == number_of_threads) {
+	if (num == number_of_threads)
+	{
 		ready = true;
 		// cout << "notify1 " << name << " " << num << " " << number_of_threads << endl;
 		cv.notify_all();
 		return;
 	}
 	// cout << "waiting1 " << name << " " << num << " " << number_of_threads << endl;
-  	while (!ready) cv.wait(lck);
+	while (!ready)
+		cv.wait(lck);
 }
 
-void wait_on_cv2(int number_of_colored_nodes, int name) {
+void wait_on_cv2(int number_of_colored_nodes, int name)
+{
 	std::unique_lock<std::mutex> lck(mtx);
 	num--;
 	if (number_of_colored_nodes == 0)
 		exit_threads++;
-	if (num == 0) {
+	if (num == 0)
+	{
 		number_of_threads = number_of_threads - exit_threads;
 		exit_threads = 0;
 		ready = false;
@@ -82,56 +86,110 @@ void wait_on_cv2(int number_of_colored_nodes, int name) {
 		return;
 	}
 	// cout << "waiting2 " << name << " " << num << " " << number_of_threads << endl;
-  	while (ready) cv.wait(lck);
+	while (ready)
+		cv.wait(lck);
 }
 
-vector<string> split (string s, string delimiter) {
+vector<string> split(string s, string delimiter)
+{
 	size_t pos_start = 0, pos_end, delim_len = delimiter.length();
 	string token;
 	vector<string> res;
 
-	while ((pos_end = s.find (delimiter, pos_start)) != string::npos) {
-		token = s.substr (pos_start, pos_end - pos_start);
+	while ((pos_end = s.find(delimiter, pos_start)) != string::npos)
+	{
+		token = s.substr(pos_start, pos_end - pos_start);
 		pos_start = pos_end + delim_len;
-		res.push_back (token);
+		res.push_back(token);
 	}
 
-	res.push_back (s.substr (pos_start));
+	res.push_back(s.substr(pos_start));
 	return res;
 }
 
-vector<int> split_to_int (string s, string delimiter) {
+vector<int> split_to_int(string s, string delimiter)
+{
 	size_t pos_start = 0, pos_end, delim_len = delimiter.length();
 	string token;
 	vector<int> res;
 
-	while ((pos_end = s.find (delimiter, pos_start)) != string::npos) {
-		token = s.substr (pos_start, pos_end - pos_start);
+	while ((pos_end = s.find(delimiter, pos_start)) != string::npos)
+	{
+		token = s.substr(pos_start, pos_end - pos_start);
 		pos_start = pos_end + delim_len;
-		try {
-			res.push_back (stoi(token));
-		} catch (exception e){
+		try
+		{
+			res.push_back(stoi(token));
+		}
+		catch (exception e)
+		{
 			cout << "we had an OPSY" << endl;
 		}
 	}
 
-	try {
-		res.push_back (stoi(s.substr (pos_start)));
-	} catch (exception e){
+	try
+	{
+		res.push_back(stoi(s.substr(pos_start)));
+	}
+	catch (exception e)
+	{
 		cout << "we had an OPSY" << endl;
 	}
 	return res;
 }
 
-std::fstream& GotoLine(std::fstream& file, unsigned int num){
-    file.seekg(std::ios::beg);
-    for(int i=0; i < num - 1; ++i){
-        file.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
-    }
-    return file;
+vector<int> split_to_int_mod(string line, string delimiter)
+{
+	string s;
+	int start_point = line.find(':') + 2;
+	int end_point = line.find("#");
+	int line_size = end_point - 1 - start_point;
+	if (end_point != start_point)
+		s = line.substr(start_point, line_size);
+	else
+		s = "";
+	// cout << "modified line: -" << s << "-" << endl;
+
+	size_t pos_start = 0, pos_end, delim_len = delimiter.length();
+	string token;
+	vector<int> res;
+	while ((pos_end = s.find(delimiter, pos_start)) != string::npos)
+	{
+		token = s.substr(pos_start, pos_end - pos_start);
+		pos_start = pos_end + delim_len;
+		try
+		{
+			res.push_back(stoi(token) + 1);
+		}
+		catch (exception e)
+		{
+			cout << "we had an OPSY" << endl;
+		}
+	}
+
+	try
+	{
+		res.push_back(stoi(s.substr(pos_start)) + 1);
+	}
+	catch (exception e)
+	{
+		cout << "we had an OPSY" << endl;
+	}
+	return res;
 }
 
-map<int, vector<int> > reading_function(int thread_index) {
+std::fstream &GotoLine(std::fstream &file, unsigned int num)
+{
+	file.seekg(std::ios::beg);
+	for (int i = 0; i < num - 1; ++i)
+	{
+		file.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	}
+	return file;
+}
+
+map<int, vector<int> > reading_function(int thread_index)
+{
 	string line;
 	fstream graph_file(graph);
 	map<int, vector<int> > node_assigned;
@@ -144,67 +202,67 @@ map<int, vector<int> > reading_function(int thread_index) {
 		return node_assigned;
 	}
 
-	int position = number_nodes/number_of_threads*(thread_index-1)+2;
+	int position = number_nodes / number_of_threads * (thread_index - 1) + 2;
 	// cout << "Position: " << position << endl;
 	GotoLine(graph_file, position);
-	
 
 	int more = 0;
-	
+
 	if (thread_index == number_of_threads)
-	 	more = number_nodes - (position-2 + number_nodes/number_of_threads);
+		more = number_nodes - (position - 2 + number_nodes / number_of_threads);
 
-
-	for(int i=0; i<number_nodes/number_of_threads+more; i++) {
+	for (int i = 0; i < number_nodes / number_of_threads + more; i++)
+	{
 		getline(graph_file, line);
-		
+
 		// cout << "Sono il thread " << thread_index << " e leggo linea " << line << endl;
 		vector<int> temp = split_to_int(line, " ");
-		node_assigned.insert(std::pair<int, vector<int>>(i+position-1, temp));
-
+		node_assigned.insert(std::pair<int, vector<int> >(i + position - 1, temp));
 	}
 	// readingMutex.lock();
 	// node_edge_connections.insert(node_assigned.begin(), node_assigned.end());
 	// readingMutex.unlock();
-	
+
 	return node_assigned;
 }
 
-void jones_thread(int thread_index) {
-
-	map<int, vector<int> > node_assigned = reading_function(thread_index);
-
-	// wait_on_cv();
-
-	/*int multiplier = node_edge_connections.size() / number_of_threads;
-
-	int start = (multiplier * (thread_index - 1)) + 1;
-	int end = multiplier * thread_index;
-
+void jones_thread(int thread_index)
+{
 	map<int, vector<int> > node_assigned;
+	if (!directed) 
+		node_assigned = reading_function(thread_index);
+	else{
+		// wait_on_cv();
 
-	if (thread_index == number_of_threads)
-	{
-		node_assigned.insert(node_edge_connections.find(start), node_edge_connections.end());
-	} else {
-		node_assigned.insert(node_edge_connections.find(start), node_edge_connections.find(end + 1));
-	}*/
+		int multiplier = node_edge_connections.size() / number_of_threads;
 
-	// cout << "name: " << thread_index << " start: " << start << " end: " << (start + node_assigned.size() - 1) << " size: " << node_assigned.size() << endl;
+		int start = (multiplier * (thread_index - 1)) + 1;
+		int end = multiplier * thread_index;
 
+		map<int, vector<int> > node_assigned;
+
+		if (thread_index == number_of_threads)
+		{
+			node_assigned.insert(node_edge_connections.find(start), node_edge_connections.end());
+		} else {
+			node_assigned.insert(node_edge_connections.find(start), node_edge_connections.find(end + 1));
+		}
+
+		// cout << "name: " << thread_index << " start: " << start << " end: " << (start + node_assigned.size() - 1) << " size: " << node_assigned.size() << endl;
+	}
 	int color = 1;
 	set<int> colors_used_global = {1};
 
 	int number_of_colored_nodes = node_assigned.size();
 
-	while(true)
+	while (true)
 	{
 		map<int, int> to_be_evaluated;
 
 		// generate array of all colors that are available
 
-		for(map<int, vector<int> >::const_iterator it = node_assigned.begin();
-			it != node_assigned.end(); ++it)
+		for (map<int, vector<int> >::const_iterator it = node_assigned.begin();
+			 it != node_assigned.end(); ++it)
 		{
 			// cout << "name: " << thread_index << " node: " << it->first << endl;
 			// explore connected nodes
@@ -216,7 +274,7 @@ void jones_thread(int thread_index) {
 
 			int node_random_this = node_random[it->first - 1];
 			int node_key_this = it->first;
-			
+
 			for (auto i : connections)
 			{
 				// cout << "node " << it->first << " look at " << to_string(i) << endl;
@@ -229,11 +287,12 @@ void jones_thread(int thread_index) {
 						is_highest = false;
 						break;
 					}
-				} else {
+				}
+				else
+				{
 					colors_used_local.insert(node_color[i - 1]);
 				}
 			}
-
 
 			if (is_highest)
 			{
@@ -248,17 +307,18 @@ void jones_thread(int thread_index) {
 		}
 
 		wait_on_cv1(thread_index);
-		
+
 		// Questo if risolve i problemi (magari esiste approccio migliore)
-		if (to_be_evaluated.size() == 0) {
+		if (to_be_evaluated.size() == 0)
+		{
 			color++;
 			colors_used_global.insert(color);
 		}
-		
+
 		// se (to_be_evaluated.size() == 0) nemmeno entra nel for
 		// per cui inutile mettere il mutex fuori dal for
-		for(map<int, int >::const_iterator node_interator = to_be_evaluated.begin();
-			node_interator != to_be_evaluated.end(); ++node_interator)
+		for (map<int, int>::const_iterator node_interator = to_be_evaluated.begin();
+			 node_interator != to_be_evaluated.end(); ++node_interator)
 		{
 			// writingMutex.lock();
 			// cout << "Sono " << thread_index << " assegno " << node_interator->second << " a " << node_interator->first << endl;
@@ -276,15 +336,14 @@ void jones_thread(int thread_index) {
 		wait_on_cv2(number_of_colored_nodes, thread_index);
 
 		// cout << "name: " << thread_index << " number of colored: " << number_of_colored_nodes << endl;
-		
+
 		if (number_of_colored_nodes == 0)
 			return;
-			
 	}
 }
 
-
-int main(int argc, char** argv) {
+int main(int argc, char **argv)
+{
 
 	if (argc < 3)
 	{
@@ -307,7 +366,7 @@ int main(int argc, char** argv) {
 		cout << "<execution file> <graph file> <number of threads>" << endl;
 		return 1;
 	}
-	
+
 	string line;
 	int new_node_index = 1;
 	// int number_nodes;
@@ -316,24 +375,66 @@ int main(int argc, char** argv) {
 	// we used srand to set seed for randomization of node numbers
 	// srand(time(NULL));
 
-	if(graph_file.is_open()) {
-
+	if (graph_file.is_open())
+	{
+		int counter = 1;
 		// this is first line
 		getline(graph_file, line);
 		vector<int> parse_first_line = split_to_int(line, " ");
 
 		number_nodes = parse_first_line[0];
-		number_edges = parse_first_line[1];
+		directed = (parse_first_line.size() == 1);
+		if (!directed)
+			number_edges = parse_first_line[1];
+		else
+		{
+			while (getline(graph_file, line))
+			{
+				vector<int> temp;
+				if (parse_first_line.size() == 1)
+					temp = split_to_int_mod(line, " ");
 
+				node_edge_connections.insert(std::pair<int, vector<int> >(counter, temp));
+				counter++;
+			}
+		}
 	}
 
 	graph_file.close();
 
 	// for (auto i : temp) cout << i << endl;
 
-	for (int i=0; i<number_nodes; i++) {
+	for (int i = 0; i < number_nodes; i++)
+	{
 		node_color.push_back(0);
 		node_random.push_back(rand() % 100 + 1);
+	}
+
+	if (directed)
+	{
+		map<int, vector<int> > temp_node_edge = node_edge_connections;
+
+		// translate the graph
+
+		//for each node of the map
+		for (map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
+			 it != node_edge_connections.end(); ++it)
+		{
+			//for each element of the selected array, insert the node it->first into the nodes referenced in the array
+			for (auto i : it->second)
+				temp_node_edge[i].push_back(it->first);
+		}
+		node_edge_connections = temp_node_edge;
+	
+		// print results
+
+		cout<< "Number of nodes: " << number_nodes << endl;
+		for(map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
+				it != node_edge_connections.end(); ++it){
+		    cout << "At node :" << it->first << "\t We have connections: ";
+		    for (auto i : it->second) cout << i << " ";
+		    cout << endl;
+		}
 	}
 
 	/*thread thread_reading[3];
@@ -349,7 +450,7 @@ int main(int argc, char** argv) {
 		t.join();
 	}*/
 
-		/*for(map<int, vector<int> >::const_iterator it = node_edge_connections.begin(); it != node_edge_connections.end(); ++it) {
+	/*for(map<int, vector<int> >::const_iterator it = node_edge_connections.begin(); it != node_edge_connections.end(); ++it) {
 			stringstream ss;
 			for(int i = 0; i < it->second.size(); ++i)
 			{
@@ -361,8 +462,7 @@ int main(int argc, char** argv) {
 			cout << s << endl;
 		}*/
 
-
-		/*while(getline(graph_file, line)) {
+	/*while(getline(graph_file, line)) {
 			// parsing node line
 
 			vector<int> temp = split_to_int(line, " ");
@@ -382,7 +482,7 @@ int main(int argc, char** argv) {
 
 	// }
 
-///////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////
 	/*while (node_edge_connections.size() < number_nodes)
 	{
 		node_edge_connections.insert(std::pair<int, vector<int>>(new_node_index, {}));
@@ -390,7 +490,7 @@ int main(int argc, char** argv) {
 		node_color.push_back(0);
 		new_node_index++;
 	}*/
-///////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////
 
 	// graph_file.close();
 
@@ -421,7 +521,7 @@ int main(int argc, char** argv) {
 		thread_array[i] = thread(jones_thread, i + 1);
 	}
 
-	for (auto& t : thread_array)
+	for (auto &t : thread_array)
 	{
 		t.join();
 	}
@@ -429,8 +529,8 @@ int main(int argc, char** argv) {
 	// int counter_3 = 1;
 	// for (auto i : node_color)
 	// {
-		// cout << "node : " << to_string(counter_3) << " color " << i << " random " << node_random[counter_3 - 1] << endl;
-		// counter_3++;
+	// cout << "node : " << to_string(counter_3) << " color " << i << " random " << node_random[counter_3 - 1] << endl;
+	// counter_3++;
 	// }
 
 	// Recording end time.
@@ -438,12 +538,12 @@ int main(int argc, char** argv) {
 
 	// Calculating total time taken by the program.
 	cout << "Elapsed time in nanoseconds: "
-		<< chrono::duration_cast<chrono::nanoseconds>(end - start).count()
-		<< " ns" << endl;
+		 << chrono::duration_cast<chrono::nanoseconds>(end - start).count()
+		 << " ns" << endl;
 
 	cout << "Elapsed time in microseconds: "
-		<< chrono::duration_cast<chrono::microseconds>(end - start).count()
-		<< " µs" << endl;
+		 << chrono::duration_cast<chrono::microseconds>(end - start).count()
+		 << " µs" << endl;
 
 	fstream write_file;
 	write_file.open(argv[3], ios::out);
@@ -457,7 +557,7 @@ int main(int argc, char** argv) {
 		{
 			write_file << to_string(i) << endl;
 			if (i > max)
-			max = i;
+				max = i;
 		}
 		cout << "Used colors: " << max << endl;
 	}
