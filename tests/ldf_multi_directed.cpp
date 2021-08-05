@@ -1,6 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include <limits>
 #include <string>
 #include <vector>
 #include <cstdlib>
@@ -18,43 +17,19 @@ using namespace std;
 
 map<int, vector<int> > node_edge_connections;
 vector<int> node_random;
+vector<int> node_degree;
 vector<int> node_color;
-int number_of_threads = 0;
+int number_of_threads = 1;
 int num = 0;
 int exit_threads = 0;
 bool directed = 0;
-int number_nodes = 0;
-string graph;
-
 std::mutex mtx;
 std::condition_variable cv;
 bool ready = false;
-// bool completed = false;
 
-// std::mutex writingMutex;
-// std::mutex readingMutex;
+std::mutex writingMutex;
 
-/* struct thread_struct {
-	int begin;
-	int end;
-	int name;
-}; */
-
-/* void wait_on_cv() {
-	std::unique_lock<std::mutex> lck(mtx);
-	num++;
-	if (num == number_of_threads) {
-		completed = true;
-		// cout << "notify1 " << name << " " << num << " " << number_of_threads << endl;
-		num = 0;
-		cv.notify_all();
-		return;
-	}
-	// cout << "waiting1 " << name << " " << num << " " << number_of_threads << endl;
-  	while (!completed) cv.wait(lck);
-} */
-
-void wait_on_cv1(int name)
+void wait_on_cv(int name)
 {
 	std::unique_lock<std::mutex> lck(mtx);
 	num++;
@@ -178,78 +153,27 @@ vector<int> split_to_int_mod(string line, string delimiter)
 	return res;
 }
 
-std::fstream &GotoLine(std::fstream &file, unsigned int num)
-{
-	file.seekg(std::ios::beg);
-	for (int i = 0; i < num - 1; ++i)
-	{
-		file.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-	}
-	return file;
-}
-
-map<int, vector<int> > reading_function(int thread_index)
-{
-	string line;
-	fstream graph_file(graph);
-	map<int, vector<int> > node_assigned;
-
-	if (!graph_file.is_open())
-	{
-		// file does not exists
-		cout << "File cannot be found, please refer to this guide:" << endl;
-		cout << "<execution file> <graph file> <number of threads>" << endl;
-		return node_assigned;
-	}
-
-	int position = number_nodes / number_of_threads * (thread_index - 1) + 2;
-	// cout << "Position: " << position << endl;
-	GotoLine(graph_file, position);
-
-	int more = 0;
-
-	if (thread_index == number_of_threads)
-		more = number_nodes - (position - 2 + number_nodes / number_of_threads);
-
-	for (int i = 0; i < number_nodes / number_of_threads + more; i++)
-	{
-		getline(graph_file, line);
-
-		// cout << "Sono il thread " << thread_index << " e leggo linea " << line << endl;
-		vector<int> temp = split_to_int(line, " ");
-		node_assigned.insert(std::pair<int, vector<int> >(i + position - 1, temp));
-	}
-	// readingMutex.lock();
-	// node_edge_connections.insert(node_assigned.begin(), node_assigned.end());
-	// readingMutex.unlock();
-
-	return node_assigned;
-}
-
 void jones_thread(int thread_index)
 {
+
+	int multiplier = node_edge_connections.size() / number_of_threads;
+
+	int start = (multiplier * (thread_index - 1)) + 1;
+	int end = multiplier * thread_index;
+
 	map<int, vector<int> > node_assigned;
-	if (!directed) 
-		node_assigned = reading_function(thread_index);
-	else{
-		// wait_on_cv();
 
-		int multiplier = node_edge_connections.size() / number_of_threads;
-
-		int start = (multiplier * (thread_index - 1)) + 1;
-		int end = multiplier * thread_index;
-
-		map<int, vector<int> > node_assigned;
-
-		if (thread_index == number_of_threads)
-		{
-			node_assigned.insert(node_edge_connections.find(start), node_edge_connections.end());
-		} else {
-			node_assigned.insert(node_edge_connections.find(start), node_edge_connections.find(end + 1));
-		}
-
-		// cout << "name: " << thread_index << " start: " << start << " end: " << (start + node_assigned.size() - 1) << " size: " << node_assigned.size() << endl;
+	if (thread_index == number_of_threads)
+	{
+		node_assigned.insert(node_edge_connections.find(start), node_edge_connections.end());
 	}
+	else
+	{
+		node_assigned.insert(node_edge_connections.find(start), node_edge_connections.find(end + 1));
+	}
+
+	cout << "name: " << thread_index << " start: " << start << " end: " << (start + node_assigned.size() - 1) << " size: " << node_assigned.size() << endl;
+
 	int color = 1;
 	set<int> colors_used_global = {1};
 
@@ -273,6 +197,7 @@ void jones_thread(int thread_index)
 			set<int> colors_used_local;
 
 			int node_random_this = node_random[it->first - 1];
+			int node_degree_this = node_degree[it->first - 1];
 			int node_key_this = it->first;
 
 			for (auto i : connections)
@@ -281,7 +206,9 @@ void jones_thread(int thread_index)
 				// check if connections is colored
 				if (node_color[i - 1] == 0)
 				{
-					if (node_random_this < node_random[i - 1] || ((node_random_this == node_random[i - 1]) && (node_key_this < i)))
+					if (node_degree_this < node_degree[i - 1] ||
+						(node_degree_this == node_degree[i - 1] && node_random_this < node_random[i - 1]) ||
+						(node_degree_this == node_degree[i - 1] && node_random_this == node_random[i - 1] && node_key_this < i))
 					{
 						// cout << "node " << node_key_this << " not highest against " << i << " rand1 " << node_random_this << " rand2 " << node_random[i - 1] << " color " << node_color[i - 1] << endl;
 						is_highest = false;
@@ -300,13 +227,13 @@ void jones_thread(int thread_index)
 				std::set<int> colors_used_interation;
 				std::set_difference(colors_used_global.begin(), colors_used_global.end(), colors_used_local.begin(), colors_used_local.end(), std::inserter(colors_used_interation, colors_used_interation.end()));
 				auto choosen = colors_used_interation.begin();
-				if (*choosen != 0) // se è uguale a 0 non devo colorarlo con zero.
+				if (*choosen != 0) // se il colore è uguale a 0 non devo colorare il nodo con zero.
 					to_be_evaluated.insert(std::pair<int, int>(node_key_this, *choosen));
 				// cout << "name: " << thread_index << "node key: " << node_key_this << " highest" << endl;
 			}
 		}
 
-		wait_on_cv1(thread_index);
+		wait_on_cv(thread_index);
 
 		// Questo if risolve i problemi (magari esiste approccio migliore)
 		if (to_be_evaluated.size() == 0)
@@ -320,11 +247,11 @@ void jones_thread(int thread_index)
 		for (map<int, int>::const_iterator node_interator = to_be_evaluated.begin();
 			 node_interator != to_be_evaluated.end(); ++node_interator)
 		{
-			// writingMutex.lock();
+			writingMutex.lock();
 			// cout << "Sono " << thread_index << " assegno " << node_interator->second << " a " << node_interator->first << endl;
 			node_color[node_interator->first - 1] = node_interator->second;
-			// writingMutex.unlock();
 			node_assigned.erase(node_interator->first);
+			writingMutex.unlock();
 			if (node_interator->second == color)
 			{
 				color++;
@@ -356,7 +283,6 @@ int main(int argc, char **argv)
 	// TODO : we have to check if this is exeception prone
 
 	fstream graph_file;
-	graph = argv[1];
 	graph_file.open(argv[1], ios::in);
 
 	if (!graph_file.is_open())
@@ -369,7 +295,7 @@ int main(int argc, char **argv)
 
 	string line;
 	int new_node_index = 1;
-	// int number_nodes;
+	int number_nodes;
 	int number_edges;
 
 	// we used srand to set seed for randomization of node numbers
@@ -377,7 +303,7 @@ int main(int argc, char **argv)
 
 	if (graph_file.is_open())
 	{
-		int counter = 1;
+
 		// this is first line
 		getline(graph_file, line);
 		vector<int> parse_first_line = split_to_int(line, " ");
@@ -386,30 +312,41 @@ int main(int argc, char **argv)
 		directed = (parse_first_line.size() == 1);
 		if (!directed)
 			number_edges = parse_first_line[1];
-		else
-		{
-			while (getline(graph_file, line))
-			{
-				vector<int> temp;
-				if (directed)
-					temp = split_to_int_mod(line, " ");
 
-				node_edge_connections.insert(std::pair<int, vector<int> >(counter, temp));
-				counter++;
-			}
+		while (getline(graph_file, line))
+		{
+			// parsing node line
+			vector<int> temp;
+			if (directed)
+				temp = split_to_int_mod(line, " ");
+			else
+				temp = split_to_int(line, " ");
+			// cout << "node number :" << to_string(new_node_index) << endl;
+			// for (auto i : temp) cout << "conn " << to_string(i) << endl;
+
+			node_edge_connections.insert(std::pair<int, vector<int> >(new_node_index, temp));
+
+			// add random number to each node
+			node_random.push_back(rand() % 100 + 1);
+			// add color 0
+			node_color.push_back(0);
+			// cout << "Degree of node " << new_node_index << " is " << temp.size() << endl;
+			if(!directed)
+				node_degree.push_back(temp.size());
+			new_node_index++;
 		}
 	}
 
-	graph_file.close();
-
-	// for (auto i : temp) cout << i << endl;
-
-	for (int i = 0; i < number_nodes; i++)
+	while (node_edge_connections.size() < number_nodes)
 	{
-		node_color.push_back(0);
+		node_edge_connections.insert(std::pair<int, vector<int> >(new_node_index, {}));
 		node_random.push_back(rand() % 100 + 1);
+		node_color.push_back(0);
+		node_degree.push_back(0);
+		new_node_index++;
 	}
 
+	// handle directed graph
 	if (directed)
 	{
 		map<int, vector<int> > temp_node_edge = node_edge_connections;
@@ -425,74 +362,34 @@ int main(int argc, char **argv)
 				temp_node_edge[i].push_back(it->first);
 		}
 		node_edge_connections = temp_node_edge;
-	
-		// print results
 
-		// cout<< "Number of nodes: " << number_nodes << endl;
-		// for(map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
-		// 		it != node_edge_connections.end(); ++it){
-		//     cout << "At node :" << it->first << "\t We have connections: ";
-		//     for (auto i : it->second) cout << i << " ";
-		//     cout << endl;
-		// }
+		// compute number_edges and degrees
+
+		for (map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
+			 it != node_edge_connections.end(); ++it)
+		{
+			// cout << "number_edges: " << number_edge
+			//edges
+			number_edges += it->second.size();
+			//degree
+			node_degree.push_back(it->second.size());
+		}
 	}
 
-	/*thread thread_reading[3];
+	// print results
 
-	for (int i = 0; i < 3; ++i)
+	cout << "Number of nodes: " << number_nodes << "\tNumber of edges: " << number_edges << endl;
+	for (map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
+		 it != node_edge_connections.end(); ++it)
 	{
-		cout << "generated thread: " << (i + 1) << endl;
-		thread_reading[i] = thread(reading_function, i + 1);
+		cout << "At node: " << it->first << "\t We have connections: ";
+		for (auto i : it->second)
+			cout << i << " ";
+		
+		cout << "\tDegree: " << node_degree[it->first - 1] << endl;
 	}
 
-	for (auto& t : thread_reading)
-	{
-		t.join();
-	}*/
-
-	/*for(map<int, vector<int> >::const_iterator it = node_edge_connections.begin(); it != node_edge_connections.end(); ++it) {
-			stringstream ss;
-			for(int i = 0; i < it->second.size(); ++i)
-			{
-			if(i != 0)
-				ss << " ";
-			ss << it->second[i];
-			}
-			string s = ss.str();
-			cout << s << endl;
-		}*/
-
-	/*while(getline(graph_file, line)) {
-			// parsing node line
-
-			vector<int> temp = split_to_int(line, " ");
-
-			// cout << "node number :" << to_string(new_node_index) << endl;
-			// for (auto i : temp) cout << "conn " << to_string(i) << endl;
-
-			node_edge_connections.insert(std::pair<int, vector<int>>(new_node_index, temp));
-
-			// add random number to each node
-			node_random.push_back(rand() % 100 + 1);
-			// add color 0
-			node_color.push_back(0);
-
-			new_node_index++;
-		}*/
-
-	// }
-
-	///////////////////////////////////////////////////////
-	/*while (node_edge_connections.size() < number_nodes)
-	{
-		node_edge_connections.insert(std::pair<int, vector<int>>(new_node_index, {}));
-		node_random.push_back(rand() % 100 + 1);
-		node_color.push_back(0);
-		new_node_index++;
-	}*/
-	///////////////////////////////////////////////////////
-
-	// graph_file.close();
+	graph_file.close();
 
 	// int debug_counter = 0;
 	// for(map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
@@ -511,7 +408,7 @@ int main(int argc, char **argv)
 
 	number_of_threads = stoi(argv[2]);
 
-	// int multiplier = node_edge_connections.size() / number_of_threads;
+	int multiplier = node_edge_connections.size() / number_of_threads;
 
 	thread thread_array[number_of_threads];
 
@@ -548,9 +445,9 @@ int main(int argc, char **argv)
 	fstream write_file;
 	write_file.open(argv[3], ios::out);
 
-	int max = 0;
 	if (write_file.is_open())
 	{
+		int max = 0;
 		// file exists write to file results
 		write_file << to_string(number_nodes) << " " << to_string(number_edges) << endl;
 		for (auto i : node_color)
