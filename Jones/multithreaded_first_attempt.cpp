@@ -19,12 +19,11 @@ map<int, vector<int>> node_edge_connections;
 vector<int> node_random;
 vector<int> node_color;
 int number_of_threads = 3;
-int num = 0;
-int exit_threads = 0;
-
-std::mutex mtx;
-std::condition_variable cv;
-bool ready = false;
+int number_of_thread_waiting = 3;
+// barrier thread_sync_point1(2);
+// barrier thread_sync_point2(2);
+std::condition_variable waitConditionVariable;
+std::mutex waitMutex;
 
 std::mutex writingMutex;
 
@@ -35,30 +34,28 @@ struct thread_struct {
 	int name;
 };
 
-void wait_on_cv() {
-	std::unique_lock<std::mutex> lck(mtx);
-	num++;
-	if (num == number_of_threads) {
-		ready = true;
-		cv.notify_all();
-		return;
+void Wait(int name) {
+	std::unique_lock<std::mutex> lLock{waitMutex};
+	if (!--number_of_thread_waiting) {
+		number_of_thread_waiting = number_of_threads;
+		// cout << "notify " << name << " " << number_of_thread_waiting << " " << number_of_threads << endl;
+		waitConditionVariable.notify_all();
+	} else {
+		// cout << "waiting " << name << " " << number_of_thread_waiting << " " << number_of_threads << endl;
+		waitConditionVariable.wait(lLock);
 	}
-  	while (!ready) cv.wait(lck);
 }
 
-void wait_on_cv2(int number_of_colored_nodes) {
-	std::unique_lock<std::mutex> lck(mtx);
-	num--;
-	if (number_of_colored_nodes == 0)
-		exit_threads++;
-	if (num == 0) {
-		number_of_threads = number_of_threads - exit_threads;
-		exit_threads = 0;
-		ready = false;
-		cv.notify_all();
-		return;
+void Leave(int name) {
+	std::unique_lock<std::mutex> lLock{waitMutex};
+	// cout << "leaving " << name << endl;
+	number_of_threads--;
+	if (!--number_of_thread_waiting)
+	{
+		number_of_thread_waiting = number_of_threads;
+		// cout << "notify leaving " << name << " " << number_of_thread_waiting << " " << number_of_threads << endl;
+		waitConditionVariable.notify_all();
 	}
-  	while (ready) cv.wait(lck);
 }
 
 vector<string> split (string s, string delimiter) {
@@ -102,15 +99,6 @@ vector<int> split_to_int (string s, string delimiter) {
 void jones_thread(thread_struct thread_info) {
 	// cout << thread_info.name << " begin: " << thread_info.begin << " end: " << thread_info.end << endl;
 
-	map<int, vector<int> > node_assigned;
-
-	if (thread_info.end == node_edge_connections.size())
-	{
-		node_assigned.insert(node_edge_connections.find(thread_info.begin), node_edge_connections.end());
-	} else {
-		node_assigned.insert(node_edge_connections.find(thread_info.begin), node_edge_connections.find(thread_info.end + 1));
-	}
-
 	int color = 1;
 	set<int> colors_used_global = {1};
 
@@ -127,8 +115,8 @@ void jones_thread(thread_struct thread_info) {
 
 		// generate array of all colors that are available
 
-		for(map<int, vector<int> >::const_iterator it = node_assigned.begin();
-			it != node_assigned.end(); ++it)
+		for(map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
+			it != node_edge_connections.end(); ++it)
 		{
 
 			if (it->first < thread_info.begin)
@@ -179,30 +167,22 @@ void jones_thread(thread_struct thread_info) {
 					std::set<int> colors_used_interation;
 					std::set_difference(colors_used_global.begin(), colors_used_global.end(), colors_used_local.begin(), colors_used_local.end(), std::inserter(colors_used_interation, colors_used_interation.end()));
 					auto choosen = colors_used_interation.begin();
-					if (*choosen != 0) // se è uguale a 0 non devo colorarlo con zero.
-						to_be_evaluated.insert(std::pair<int, int>(node_key_this, *choosen));
+					to_be_evaluated.insert(std::pair<int, int>(node_key_this, *choosen));
 				}
 			}
 		}
 
-		wait_on_cv();
-		
-		// Questo if risolve i problemi (magari esiste approccio migliore)
-		if (to_be_evaluated.size() == 0) {
-			color++;
-			colors_used_global.insert(color);
-		}
-		
-		// se (to_be_evaluated.size() == 0) nemmeno entra nel for
-		// per cui inutile mettere il mutex fuori dal for
+		Wait(thread_info.name);
+
+		// BEGIN CS
+		writingMutex.lock();
+
 		for(map<int, int >::const_iterator node_interator = to_be_evaluated.begin();
 			node_interator != to_be_evaluated.end(); ++node_interator)
 		{
-			writingMutex.lock();
-			//cout << "Sono " << thread_info.name << " assegno " << node_interator->second << " a " << node_interator->first << endl;
 			node_color[node_interator->first - 1] = node_interator->second;
-			node_assigned.erase(node_interator->first);
-			writingMutex.unlock();
+			node_edge_connections.erase(node_interator->first);
+
 			if (node_interator->second == color)
 			{
 				color++;
@@ -211,11 +191,17 @@ void jones_thread(thread_struct thread_info) {
 			number_of_colored_nodes--;
 		}
 
-		wait_on_cv2(number_of_colored_nodes);
+		writingMutex.unlock();
+		// END CS
 
+		// if we want to leave
 		if (number_of_colored_nodes == 0)
+		{
+			Leave(thread_info.name);
 			return;
-			
+		}
+
+		Wait(thread_info.name);
 	}
 }
 
