@@ -29,6 +29,7 @@ string graph;
 std::mutex mtx;
 std::condition_variable cv;
 bool ready = false;
+bool ready2 = false;
 // bool completed = false;
 
 std::vector<std::mutex> mutexes;
@@ -69,23 +70,6 @@ void wait_on_cv1(int name)
 	while (!ready)
 		cv.wait(lck);
 }
-int wait_on_cv3(int name)
-{
-	std::unique_lock<std::mutex> lck(mtx);
-	num++;
-	if (num == number_of_threads)
-	{
-		ready = true;
-		// cout << "notify1 " << name << " " << num << " " << number_of_threads << endl;
-		cv.notify_all();
-		return name;
-	}
-	// cout << "waiting1 " << name << " " << num << " " << number_of_threads << endl;
-	while (!ready)
-		cv.wait(lck);
-	return -1;
-}
-
 void wait_on_cv2(int number_of_colored_nodes, int name)
 {
 	std::unique_lock<std::mutex> lck(mtx);
@@ -104,6 +88,22 @@ void wait_on_cv2(int number_of_colored_nodes, int name)
 	// cout << "waiting2 " << name << " " << num << " " << number_of_threads << endl;
 	while (ready)
 		cv.wait(lck);
+}
+int wait_on_cv3(int name)
+{
+	std::unique_lock<std::mutex> lck(mtx);
+	num++;
+	if (num == number_of_threads)
+	{
+		ready2 = true;
+		// cout << "notify1 " << name << " " << num << " " << number_of_threads << endl;
+		cv.notify_all();
+		return name;
+	}
+	// cout << "waiting1 " << name << " " << num << " " << number_of_threads << endl;
+	while (!ready2)
+		cv.wait(lck);
+	return -1;
 }
 
 vector<string> split(string s, string delimiter)
@@ -277,7 +277,20 @@ void jones_thread(int thread_index)
 					temp_node_edge[i].push_back(it->first);
 			}
 			node_edge_connections = temp_node_edge;
+			// print results
+
+			cout << "Number of nodes: " << number_nodes << endl;
+			for (map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
+				 it != node_edge_connections.end(); ++it)
+			{
+				cout << "At node :" << it->first << "\t We have connections: ";
+				for (auto i : it->second)
+					cout << i << " ";
+				cout << endl;
+			}
 		}
+		wait_on_cv3(thread_index);
+		cout<< "thread " << thread_index << endl;
 
 		int multiplier = node_edge_connections.size() / number_of_threads;
 
@@ -292,18 +305,6 @@ void jones_thread(int thread_index)
 		{
 			node_assigned.insert(node_edge_connections.find(start), node_edge_connections.find(end + 1));
 		}
-	}
-
-	// print results
-
-	cout << "Number of nodes: " << number_nodes << endl;
-	for (map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
-		 it != node_edge_connections.end(); ++it)
-	{
-		cout << "At node :" << it->first << "\t We have connections: ";
-		for (auto i : it->second)
-			cout << i << " ";
-		cout << endl;
 	}
 
 	// wait_on_cv();
@@ -365,7 +366,6 @@ void jones_thread(int thread_index)
 				// cout << "name: " << thread_index << "node key: " << node_key_this << " highest" << endl;
 			}
 		}
-
 		wait_on_cv1(thread_index);
 
 		// Questo if risolve i problemi (magari esiste approccio migliore)
@@ -392,7 +392,7 @@ void jones_thread(int thread_index)
 			}
 			number_of_colored_nodes--;
 		}
-
+		cout<< "thread " << thread_index << " \tcolor " << number_of_colored_nodes << endl;
 		wait_on_cv2(number_of_colored_nodes, thread_index);
 
 		// cout << "name: " << thread_index << " number of colored: " << number_of_colored_nodes << endl;
