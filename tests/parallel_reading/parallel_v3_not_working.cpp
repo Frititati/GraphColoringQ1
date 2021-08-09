@@ -69,6 +69,22 @@ void wait_on_cv1(int name)
 	while (!ready)
 		cv.wait(lck);
 }
+int wait_on_cv3(int name)
+{
+	std::unique_lock<std::mutex> lck(mtx);
+	num++;
+	if (num == number_of_threads)
+	{
+		ready = true;
+		// cout << "notify1 " << name << " " << num << " " << number_of_threads << endl;
+		cv.notify_all();
+		return name;
+	}
+	// cout << "waiting1 " << name << " " << num << " " << number_of_threads << endl;
+	while (!ready)
+		cv.wait(lck);
+	return -1;
+}
 
 void wait_on_cv2(int number_of_colored_nodes, int name)
 {
@@ -210,86 +226,28 @@ map<int, vector<int> > reading_function(int thread_index)
 
 	if (thread_index == number_of_threads)
 		more = number_nodes - (position - 2 + number_nodes / number_of_threads);
-
-	for (int i = 0; i < number_nodes / number_of_threads + more; i++)
+	if (directed)
 	{
-		getline(graph_file, line);
-
-		// cout << "Sono il thread " << thread_index << " e leggo linea " << line << endl;
-		vector<int> temp = split_to_int(line, " ");
-		node_assigned.insert(std::pair<int, vector<int> >(i + position - 1, temp));
-	}
-	// readingMutex.lock();
-	// node_edge_connections.insert(node_assigned.begin(), node_assigned.end());
-	// readingMutex.unlock();
-
-	return node_assigned;
-}
-map<int, vector<int> > reading_function_directed(int thread_index)
-{
-	string line;
-	fstream graph_file(graph);
-	map<int, vector<int> > node_assigned;
-
-	if (!graph_file.is_open())
-	{
-		// file does not exists
-		cout << "File cannot be found, please refer to this guide:" << endl;
-		cout << "<execution file> <graph file> <number of threads>" << endl;
-		return node_assigned;
-	}
-
-	int position = number_nodes / number_of_threads * (thread_index - 1) + 2;
-	// cout << "Position: " << position << endl;
-	GotoLine(graph_file, position);
-
-	int dim = 0;
-	int more = 0;
-
-	if (thread_index == number_of_threads)
-		more = number_nodes - (position - 2 + number_nodes / number_of_threads);
-
-	dim = number_nodes / number_of_threads + more;
-
-	for (int i = 0; i < dim; i++)
-	{
-		getline(graph_file, line);
-
-		// cout << "Sono il thread " << thread_index << " e leggo linea " << line << endl;
-		vector<int> temp = split_to_int_directed(line, " ");
-		node_edge_connections.insert(std::pair<int, vector<int> >(i + position - 1, temp));
-	}
-
-	map<int, vector<int> > temp_node_edge = node_edge_connections;
-
-	// translate the graph
-
-	//for each node of the map
-	for (map<int, vector<int> >::const_iterator it = node_edge_connections.find(position - 1);
-		 it != node_edge_connections.find(position + dim); ++it)
-	{
-		//for each element of the selected array, insert the node it->first into the nodes referenced in the array
-		for (auto i : it->second)
+		for (int i = 0; i < number_nodes / number_of_threads + more; i++)
 		{
-			mutexes[i].lock();
-			temp_node_edge[i].push_back(it->first);
-			mutexes[i].unlock();
+			getline(graph_file, line);
+
+			// cout << "Sono il thread " << thread_index << " e leggo linea " << line << endl;
+			vector<int> temp = split_to_int_directed(line, " ");
+			node_edge_connections.insert(std::pair<int, vector<int> >(i + position - 1, temp));
 		}
 	}
-
-	//write on global map - necessary on dire
-	writingMutex.lock();
-	if (thread_index == number_of_threads)
-		node_edge_connections.insert(temp_node_edge.find(position - 1), temp_node_edge.end());
 	else
-		node_edge_connections.insert(temp_node_edge.find(position - 1), temp_node_edge.find(position + dim));
-	writingMutex.unlock();
+	{
+		for (int i = 0; i < number_nodes / number_of_threads + more; i++)
+		{
+			getline(graph_file, line);
 
-	if (thread_index == number_of_threads)
-		node_assigned.insert(node_edge_connections.find(position - 1), node_edge_connections.find(position + dim));
-	else
-		node_assigned.insert(node_edge_connections.find(position - 1), node_edge_connections.end());
-
+			// cout << "Sono il thread " << thread_index << " e leggo linea " << line << endl;
+			vector<int> temp = split_to_int(line, " ");
+			node_assigned.insert(std::pair<int, vector<int> >(i + position - 1, temp));
+		}
+	}
 	// readingMutex.lock();
 	// node_edge_connections.insert(node_assigned.begin(), node_assigned.end());
 	// readingMutex.unlock();
@@ -300,26 +258,55 @@ map<int, vector<int> > reading_function_directed(int thread_index)
 void jones_thread(int thread_index)
 {
 	map<int, vector<int> > node_assigned;
+	node_assigned = reading_function(thread_index);
 	if (directed)
-		node_assigned = reading_function_directed(thread_index);
-	else
-		node_assigned = reading_function(thread_index);
+	{
+		int n = wait_on_cv3(thread_index);
+		if (n == thread_index)
+		{
+			map<int, vector<int> > temp_node_edge = node_edge_connections;
+
+			// translate the graph
+
+			//for each node of the map
+			for (map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
+				 it != node_edge_connections.end(); ++it)
+			{
+				//for each element of the selected array, insert the node it->first into the nodes referenced in the array
+				for (auto i : it->second)
+					temp_node_edge[i].push_back(it->first);
+			}
+			node_edge_connections = temp_node_edge;
+		}
+
+		int multiplier = node_edge_connections.size() / number_of_threads;
+
+		int start = (multiplier * (thread_index - 1)) + 1;
+		int end = multiplier * thread_index;
+
+		if (thread_index == number_of_threads)
+		{
+			node_assigned.insert(node_edge_connections.find(start), node_edge_connections.end());
+		}
+		else
+		{
+			node_assigned.insert(node_edge_connections.find(start), node_edge_connections.find(end + 1));
+		}
+	}
+
+	// print results
+
+	cout << "Number of nodes: " << number_nodes << endl;
+	for (map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
+		 it != node_edge_connections.end(); ++it)
+	{
+		cout << "At node :" << it->first << "\t We have connections: ";
+		for (auto i : it->second)
+			cout << i << " ";
+		cout << endl;
+	}
 
 	// wait_on_cv();
-
-	/*int multiplier = node_edge_connections.size() / number_of_threads;
-
-	int start = (multiplier * (thread_index - 1)) + 1;
-	int end = multiplier * thread_index;
-
-	map<int, vector<int> > node_assigned;
-
-	if (thread_index == number_of_threads)
-	{
-		node_assigned.insert(node_edge_connections.find(start), node_edge_connections.end());
-	} else {
-		node_assigned.insert(node_edge_connections.find(start), node_edge_connections.find(end + 1));
-	}*/
 
 	// cout << "name: " << thread_index << " start: " << start << " end: " << (start + node_assigned.size() - 1) << " size: " << node_assigned.size() << endl;
 
