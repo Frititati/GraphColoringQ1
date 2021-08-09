@@ -5,6 +5,9 @@
 #include <cstdlib>
 #include <map>
 #include <time.h>
+#include <algorithm>
+#include <set>
+#include <iterator>
 #include <chrono>
 
 using namespace std;
@@ -59,12 +62,14 @@ vector<int> split_to_int (string s, string delimiter) {
 int jones_sequential() {
 	// color is defined as integer
 	int color = 1;
+	// we have a set of the colors used (this is useful to compare later in the iterative step)
+	set<int> colors_used_global = {1};
 
 	// we continue until the node_edge_connection is empty
 	while(node_edge_connections.size() != 0)
 	{
-		// vector of all the nodes to be evaluated this iteration
-		vector<int> to_be_evaluated;
+		// map of all the nodes to be evaluated this iteration <index, color>
+		map<int, int> to_be_evaluated;
 
 		// cout << "size node " << to_string(node_edge_connections.size()) << " color " << color << endl;
 
@@ -77,8 +82,10 @@ int jones_sequential() {
 
 			bool is_highest = true;
 
-			// get the random value for the current node
-			int node_rand_this = node_random[it->first - 1];
+			set<int> colors_used_local;
+
+			int node_random_this = node_random[it->first - 1];
+			int node_key_this = it->first;
 			
 			// look into all the connected nodes
 			for (auto i : connections)
@@ -88,43 +95,40 @@ int jones_sequential() {
 				// check if connections is not colored
 				if (node_color[i - 1] == 0)
 				{
-					// comparing the random values (we see if the node is local highest)
-					if (node_rand_this < node_random[i - 1])
+					if (node_random_this < node_random[i - 1] || ((node_random_this == node_random[i - 1]) && (node_key_this < i)))
 					{
 						// not local highest
 						is_highest = false;
 						break;
-					// if the random values are equal we check the index of the nodes (to find highest)
-					} else if (node_rand_this == node_random[i - 1])
-					{
-						if (it->first < i)
-						{
-							is_highest = false;
-							break;
-						}
 					}
+				} else {
+					colors_used_local.insert(node_color[i - 1]);
 				}
 			}
 
 			// only execute if the node is the highest in its local section
 			if (is_highest)
 			{
-				// cout << "node " << it->first << " highest" << endl;
-				to_be_evaluated.push_back(it->first);
+				// cout << "node " << node_key_this << " highest" << endl;
+				std::set<int> colors_used_interation;
+				std::set_difference(colors_used_global.begin(), colors_used_global.end(), colors_used_local.begin(), colors_used_local.end(), std::inserter(colors_used_interation, colors_used_interation.end()));
+				auto choosen = colors_used_interation.begin();
+				to_be_evaluated.insert(std::pair<int, int>(node_key_this, *choosen));
 			}
 		}
 
-		// we have to remove
-		for (auto i : to_be_evaluated)
+		for(map<int, int >::const_iterator node_interator = to_be_evaluated.begin();
+			node_interator != to_be_evaluated.end(); ++node_interator)
 		{
-			// color the node on the node_color vector
-			node_color[i - 1] = color;
-			// if we color the node we erase it from the map
-			node_edge_connections.erase(i);
-		}
+			node_color[node_interator->first - 1] = node_interator->second;
+			node_edge_connections.erase(node_interator->first);
 
-		// increment the color integer
-		color++;
+			if (node_interator->second == color)
+			{
+				color++;
+				colors_used_global.insert(color);
+			}
+		}
 	}
 
 	cout << "Colors used: " << to_string(color) << endl;
