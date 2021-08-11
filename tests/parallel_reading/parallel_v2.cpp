@@ -29,6 +29,9 @@ string graph;
 std::mutex mtx;
 std::condition_variable cv;
 bool ready = false;
+
+vector<chrono::microseconds> reading_times;
+
 // bool completed = false;
 
 // std::mutex writingMutex;
@@ -52,7 +55,7 @@ bool ready = false;
 		return;
 	}
 	// cout << "waiting1 " << name << " " << num << " " << number_of_threads << endl;
-  	while (!completed) cv.wait(lck);
+	while (!completed) cv.wait(lck);
 } */
 
 void wait_on_cv1(int name) {
@@ -65,14 +68,15 @@ void wait_on_cv1(int name) {
 		return;
 	}
 	// cout << "waiting1 " << name << " " << num << " " << number_of_threads << endl;
-  	while (!ready) cv.wait(lck);
+	while (!ready) cv.wait(lck);
 }
 
 void wait_on_cv2(int number_of_colored_nodes, int name) {
 	std::unique_lock<std::mutex> lck(mtx);
 	num--;
-	if (number_of_colored_nodes == 0)
+	if (number_of_colored_nodes == 0){
 		exit_threads++;
+	}
 	if (num == 0) {
 		number_of_threads = number_of_threads - exit_threads;
 		exit_threads = 0;
@@ -82,7 +86,7 @@ void wait_on_cv2(int number_of_colored_nodes, int name) {
 		return;
 	}
 	// cout << "waiting2 " << name << " " << num << " " << number_of_threads << endl;
-  	while (ready) cv.wait(lck);
+	while (ready) cv.wait(lck);
 }
 
 vector<string> split (string s, string delimiter) {
@@ -123,12 +127,12 @@ vector<int> split_to_int (string s, string delimiter) {
 	return res;
 }
 
-std::fstream& GotoLine(std::fstream& file, unsigned int num){
-    file.seekg(std::ios::beg);
-    for(int i=0; i < num - 1; ++i){
-        file.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
-    }
-    return file;
+std::fstream& GotoLine(std::fstream& file, unsigned int num) {
+	file.seekg(std::ios::beg);
+	for(int i=0; i < num - 1; ++i){
+		file.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+	}
+	return file;
 }
 
 map<int, vector<int> > reading_function(int thread_index) {
@@ -151,8 +155,9 @@ map<int, vector<int> > reading_function(int thread_index) {
 
 	int more = 0;
 	
-	if (thread_index == number_of_threads)
-	 	more = number_nodes - (position-2 + number_nodes/number_of_threads);
+	if (thread_index == number_of_threads) {
+		more = number_nodes - (position-2 + number_nodes/number_of_threads);
+	}
 
 
 	for(int i=0; i<number_nodes/number_of_threads+more; i++) {
@@ -172,7 +177,12 @@ map<int, vector<int> > reading_function(int thread_index) {
 
 void jones_thread(int thread_index) {
 
+	auto start_time = chrono::steady_clock::now();
+	
 	map<int, vector<int> > node_assigned = reading_function(thread_index);
+	
+	auto end_time = chrono::steady_clock::now();
+	reading_times[thread_index-1] = chrono::duration_cast<chrono::microseconds>(end_time - start_time);
 
 	// wait_on_cv();
 
@@ -404,7 +414,7 @@ int main(int argc, char** argv) {
 	// 	debug_counter++;
 	// }
 
-	auto start = chrono::steady_clock::now();
+	auto start_main = chrono::steady_clock::now();
 
 	// unsync the I/O of C and C++.
 	ios_base::sync_with_stdio(false);
@@ -419,6 +429,7 @@ int main(int argc, char** argv) {
 	{
 		cout << "generated thread: " << (i + 1) << endl;
 		thread_array[i] = thread(jones_thread, i + 1);
+		reading_times.push_back((chrono::microseconds) 0);
 	}
 
 	for (auto& t : thread_array)
@@ -434,35 +445,69 @@ int main(int argc, char** argv) {
 	// }
 
 	// Recording end time.
-	auto end = chrono::steady_clock::now();
+	auto end_main = chrono::steady_clock::now();
 
-	// Calculating total time taken by the program.
-	cout << "Elapsed time in nanoseconds: "
-		<< chrono::duration_cast<chrono::nanoseconds>(end - start).count()
-		<< " ns" << endl;
+	int time_sum = 0;
 
-	cout << "Elapsed time in microseconds: "
-		<< chrono::duration_cast<chrono::microseconds>(end - start).count()
-		<< " µs" << endl;
-
-	fstream write_file;
-	write_file.open(argv[3], ios::out);
-
-	int max = 0;
-	if (write_file.is_open())
+	for (auto time : reading_times)
 	{
-		// file exists write to file results
-		write_file << to_string(number_nodes) << " " << to_string(number_edges) << endl;
-		for (auto i : node_color)
-		{
-			write_file << to_string(i) << endl;
-			if (i > max)
-			max = i;
-		}
-		cout << "Used colors: " << max << endl;
+		// cout << "Elapsed " << chrono::duration_cast<chrono::microseconds>(time).count() << " µs" << endl;
+		time_sum += chrono::duration_cast<chrono::microseconds>(time).count();
+	}
+	int time_average = static_cast<int>(time_sum/reading_times.size());
+
+	cout << "Elapsed reading time in microseconds: " << time_average << " µs" << endl;
+
+	int algo_time = chrono::duration_cast<chrono::microseconds>(end_main - start_main).count() - time_average;
+
+	cout << "Elapsed algo time in microseconds: " << algo_time << " µs" << endl;
+
+	auto start_write = chrono::steady_clock::now();
+
+	string final = to_string(number_nodes) + " " + to_string(number_edges) + "\n";
+
+	for (auto i : node_color)
+	{
+		final += to_string(i) + "\n";
 	}
 
-	write_file.close();
+	// cout << "size of final cstr " << (final.size() * sizeof(char)) << endl;
+	auto output_file = std::fstream(argv[3], std::ios::out | std::ios::binary);
+	output_file.write(final.c_str(), (final.size() * sizeof(char)) );
+	output_file.close();
+
+	auto end_write = chrono::steady_clock::now();
+
+	// Calculating total time taken by the program.
+	cout << "Elapsed writing time in microseconds: "
+		<< chrono::duration_cast<chrono::microseconds>(end_write - start_write).count()
+		<< " µs" << endl;
+
+	// Calculating total time taken by the program.
+	cout << "Elapsed time in microseconds: "
+		<< chrono::duration_cast<chrono::microseconds>(end_write - start_main).count()
+		<< " µs" << endl;
+
+	unsigned int n = std::thread::hardware_concurrency();
+	std::cout << n << " concurrent threads are supported.\n";
+
+	// fstream write_file;
+	// write_file.open(argv[3], ios::out);
+
+	// int max = 0;
+	// if (write_file.is_open())
+	// {
+	// 	// file exists write to file results
+	// 	write_file << to_string(number_nodes) << " " << to_string(number_edges) << endl;
+	// 	for (auto i : node_color)
+	// 	{
+	// 		write_file << to_string(i) << endl;
+	// 		if (i > max)
+	// 		max = i;
+	// 	}
+	// 	cout << "Used colors: " << max << endl;
+	// }
+	// write_file.close();
 
 	return 0;
 }
