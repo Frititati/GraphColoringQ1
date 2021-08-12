@@ -16,7 +16,12 @@
 
 using namespace std;
 
-// map<int, vector<int>> node_edge_connections;
+struct node_struct {
+	int index;
+	int size;
+	int* connections;
+};
+
 vector<int> node_random;
 vector<int> node_color;
 int number_threads = 0;
@@ -132,6 +137,34 @@ vector<int> split_to_int (string s, string delimiter) {
 	return res;
 }
 
+void split_directed_node (string s, string delimiter, node_struct *node, int index) {
+	size_t pos_start = 0, pos_end, delim_len = delimiter.length();
+	string token;
+	vector<int> res;
+
+	while ((pos_end = s.find (delimiter, pos_start)) != string::npos) {
+		token = s.substr (pos_start, pos_end - pos_start);
+		pos_start = pos_end + delim_len;
+		try {
+			res.push_back(stoi(token));
+		} catch (exception e){
+			// we don't have any node connections
+		}
+	}
+
+	try {
+		res.push_back (stoi(s.substr (pos_start)));
+	} catch (exception e){
+		// we don't have any node connections
+	}
+
+	(*node).index = index;
+	(*node).size = res.size();
+
+	(*node).connections = new int[res.size()];
+	std::copy(res.begin(), res.end(), (*node).connections);
+}
+
 std::fstream& GotoLine(std::fstream& file, unsigned int num) {
 	file.seekg(std::ios::beg);
 	for(int i=0; i < num - 1; ++i){
@@ -140,17 +173,16 @@ std::fstream& GotoLine(std::fstream& file, unsigned int num) {
 	return file;
 }
 
-map<int, vector<int> > reading_function(int thread_index) {
+void reading_function(int thread_index, node_struct *&node_assigned, int *number_of_nodes) {
 	string line;
 	fstream graph_file(graph);
-	map<int, vector<int> > node_assigned;
 
 	if (!graph_file.is_open())
 	{
 		// file does not exists
 		cout << "File cannot be found, please refer to this guide:" << endl;
 		cout << "<execution file> <graph file> <number of threads>" << endl;
-		return node_assigned;
+		return;
 	}
 
 	int position = number_nodes/number_threads*(thread_index-1)+2;
@@ -161,64 +193,82 @@ map<int, vector<int> > reading_function(int thread_index) {
 		more = number_nodes - (position-2 + number_nodes/number_threads);
 	}
 
+	node_struct *local_nodes;
+	local_nodes = new node_struct[(number_nodes/number_threads+more)];
 
 	for(int i=0; i<number_nodes/number_threads+more; i++) {
 		getline(graph_file, line);
-		
-		// cout << "Sono il thread " << thread_index << " e leggo linea " << line << endl;
-		vector<int> temp = split_to_int(line, " ");
-		node_assigned.insert(std::pair<int, vector<int>>(i+position-1, temp));
-
+		local_nodes[i].index = i+position-1;
+		split_directed_node(line, " ", &local_nodes[i], i+position-1);
 	}
-	
-	return node_assigned;
+
+	*number_of_nodes = (number_nodes/number_threads+more);
+	node_assigned = local_nodes;
 }
+
+// copied online to fill set :(
+template<class OutputIterator, class T>
+OutputIterator iota_rng(OutputIterator first, T low, T high)
+{
+		return std::generate_n(first, high - low, [&, value = low]() mutable { return value++; });
+} 
 
 void jones_thread(int thread_index) {
 
 	auto start_time = chrono::steady_clock::now();
-	
-	map<int, vector<int> > node_assigned = reading_function(thread_index);
+
+	node_struct *node_assigned = new node_struct;
+	int temp = 0;
+	int *number_of_nodes = &temp;
+
+	reading_function(thread_index, node_assigned, number_of_nodes);
 	
 	auto end_time = chrono::steady_clock::now();
 	reading_times[thread_index-1] = chrono::duration_cast<chrono::microseconds>(end_time - start_time);
 
+	int start = ((number_nodes/number_threads)*(thread_index-1))+1;
+	int end = start + (number_nodes/number_threads) - 1;
+	if (thread_index == number_threads) {
+		end = number_nodes;
+	}
 
-	// cout << "name: " << thread_index << " start: " << start << " end: " << (start + node_assigned.size() - 1) << " size: " << node_assigned.size() << endl;
+	set<int> nodes_iteration;
+	iota_rng(std::inserter(nodes_iteration, nodes_iteration.begin()), start, end+1);
+
+	// cout << "A t" << thread_index << "  s:" << start << "  e:" << end << "  n:" << *number_of_nodes << endl;
 
 	int color = 1;
 	set<int> colors_used_global = {1};
 
-	int number_of_colored_nodes = node_assigned.size();
+	int number_of_colored_nodes = *number_of_nodes;
 
 	while(true)
 	{
 		map<int, int> to_be_evaluated;
 
-
-		for(map<int, vector<int> >::const_iterator it = node_assigned.begin();
-			it != node_assigned.end(); ++it)
+		for(auto node_key_this : nodes_iteration)
 		{
-			// cout << "name: " << thread_index << " node: " << it->first << endl;
+			// cout << "name: " << thread_index << " node: " << node_key_this << endl;
 			// explore connected nodes
-			vector<int> connections = it->second;
+			int index = node_key_this - start;
 
 			bool is_highest = true;
 
 			set<int> colors_used_local;
 
-			int node_random_this = node_random[it->first - 1];
-			int node_key_this = it->first;
-			
-			for (auto i : connections)
+			int node_random_this = node_random[node_key_this - 1];
+		
+			for (int j = 0; j < node_assigned[index].size; j++)
 			{
-				// cout << "node " << it->first << " look at " << to_string(i) << endl;
+				int i = node_assigned[index].connections[j];
+				// cout << "node:" << node_key_this << " index:" << index << " val:" << i << " size:" << node_assigned[index].size << endl;
+				// cout << "node " << node_key_this->first << " look at " << to_string(i) << endl;
 				// check if connections is colored
 				if (node_color[i - 1] == 0)
 				{
 					if (node_random_this < node_random[i - 1] || ((node_random_this == node_random[i - 1]) && (node_key_this < i)))
 					{
-						// cout << "node " << node_key_this << " not highest against " << i << " rand1 " << node_random_this << " rand2 " << node_random[i - 1] << " color " << node_color[i - 1] << endl;
+						// cout << "node:" << node_key_this << " not highest against node:" << i << " randA " << node_random_this << " randB " << node_random[i - 1] << " color " << node_color[i - 1] << endl;
 						is_highest = false;
 						break;
 					}
@@ -236,7 +286,7 @@ void jones_thread(int thread_index) {
 				auto choosen = colors_used_interation.begin();
 				if (*choosen != 0) // se è uguale a 0 non devo colorarlo con zero.
 					to_be_evaluated.insert(std::pair<int, int>(node_key_this, *choosen));
-				// cout << "name: " << thread_index << "node key: " << node_key_this << " highest" << endl;
+				// cout << "name: " << thread_index << " node: " << node_key_this << " highest" << endl;
 			}
 		}
 
@@ -248,7 +298,7 @@ void jones_thread(int thread_index) {
 			color++;
 			colors_used_global.insert(color);
 		}
-		
+
 		// se (to_be_evaluated.size() == 0) nemmeno entra nel for
 		// per cui inutile mettere il mutex fuori dal for
 		for(map<int, int >::const_iterator node_interator = to_be_evaluated.begin();
@@ -258,7 +308,7 @@ void jones_thread(int thread_index) {
 			// cout << "node:" << node_interator->first << " new color:" << node_interator->second << endl;
 			node_color[node_interator->first - 1] = node_interator->second;
 			// debugMutex.unlock();
-			node_assigned.erase(node_interator->first);
+			nodes_iteration.erase(node_interator->first);
 			if (node_interator->second == color)
 			{
 				color++;
