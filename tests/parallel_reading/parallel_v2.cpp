@@ -65,7 +65,29 @@ void wait_on_cv2(int number_of_colored_nodes, int name) {
 	while (ready) cv.wait(lck);
 }
 
-void wait_single(int number_of_colored_nodes, int name) {
+void wait_single(int name) {
+	// get lock
+	std::unique_lock<std::mutex> lck(mtx);
+
+	// lower barrier counter
+	barrier_counter--;
+
+	// if the barrier_counter is 0 means we are the last thread
+	// reset variable for next barrier
+	if (barrier_counter == 0) {
+		// fix number_threads to adjust for exited threads
+		barrier_counter = number_threads;
+		// cout << "notify2 " << name << " " << barrier_counter << " " << number_threads << endl;
+		cv.notify_all();
+
+		// leave without going to the condition wait
+		return;
+	}
+	// cout << "waiting2 " << name << " " << barrier_counter << " " << number_threads << endl;
+	cv.wait(lck);
+}
+
+void wait_leave(int number_of_colored_nodes, int name) {
 	// get lock
 	std::unique_lock<std::mutex> lck(mtx);
 
@@ -91,7 +113,7 @@ void wait_single(int number_of_colored_nodes, int name) {
 		return;
 	}
 	// cout << "waiting2 " << name << " " << barrier_counter << " " << number_threads << endl;
-  	cv.wait(lck);
+	cv.wait(lck);
 }
 
 vector<string> split (string s, string delimiter) {
@@ -241,14 +263,14 @@ void jones_thread(int thread_index) {
 		}
 
 		// removed first barrier
-		//wait_on_cv1(thread_index);
+		wait_single(thread_index);
 
 		// Questo if risolve i problemi (magari esiste approccio migliore)
 		if (to_be_evaluated.size() == 0) {
 			color++;
 			colors_used_global.insert(color);
 		}
-		
+
 		// se (to_be_evaluated.size() == 0) nemmeno entra nel for
 		// per cui inutile mettere il mutex fuori dal for
 		for(map<int, int >::const_iterator node_interator = to_be_evaluated.begin();
@@ -267,7 +289,7 @@ void jones_thread(int thread_index) {
 			number_of_colored_nodes--;
 		}
 
-		wait_single(number_of_colored_nodes, thread_index);
+		wait_leave(number_of_colored_nodes, thread_index);
 
 		// cout << "name: " << thread_index << " number of colored: " << number_of_colored_nodes << endl;
 
