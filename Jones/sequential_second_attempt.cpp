@@ -90,8 +90,6 @@ int jones_sequential() {
 			// look into all the connected nodes
 			for (auto i : connections)
 			{
-				// cout << "node " << it->first << " look at " << to_string(i) << endl;
-				
 				// check if connections is not colored
 				if (node_color[i - 1] == 0)
 				{

@@ -15,50 +15,63 @@
 
 using namespace std;
 
+// the datastructure where we keep the node index and all of it's connections
 map<int, vector<int>> node_edge_connections;
+// the datastructure where we keep the node random based on index
 vector<int> node_random;
+// the datastructure where we keep the node color based on index
 vector<int> node_color;
-int number_of_threads = 3;
-int num = 0;
-int exit_threads = 0;
 
-std::mutex mtx;
-std::condition_variable cv;
-bool ready = false;
+// statically assign the max number of threads
+int number_threads = 3;
+// counter for barriers
+int barrier_counter = 0;
+// counter for exited threads
+int number_exited_threads = 0;
 
-std::mutex writingMutex;
+// condition variable for barrier
+std::condition_variable barrier_cv;
+// mutex for barrier
+std::mutex barrier_mutex;
 
+// barrier readiness check
+bool barrier_ready = false;
 
+// mutex for writing in CS
+std::mutex writing_mtx;
+
+// struct to pass to thread
 struct thread_struct {
 	int begin;
 	int end;
 	int name;
 };
 
-void wait_on_cv() {
-	std::unique_lock<std::mutex> lck(mtx);
-	num++;
-	if (num == number_of_threads) {
-		ready = true;
-		cv.notify_all();
+// wait barrier function
+void barrier_wait() {
+	std::unique_lock<std::mutex> lck(barrier_mutex);
+	barrier_counter++;
+	if (barrier_counter == number_threads) {
+		barrier_ready = true;
+		barrier_cv.notify_all();
 		return;
 	}
-  	while (!ready) cv.wait(lck);
+  	while (!barrier_ready) barrier_cv.wait(lck);
 }
 
-void wait_on_cv2(int number_of_colored_nodes) {
-	std::unique_lock<std::mutex> lck(mtx);
-	num--;
+void barrier_wait_leave(int number_of_colored_nodes) {
+	std::unique_lock<std::mutex> lck(barrier_mutex);
+	barrier_counter--;
 	if (number_of_colored_nodes == 0)
-		exit_threads++;
-	if (num == 0) {
-		number_of_threads = number_of_threads - exit_threads;
-		exit_threads = 0;
-		ready = false;
-		cv.notify_all();
+		number_exited_threads++;
+	if (barrier_counter == 0) {
+		number_threads = number_threads - number_exited_threads;
+		number_exited_threads = 0;
+		barrier_ready = false;
+		barrier_cv.notify_all();
 		return;
 	}
-  	while (ready) cv.wait(lck);
+  	while (barrier_ready) barrier_cv.wait(lck);
 }
 
 vector<string> split (string s, string delimiter) {
@@ -87,21 +100,23 @@ vector<int> split_to_int (string s, string delimiter) {
 		try {
 			res.push_back (stoi(token));
 		} catch (exception e){
-			cout << "we had an OPSY" << endl;
+			// we don't have any node connections
+			// cout << "There are no connections" << endl;
 		}
 	}
 
 	try {
 		res.push_back (stoi(s.substr (pos_start)));
 	} catch (exception e){
-		cout << "we had an OPSY" << endl;
+		// we don't have any node connections
+		// cout << "There are no connections" << endl;
 	}
 	return res;
 }
 
 void jones_thread(thread_struct thread_info) {
-	// cout << thread_info.name << " begin: " << thread_info.begin << " end: " << thread_info.end << endl;
 
+	// map splitting
 	map<int, vector<int> > node_assigned;
 
 	if (thread_info.end == node_edge_connections.size())
@@ -111,31 +126,35 @@ void jones_thread(thread_struct thread_info) {
 		node_assigned.insert(node_edge_connections.find(thread_info.begin), node_edge_connections.find(thread_info.end + 1));
 	}
 
+	// color is defined as integer
 	int color = 1;
+
+	// set of the color we use 
 	set<int> colors_used_global = {1};
 
+	// first iteration counter (minor performance improvement)
 	bool first_iter = true;
 
+	// max number of nodes to color
 	int number_of_colored_nodes = (thread_info.end - thread_info.begin) + 1;
 
-	// 
 	while(true)
 	{
+		// map of nodes to be colored and their respective color
 		map<int, int> to_be_evaluated;
 
-		// cout << "size node " << to_string(node_edge_connections.size()) << " color " << color << endl;
-
-		// generate array of all colors that are available
-
+		// iterate over the map
 		for(map<int, vector<int> >::const_iterator it = node_assigned.begin();
 			it != node_assigned.end(); ++it)
 		{
 
+			// skip if the index of map is too small
 			if (it->first < thread_info.begin)
 			{
 				continue;
 			}
 
+			// break if the index of the map is too high
 			if (it->first > thread_info.end)
 			{
 				break;
@@ -151,14 +170,15 @@ void jones_thread(thread_struct thread_info) {
 			int node_random_this = node_random[it->first - 1];
 			int node_key_this = it->first;
 			
+			// look into all the connected nodes
 			for (auto i : connections)
 			{
-				// cout << "node " << it->first << " look at " << to_string(i) << endl;
 				// check if connections is colored
 				if (node_color[i - 1] == 0)
 				{
 					if (node_random_this < node_random[i - 1] || ((node_random_this == node_random[i - 1]) && (node_key_this < i)))
 					{
+						// not local highest
 						is_highest = false;
 						break;
 					}
@@ -167,7 +187,7 @@ void jones_thread(thread_struct thread_info) {
 				}
 			}
 
-
+			// only execute if the node is the highest in its local section
 			if (is_highest)
 			{
 				// cout << "node " << node_key_this << " highest" << endl;
@@ -185,7 +205,7 @@ void jones_thread(thread_struct thread_info) {
 			}
 		}
 
-		wait_on_cv();
+		barrier_wait();
 		
 		// Questo if risolve i problemi (magari esiste approccio migliore)
 		if (to_be_evaluated.size() == 0) {
@@ -198,11 +218,11 @@ void jones_thread(thread_struct thread_info) {
 		for(map<int, int >::const_iterator node_interator = to_be_evaluated.begin();
 			node_interator != to_be_evaluated.end(); ++node_interator)
 		{
-			writingMutex.lock();
+			writing_mtx.lock();
 			//cout << "Sono " << thread_info.name << " assegno " << node_interator->second << " a " << node_interator->first << endl;
 			node_color[node_interator->first - 1] = node_interator->second;
 			node_assigned.erase(node_interator->first);
-			writingMutex.unlock();
+			writing_mtx.unlock();
 			if (node_interator->second == color)
 			{
 				color++;
@@ -211,10 +231,11 @@ void jones_thread(thread_struct thread_info) {
 			number_of_colored_nodes--;
 		}
 
-		wait_on_cv2(number_of_colored_nodes);
+		barrier_wait_leave(number_of_colored_nodes);
 
-		if (number_of_colored_nodes == 0)
+		if (number_of_colored_nodes == 0){
 			return;
+		}
 			
 	}
 }
@@ -282,32 +303,9 @@ int main(int argc, char** argv) {
 
 	graph_file.close();
 
-	cout << "$$$$$$$$$$$$$$$$$$$$" << endl;
-
-	// int counter_2 = 0;
-
-	// for(map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
-	// 	it != node_edge_connections.end(); ++it)
-	// {
-	// 	cout << "node :" << it->first << endl;
-	// 	cout << "random :" << node_random[counter_2] << endl;
-	// 	for (auto i : it->second) cout << "conn " << to_string(i) << endl;
-	// 	counter_2++;
-	// }
-
-	// here we call jones
-
 	auto start = chrono::steady_clock::now();
 
-	// unsync the I/O of C and C++.
 	ios_base::sync_with_stdio(false);
-
-
-
-
-	// begin theading
-
-	// 2 thread to test
 
 	int multiplier = node_edge_connections.size() / 3;
 
@@ -326,23 +324,13 @@ int main(int argc, char** argv) {
 	t3_struct.end = node_edge_connections.size();
 	t3_struct.name = 3;
 
-	cout << "multiplier " << multiplier << endl;
-
 	std::thread thread_1 (jones_thread, t1_struct);
 	std::thread thread_2 (jones_thread, t2_struct);
 	std::thread thread_3 (jones_thread, t3_struct);
 
-
 	thread_1.join();
 	thread_2.join();
 	thread_3.join();
-
-	// int counter_3 = 1;
-	// for (auto i : node_color)
-	// {
-		// cout << "node : " << to_string(counter_3) << " color " << i << " random " << node_random[counter_3 - 1] << endl;
-		// counter_3++;
-	// }
 
 	// Recording end time.
 	auto end = chrono::steady_clock::now();
