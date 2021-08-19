@@ -417,7 +417,7 @@ int main(int argc, char** argv) {
 		<< to_string(chrono::duration_cast<chrono::microseconds>(end_write - start_main).count()) << ","
 		<< time_average << ","
 		<< algo_time << ","
-		<< to_string(chrono::duration_cast<chrono::microseconds>(end_write - start_write).count()) << ",";
+		<< to_string(chrono::duration_cast<chrono::microseconds>(end_write - start_write).count()) << ",\n";
 	results_file.close();
 
 	return 0;
