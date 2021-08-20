@@ -24,6 +24,7 @@ int num = 0;
 int exit_threads = 0;
 bool directed = 0;
 int number_nodes = 0;
+int number_edges = 0;
 string graph;
 
 std::mutex mtx;
@@ -239,8 +240,6 @@ void jones_thread(int thread_index)
 		int start = (multiplier * (thread_index - 1)) + 1;
 		int end = multiplier * thread_index;
 
-		map<int, vector<int> > node_assigned;
-
 		if (thread_index == number_of_threads)
 		{
 			node_assigned.insert(node_edge_connections.find(start), node_edge_connections.end());
@@ -370,7 +369,6 @@ int main(int argc, char **argv)
 	string line;
 	int new_node_index = 1;
 	// int number_nodes;
-	int number_edges;
 
 	// we used srand to set seed for randomization of node numbers
 	// srand(time(NULL));
@@ -426,6 +424,13 @@ int main(int argc, char **argv)
 		}
 		node_edge_connections = temp_node_edge;
 	
+	  // compute number_edges
+
+            for (map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
+                 it != node_edge_connections.end(); ++it)
+            {
+                number_edges += it->second.size();
+            }
 		// print results
 
 		// cout<< "Number of nodes: " << number_nodes << endl;

@@ -31,7 +31,7 @@ int number_exited_threads = 0;
 bool directed = 0;
 // number of all nodes
 int number_nodes = 0;
-
+int number_edges = 0;
 // path to the graph
 string graph_path;
 
@@ -45,7 +45,8 @@ std::vector<std::mutex> mutexes;
 // vector of reading times for each thread
 vector<chrono::microseconds> reading_times;
 
-void wait_single(int name) {
+void wait_single(int name)
+{
 	// get lock
 	std::unique_lock<std::mutex> lck(barrier_mutex);
 
@@ -54,7 +55,8 @@ void wait_single(int name) {
 
 	// if the barrier_counter is 0 means we are the last thread
 	// reset variable for next barrier
-	if (barrier_counter == 0) {
+	if (barrier_counter == 0)
+	{
 		// fix number_threads to adjust for exited threads
 		barrier_counter = number_threads;
 		// cout << "notify2 " << name << " " << barrier_counter << " " << number_threads << endl;
@@ -67,7 +69,8 @@ void wait_single(int name) {
 	barrier_cv.wait(lck);
 }
 
-void wait_leave(int number_of_colored_nodes, int name) {
+void wait_leave(int number_of_colored_nodes, int name)
+{
 	// get lock
 	std::unique_lock<std::mutex> lck(barrier_mutex);
 
@@ -75,13 +78,15 @@ void wait_leave(int number_of_colored_nodes, int name) {
 	barrier_counter--;
 
 	// if the thread did not color anything he has to be exiting
-	if (number_of_colored_nodes == 0){
+	if (number_of_colored_nodes == 0)
+	{
 		number_exited_threads++;
 	}
 
 	// if the barrier_counter is 0 means we are the last thread
 	// reset variable for next barrier
-	if (barrier_counter == 0) {
+	if (barrier_counter == 0)
+	{
 		// fix number_threads to adjust for exited threads
 		number_threads = number_threads - number_exited_threads;
 		number_exited_threads = 0;
@@ -108,13 +113,21 @@ void wait_single_special(int name)
 
 		//for each node of the map
 		for (map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
-			it != node_edge_connections.end(); ++it)
+			 it != node_edge_connections.end(); ++it)
 		{
 			//for each element of the selected array, insert the node it->first into the nodes referenced in the array
 			for (auto i : it->second)
 				temp_node_edge[i].push_back(it->first);
 		}
 		node_edge_connections = temp_node_edge;
+
+		// compute number_edges
+
+		for (map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
+			 it != node_edge_connections.end(); ++it)
+		{
+			number_edges += it->second.size();
+		}
 
 		barrier_cv.notify_all();
 		return;
@@ -282,6 +295,7 @@ void jones_thread(int thread_index)
 	if (directed)
 	{
 		wait_single_special(thread_index);
+		cout << "hello\n";
 
 		int multiplier = node_edge_connections.size() / number_threads;
 
@@ -299,14 +313,14 @@ void jones_thread(int thread_index)
 	}
 
 	auto end_time = chrono::steady_clock::now();
-	reading_times[thread_index-1] = chrono::duration_cast<chrono::microseconds>(end_time - start_time);
+	reading_times[thread_index - 1] = chrono::duration_cast<chrono::microseconds>(end_time - start_time);
 
 	// cout << "name: " << thread_index << " start: " << start << " end: " << (start + node_assigned.size() - 1) << " size: " << node_assigned.size() << endl;
 
 	// color is defined as integer
 	int color = 1;
 
-	// set of the color we use 
+	// set of the color we use
 	set<int> colors_used_global = {1};
 
 	// max number of nodes to color
@@ -331,7 +345,7 @@ void jones_thread(int thread_index)
 
 			int node_random_this = node_random[it->first - 1];
 			int node_key_this = it->first;
-			
+
 			// look into all the connected nodes
 			for (auto i : connections)
 			{
@@ -345,7 +359,9 @@ void jones_thread(int thread_index)
 						is_highest = false;
 						break;
 					}
-				} else {
+				}
+				else
+				{
 					colors_used_local.insert(node_color[i - 1]);
 				}
 			}
@@ -366,7 +382,8 @@ void jones_thread(int thread_index)
 		wait_single(thread_index);
 
 		// Questo if risolve i problemi (magari esiste approccio migliore)
-		if (to_be_evaluated.size() == 0) {
+		if (to_be_evaluated.size() == 0)
+		{
 			color++;
 			colors_used_global.insert(color);
 		}
@@ -391,15 +408,15 @@ void jones_thread(int thread_index)
 
 		// cout << "name: " << thread_index << " number of colored: " << number_of_colored_nodes << endl;
 
-		if (number_of_colored_nodes == 0){
+		if (number_of_colored_nodes == 0)
+		{
 			return;
 		}
-		
 	}
 }
 
-
-int main(int argc, char** argv) {
+int main(int argc, char **argv)
+{
 
 	if (argc < 3)
 	{
@@ -422,14 +439,14 @@ int main(int argc, char** argv) {
 		cout << "<execution file> <graph file> <number of threads>" << endl;
 		return 1;
 	}
-	
+
 	string line;
-	int number_edges;
 
 	// we used srand to set seed for randomization of node numbers
 	srand(time(NULL));
 
-	if(graph_file.is_open()) {
+	if (graph_file.is_open())
+	{
 
 		// this is first line
 		getline(graph_file, line);
@@ -445,7 +462,8 @@ int main(int argc, char** argv) {
 
 	// for (auto i : temp) cout << i << endl;
 
-	for (int i=0; i<number_nodes; i++) {
+	for (int i = 0; i < number_nodes; i++)
+	{
 		node_color.push_back(0);
 		node_random.push_back(rand() % 100 + 1);
 	}
@@ -466,10 +484,10 @@ int main(int argc, char** argv) {
 	{
 		cout << "generated thread: " << (i + 1) << endl;
 		thread_array[i] = thread(jones_thread, i + 1);
-		reading_times.push_back((chrono::microseconds) 0);
+		reading_times.push_back((chrono::microseconds)0);
 	}
 
-	for (auto& t : thread_array)
+	for (auto &t : thread_array)
 	{
 		t.join();
 	}
@@ -484,7 +502,7 @@ int main(int argc, char** argv) {
 		// cout << "Elapsed " << chrono::duration_cast<chrono::microseconds>(time).count() << " µs" << endl;
 		time_sum += chrono::duration_cast<chrono::microseconds>(time).count();
 	}
-	int time_average = static_cast<int>(time_sum/reading_times.size());
+	int time_average = static_cast<int>(time_sum / reading_times.size());
 
 	cout << "Elapsed reading time in microseconds: " << time_average << " µs" << endl;
 
@@ -509,20 +527,20 @@ int main(int argc, char** argv) {
 
 	// cout << "size of final cstr " << (final.size() * sizeof(char)) << endl;
 	auto output_file = std::fstream(argv[3], std::ios::out | std::ios::binary);
-	output_file.write(final.c_str(), (final.size() * sizeof(char)) );
+	output_file.write(final.c_str(), (final.size() * sizeof(char)));
 	output_file.close();
 
 	auto end_write = chrono::steady_clock::now();
 
 	// Calculating total time taken by the program.
 	cout << "Elapsed writing time in microseconds: "
-		<< chrono::duration_cast<chrono::microseconds>(end_write - start_write).count()
-		<< " µs" << endl;
+		 << chrono::duration_cast<chrono::microseconds>(end_write - start_write).count()
+		 << " µs" << endl;
 
 	// Calculating total time taken by the program.
 	cout << "Elapsed time in microseconds: "
-		<< chrono::duration_cast<chrono::microseconds>(end_write - start_main).count()
-		<< " µs" << endl;
+		 << chrono::duration_cast<chrono::microseconds>(end_write - start_main).count()
+		 << " µs" << endl;
 
 	// unsigned int n = std::thread::hardware_concurrency();
 	// std::cout << n << " concurrent threads are supported.\n";
@@ -530,12 +548,12 @@ int main(int argc, char** argv) {
 	std::ofstream results_file;
 	results_file.open("p3.csv", std::ios_base::app);
 	results_file << graph_path.substr(graph_path.find_last_of("/\\") + 1) << ","
-		<< number_nodes << ","
-		<< max_color << ","
-		<< to_string(chrono::duration_cast<chrono::microseconds>(end_write - start_main).count()) << ","
-		<< time_average << ","
-		<< algo_time << ","
-		<< to_string(chrono::duration_cast<chrono::microseconds>(end_write - start_write).count()) << ",\n";
+				 << number_nodes << ","
+				 << max_color << ","
+				 << to_string(chrono::duration_cast<chrono::microseconds>(end_write - start_main).count()) << ","
+				 << time_average << ","
+				 << algo_time << ","
+				 << to_string(chrono::duration_cast<chrono::microseconds>(end_write - start_write).count()) << ",\n";
 	results_file.close();
 
 	return 0;
