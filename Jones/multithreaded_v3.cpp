@@ -99,8 +99,8 @@ void wait_leave(int number_of_colored_nodes, int name) {
 void wait_single_special(int name)
 {
 	std::unique_lock<std::mutex> lck(barrier_mutex);
-	barrier_counter++;
-	if (barrier_counter == number_threads)
+	barrier_counter--;
+	if (barrier_counter == 0)
 	{
 		// here we transform to usual data structure
 		// translate the graph
@@ -116,6 +116,7 @@ void wait_single_special(int name)
 		}
 		node_edge_connections = temp_node_edge;
 
+		barrier_counter = number_threads;
 		barrier_cv.notify_all();
 		return;
 	}
