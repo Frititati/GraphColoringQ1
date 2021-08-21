@@ -10,6 +10,7 @@
 #include <iterator>
 #include <chrono>
 
+
 using namespace std;
 
 // the datastructure where we keep the node index and all of it's connections
@@ -18,6 +19,9 @@ map<int, vector<int>> node_edge_connections;
 vector<int> node_random;
 // the datastructure where we keep the node color based on index
 vector<int> node_color;
+// the datastructure where we keep the degree of each node
+vector<int> node_degree;
+
 
 vector<string> split (string s, string delimiter) {
 	size_t pos_start = 0, pos_end, delim_len = delimiter.length();
@@ -59,16 +63,20 @@ vector<int> split_to_int (string s, string delimiter) {
 	return res;
 }
 
-int jones_sequential() {
-	// color is defined as integer
+int ldf_sequential() {
+	// first we look for the highest local MIS
+
+	// iterate on the hash map
+
 	int color = 1;
-	// we have a set of the colors used (this is useful to compare later in the iterative step)
+
 	set<int> colors_used_global = {1};
 
-	// we continue until the node_edge_connection is empty
+	bool first_iter = true;
+
 	while(node_edge_connections.size() != 0)
 	{
-		// map of all the nodes to be evaluated this iteration <index, color>
+		// map of all the nodes to be evaluated this iteration <index, color> 
 		map<int, int> to_be_evaluated;
 
 		// cout << "size node " << to_string(node_edge_connections.size()) << " color " << color << endl;
@@ -85,6 +93,7 @@ int jones_sequential() {
 			set<int> colors_used_local;
 
 			int node_random_this = node_random[it->first - 1];
+			int node_degree_this = node_degree[it->first - 1];
 			int node_key_this = it->first;
 			
 			// look into all the connected nodes
@@ -93,7 +102,9 @@ int jones_sequential() {
 				// check if connections is not colored
 				if (node_color[i - 1] == 0)
 				{
-					if (node_random_this < node_random[i - 1] || ((node_random_this == node_random[i - 1]) && (node_key_this < i)))
+					if (node_degree_this < node_degree[i - 1] || 
+						(node_degree_this == node_degree[i - 1] && node_random_this < node_random[i - 1]) || 
+						(node_degree_this == node_degree[i - 1] && node_random_this == node_random[i - 1] && node_key_this < i))
 					{
 						// not local highest
 						is_highest = false;
@@ -188,13 +199,13 @@ int main(int argc, char** argv) {
 			node_random.push_back(rand() % 100 + 1);
 			// add color 0
 			node_color.push_back(0);
-
+			// cout << "Degree of node " << new_node_index << " is " << temp.size() << endl;
+			node_degree.push_back(temp.size());
 			new_node_index++;
 		}
 	}
 
-	while (node_edge_connections.size() < number_nodes)
-	{
+	while (node_edge_connections.size() < number_nodes) {
 		node_edge_connections.insert(std::pair<int, vector<int>>(new_node_index, {}));
 		node_random.push_back(rand() % 100 + 1);
 		node_color.push_back(0);
@@ -205,22 +216,26 @@ int main(int argc, char** argv) {
 
 	// start a timer
 	auto start = chrono::steady_clock::now();
+
+	// unsync the I/O of C and C++.
 	ios_base::sync_with_stdio(false);
 
-	jones_sequential();
-	
+	ldf_sequential();
+
 	// end timer
 	auto end = chrono::steady_clock::now();
 
 	cout << "Elapsed time in nanoseconds: "
 		<< chrono::duration_cast<chrono::nanoseconds>(end - start).count()
 		<< " ns" << endl;
+
 	cout << "Elapsed time in microseconds: "
 		<< chrono::duration_cast<chrono::microseconds>(end - start).count()
 		<< " µs" << endl;
 
 	fstream write_file;
 	write_file.open(argv[2], ios::out);
+
 	if (write_file.is_open())
 	{
 		int max = 0;
@@ -234,6 +249,7 @@ int main(int argc, char** argv) {
 		}
 		cout << "Used colors: " << max << endl;
 	}
+
 	write_file.close();
 
 	return 0;
