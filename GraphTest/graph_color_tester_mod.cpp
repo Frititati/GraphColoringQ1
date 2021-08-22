@@ -89,7 +89,8 @@ vector<int> split_to_int_mod(string line, string delimiter)
         }
         catch (exception e)
         {
-            cout << "we had an OPSY" << endl;
+            // we don't have any node connections
+            // cout << "There are no connections" << endl;
         }
     }
 
@@ -99,7 +100,8 @@ vector<int> split_to_int_mod(string line, string delimiter)
     }
     catch (exception e)
     {
-        cout << "we had an OPSY" << endl;
+        // we don't have any node connections
+        // cout << "There are no connections" << endl;
     }
     return res;
 }

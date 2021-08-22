@@ -40,7 +40,7 @@ std::condition_variable barrier_cv;
 // mutex for barrier
 std::mutex barrier_mutex;
 
-std::vector<std::mutex> mutexes;
+std::mutex write_directed_mutex;
 
 // vector of reading times for each thread
 vector<chrono::microseconds> reading_times;
@@ -57,13 +57,11 @@ void wait_single(int name) {
 	if (barrier_counter == 0) {
 		// fix number_threads to adjust for exited threads
 		barrier_counter = number_threads;
-		// cout << "notify2 " << name << " " << barrier_counter << " " << number_threads << endl;
 		barrier_cv.notify_all();
 
 		// leave without going to the condition wait
 		return;
 	}
-	// cout << "waiting2 " << name << " " << barrier_counter << " " << number_threads << endl;
 	barrier_cv.wait(lck);
 }
 
@@ -86,13 +84,11 @@ void wait_leave(int number_of_colored_nodes, int name) {
 		number_threads = number_threads - number_exited_threads;
 		number_exited_threads = 0;
 		barrier_counter = number_threads;
-		// cout << "notify2 " << name << " " << barrier_counter << " " << number_threads << endl;
 		barrier_cv.notify_all();
 
 		// leave without going to the condition wait
 		return;
 	}
-	// cout << "waiting2 " << name << " " << barrier_counter << " " << number_threads << endl;
 	barrier_cv.wait(lck);
 }
 
@@ -157,7 +153,7 @@ vector<int> split_to_int(string s, string delimiter)
 		}
 		catch (exception e)
 		{
-			cout << "we had an OPSY" << endl;
+			// we don't have any node connections
 		}
 	}
 
@@ -167,7 +163,7 @@ vector<int> split_to_int(string s, string delimiter)
 	}
 	catch (exception e)
 	{
-		cout << "we had an OPSY" << endl;
+		// we don't have any node connections
 	}
 	return res;
 }
@@ -197,7 +193,7 @@ vector<int> split_to_int_directed(string line, string delimiter)
 		}
 		catch (exception e)
 		{
-			cout << "we had an OPSY" << endl;
+			// we don't have any node connections
 		}
 	}
 
@@ -207,7 +203,7 @@ vector<int> split_to_int_directed(string line, string delimiter)
 	}
 	catch (exception e)
 	{
-		cout << "we had an OPSY" << endl;
+		// we don't have any node connections
 	}
 	return res;
 }
@@ -222,7 +218,7 @@ std::fstream &GotoLine(std::fstream &file, unsigned int num)
 	return file;
 }
 
-map<int, vector<int> > reading_function(int thread_index)
+map<int, vector<int> > reading_function_not_directed(int thread_index)
 {
 	string line;
 	fstream graph_file(graph_path);
@@ -242,35 +238,58 @@ map<int, vector<int> > reading_function(int thread_index)
 
 	int more = 0;
 
-	if (thread_index == number_threads)
+	if (thread_index == number_threads) {
 		more = number_nodes - (position - 2 + number_nodes / number_threads);
-	if (directed)
-	{
-		for (int i = 0; i < number_nodes / number_threads + more; i++)
-		{
-			getline(graph_file, line);
-
-			// cout << "Sono il thread " << thread_index << " e leggo linea " << line << endl;
-			vector<int> temp = split_to_int_directed(line, " ");
-			node_edge_connections.insert(std::pair<int, vector<int> >(i + position - 1, temp));
-		}
 	}
-	else
+	
+	for (int i = 0; i < number_nodes / number_threads + more; i++)
 	{
-		for (int i = 0; i < number_nodes / number_threads + more; i++)
-		{
-			getline(graph_file, line);
+		getline(graph_file, line);
 
-			// cout << "Sono il thread " << thread_index << " e leggo linea " << line << endl;
-			vector<int> temp = split_to_int(line, " ");
-			node_assigned.insert(std::pair<int, vector<int> >(i + position - 1, temp));
-		}
+		// cout << "Sono il thread " << thread_index << " e leggo linea " << line << endl;
+		vector<int> temp = split_to_int(line, " ");
+		node_assigned.insert(std::pair<int, vector<int> >(i + position - 1, temp));
 	}
-	// readingMutex.lock();
-	// node_edge_connections.insert(node_assigned.begin(), node_assigned.end());
-	// readingMutex.unlock();
 
 	return node_assigned;
+}
+
+void reading_function_directed(int thread_index)
+{
+	string line;
+	fstream graph_file(graph_path);
+	map<int, vector<int> > node_assigned;
+
+	if (!graph_file.is_open())
+	{
+		// file does not exists
+		cout << "File cannot be found, please refer to this guide:" << endl;
+		cout << "<execution file> <graph file> <number of threads>" << endl;
+		return;
+	}
+
+	int position = number_nodes / number_threads * (thread_index - 1) + 2;
+	// cout << "Position: " << position << endl;
+	GotoLine(graph_file, position);
+
+	int more = 0;
+
+	if (thread_index == number_threads){
+		more = number_nodes - (position - 2 + number_nodes / number_threads);
+	}
+
+	for (int i = 0; i < number_nodes / number_threads + more; i++)
+	{
+		getline(graph_file, line);
+
+		// cout << "Sono il thread " << thread_index << " e leggo linea " << line << endl;
+		vector<int> temp = split_to_int_directed(line, " ");
+		node_assigned.insert(std::pair<int, vector<int> >(i + position - 1, temp));
+	}
+
+	write_directed_mutex.lock();
+	node_edge_connections.insert(node_assigned.begin(), node_assigned.end());
+	write_directed_mutex.unlock();
 }
 
 void jones_thread(int thread_index)
@@ -278,10 +297,10 @@ void jones_thread(int thread_index)
 	auto start_time = chrono::steady_clock::now();
 
 	map<int, vector<int> > node_assigned;
-	node_assigned = reading_function(thread_index);
 
 	if (directed)
 	{
+		reading_function_directed(thread_index);
 		wait_single_special(thread_index);
 
 		int multiplier = node_edge_connections.size() / number_threads;
@@ -297,6 +316,8 @@ void jones_thread(int thread_index)
 		{
 			node_assigned.insert(node_edge_connections.find(start), node_edge_connections.find(end + 1));
 		}
+	} else {
+		node_assigned = reading_function_not_directed(thread_index);
 	}
 
 	auto end_time = chrono::steady_clock::now();
@@ -336,7 +357,6 @@ void jones_thread(int thread_index)
 			// look into all the connected nodes
 			for (auto i : connections)
 			{
-				// cout << "node " << it->first << " look at " << to_string(i) << endl;
 				// check if connections is colored
 				if (node_color[i - 1] == 0)
 				{
@@ -406,11 +426,9 @@ int main(int argc, char** argv) {
 	{
 		// not enought parameters
 		cout << "Not enough parameters passed, please refer to this guide:" << endl;
-		cout << "<execution file> <graph file> <number of threads>" << endl;
+		cout << "<execution file> <graph file> <number of threads> [optional] <output file>" << endl;
 		return 1;
 	}
-
-	// TODO : we have to check if this is exeception prone
 
 	fstream graph_file;
 	graph_path = argv[1];
@@ -420,7 +438,7 @@ int main(int argc, char** argv) {
 	{
 		// file does not exists
 		cout << "File cannot be found, please refer to this guide:" << endl;
-		cout << "<execution file> <graph file> <number of threads>" << endl;
+		cout << "<execution file> <graph file> <number of threads> [optional] <output file>" << endl;
 		return 1;
 	}
 	
@@ -456,10 +474,16 @@ int main(int argc, char** argv) {
 	// unsync the I/O of C and C++.
 	ios_base::sync_with_stdio(false);
 
-	number_threads = stoi(argv[2]);
+	try {
+		number_threads = stoi(argv[2]);
+	} catch (exception& e) {
+		// number of threads not found
+		cout << "Number of threads not found, please refer to this guide:" << endl;
+		cout << "<execution file> <graph file> <number of threads> [optional] <output file>" << endl;
+		return 1;
+	}
+
 	barrier_counter = number_threads;
-	std::vector<std::mutex> list(number_threads);
-	mutexes.swap(list);
 
 	thread thread_array[number_threads];
 
@@ -532,6 +556,7 @@ int main(int argc, char** argv) {
 	results_file.open("p3.csv", std::ios_base::app);
 	results_file << graph_path.substr(graph_path.find_last_of("/\\") + 1) << ","
 		<< number_nodes << ","
+		<< number_edges << ","
 		<< number_threads << ","
 		<< max_color << ","
 		<< to_string(chrono::duration_cast<chrono::microseconds>(end_write - start_main).count()) << ","
