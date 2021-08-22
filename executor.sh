@@ -5,6 +5,9 @@ rm Jones/testv3
 rm Jones/testv5
 rm Ldf/test
 
+cat report.log >> report_old.log
+rm report.log
+
 g++ -pthread Jones/multithreaded_v2.cpp -o Jones/testv2
 g++ -pthread Jones/multithreaded_v3.cpp -o Jones/testv3
 g++ -pthread Jones/multithreaded_v5.cpp -o Jones/testv5
@@ -31,8 +34,10 @@ for w in ${workers_undirected[@]}; do
 		for t in ${number_threads[@]}; do
 			for r in ${repetitions[@]}; do
 				echo "program:" $w "  graph(undir):" $g "  threads:" $t "  round:" $r
-				# ./$w Graphs/$g $t a.out
+				echo "program:" $w "  graph(undir):" $g "  threads:" $t "  round:" $r >> report.log
+				./$w Graphs/$g $t a.out >> report.log
 				echo ""
+				echo "" >> report.log
 			done
 		done
 	done
@@ -43,8 +48,10 @@ for w in ${workers_directed[@]}; do
 		for t in ${number_threads[@]}; do
 			for r in ${repetitions[@]}; do
 				echo "program:" $w "  graph(dir):" $g "  threads:" $t "  round:" $r
-				./$w Graphs/$g $t a.out
+				echo "program:" $w "  graph(dir):" $g "  threads:" $t "  round:" $r >> report.log
+				./$w Graphs/$g $t a.out >> report.log
 				echo ""
+				echo "" >> report.log
 			done
 		done
 	done
