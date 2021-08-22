@@ -22,7 +22,7 @@ map<int, vector<int> > node_edge_connections;
 vector<int> node_random;
 // the datastructure where we keep the node color based on index
 vector<int> node_color;
-
+// the datastructure where we keep the degree of each node
 vector<int> node_degree;
 
 int number_threads = 0;
@@ -354,8 +354,9 @@ void jones_thread(int thread_index)
 				// check if connections is colored
 				if (node_color[i - 1] == 0)
 				{
-						if ((node_random_this < node_random[i - 1]) || 
-						(node_random_this == node_random[i - 1] && node_key_this < i))
+					if (node_degree_this < node_degree[i - 1] || 
+						(node_degree_this == node_degree[i - 1] && node_random_this < node_random[i - 1]) || 
+						(node_degree_this == node_degree[i - 1] && node_random_this == node_random[i - 1] && node_key_this < i))
 					{
 						// cout << "node " << node_key_this << " not highest against " << i << " rand1 " << node_random_this << " rand2 " << node_random[i - 1] << " color " << node_color[i - 1] << endl;
 						is_highest = false;
@@ -443,7 +444,7 @@ int main(int argc, char** argv) {
 	int number_edges;
 
 	// we used srand to set seed for randomization of node numbers
-	srand(time(NULL));
+	//srand(time(NULL));
 
 	if(graph_file.is_open()) {
 
@@ -548,7 +549,6 @@ int main(int argc, char** argv) {
 	results_file.open("p3.csv", std::ios_base::app);
 	results_file << graph_path.substr(graph_path.find_last_of("/\\") + 1) << ","
 		<< number_nodes << ","
-		<< number_threads << ","
 		<< max_color << ","
 		<< to_string(chrono::duration_cast<chrono::microseconds>(end_write - start_main).count()) << ","
 		<< time_average << ","
