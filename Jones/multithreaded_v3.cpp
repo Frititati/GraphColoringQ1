@@ -532,6 +532,7 @@ int main(int argc, char** argv) {
 	results_file.open("p3.csv", std::ios_base::app);
 	results_file << graph_path.substr(graph_path.find_last_of("/\\") + 1) << ","
 		<< number_nodes << ","
+		<< number_threads << ","
 		<< max_color << ","
 		<< to_string(chrono::duration_cast<chrono::microseconds>(end_write - start_main).count()) << ","
 		<< time_average << ","
