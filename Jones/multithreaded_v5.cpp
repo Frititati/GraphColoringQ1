@@ -456,7 +456,7 @@ int main(int argc, char** argv) {
 	// std::cout << n << " concurrent threads are supported.\n";
 
 	std::ofstream results_file;
-	results_file.open("p5.csv", std::ios_base::app);
+	results_file.open("jones_5.csv", std::ios_base::app);
 	results_file << graph_path.substr(graph_path.find_last_of("/\\") + 1) << ","
 		<< number_nodes << ","
 		<< number_threads << ","
