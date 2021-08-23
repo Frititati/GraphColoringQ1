@@ -1,0 +1,2942 @@
+fcardano@TheComoMeter:/mnt/u/Master Local/GraphColoringQ1$ ls -l
+total 132
+drwxrwxrwx 1 fcardano fcardano   4096 Aug 22 19:31 GraphTest
+drwxrwxrwx 1 fcardano fcardano   4096 Aug 23 00:01 Graphs
+drwxrwxrwx 1 fcardano fcardano   4096 Aug 23 01:01 Jones
+drwxrwxrwx 1 fcardano fcardano   4096 Aug 23 01:01 Ldf
+-rwxrwxrwx 1 fcardano fcardano   2841 Aug 22 16:51 README.md
+-rwxrwxrwx 1 fcardano fcardano 125272 Aug 22 18:35 color_test
+-rwxrwxrwx 1 fcardano fcardano   2169 Aug 23 01:01 executor.sh
+drwxrwxrwx 1 fcardano fcardano   4096 Aug 22 16:51 images
+drwxrwxrwx 1 fcardano fcardano   4096 Aug 19 12:17 tests
+fcardano@TheComoMeter:/mnt/u/Master Local/GraphColoringQ1$ ./executor.sh
+rm: cannot remove 'Jones/testv2': No such file or directory
+rm: cannot remove 'Jones/testv3': No such file or directory
+rm: cannot remove 'Jones/testv5': No such file or directory
+rm: cannot remove 'Ldf/test': No such file or directory
+cat: report.log: No such file or directory
+rm: cannot remove 'report.log': No such file or directory
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 1
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 2
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 3
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 4
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 5
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 1
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 2
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 3
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 4
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 5
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 1
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 2
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 3
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 4
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 5
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 1
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 2
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 3
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 4
+
+program: Jones/testv2   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 5
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 1
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 2
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 3
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 4
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 5
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 1
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 2
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 3
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 4
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 5
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 1
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 2
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 3
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 4
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 5
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 1
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 2
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 3
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 4
+
+program: Jones/testv2   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 5
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 1
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 2
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 3
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 4
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 5
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 1
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 2
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 3
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 4
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 5
+
+
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 1
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 2
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 3
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 4
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 5
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 1
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 2
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 3
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 4
+
+program: Jones/testv2   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 5
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 1
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 2
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 3
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 4
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 5
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 1
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 2
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 3
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 4
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 5
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 1
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 2
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 3
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 4
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 5
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 1
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 2
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 3
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 4
+
+program: Jones/testv3   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 5
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 1
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 2
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 3
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 4
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 5
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 1
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 2
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 3
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 4
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 5
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 1
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 2
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 3
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 4
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 5
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 1
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 2
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 3
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 4
+
+program: Jones/testv3   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 5
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 1
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 2
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 3
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 4
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 5
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 1
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 2
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 3
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 4
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 5
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 1
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 2
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 3
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 4
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 5
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 1
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 2
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 3
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 4
+
+program: Jones/testv3   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 5
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 1
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 2
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 3
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 4
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 5
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 1
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 2
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 3
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 4
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 5
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 1
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 2
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 3
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 4
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 5
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 1
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 2
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 3
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 4
+
+program: Jones/testv5   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 5
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 1
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 2
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 3
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 4
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 5
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 1
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 2
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 3
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 4
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 5
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 1
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 2
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 3
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 4
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 5
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 1
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 2
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 3
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 4
+
+program: Jones/testv5   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 5
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 1
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 2
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 3
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 4
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 5
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 1
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 2
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 3
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 4
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 5
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 1
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 2
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 3
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 4
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 5
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 1
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 2
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 3
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 4
+
+program: Jones/testv5   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 5
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 1
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 2
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 3
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 4
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 2   round: 5
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 1
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 2
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 3
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 4
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 4   round: 5
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 1
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 2
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 3
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 4
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 8   round: 5
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 1
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 2
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 3
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 4
+
+program: Ldf/test   graph(undir): rgg_n_2_15_s0.graph   threads: 16   round: 5
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 1
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 2
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 3
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 4
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 2   round: 5
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 1
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 2
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 3
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 4
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 4   round: 5
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 1
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 2
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 3
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 4
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 8   round: 5
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 1
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 2
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 3
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 4
+
+program: Ldf/test   graph(undir): rgg_n_2_21_s0.graph   threads: 16   round: 5
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 1
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 2
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 3
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 4
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 2   round: 5
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 1
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 2
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 3
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 4
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 4   round: 5
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 1
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 2
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 3
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 4
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 8   round: 5
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 1
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 2
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 3
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 4
+
+program: Ldf/test   graph(undir): rgg_n_2_24_s0.graph   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): agrocyc_dag_uniq.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): amaze_dag_uniq.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): anthra_dag_uniq.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): arXiv_sub_6000-1.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): ba10k2d.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): ba10k5d.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): cit-Patents.scc.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): citeseer.scc.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): citeseerx.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): cuda.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): ecoo_dag_uniq.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): go_sub_6793.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): go_uniprot.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): human_dag_uniq.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): kegg_dag_uniq.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): mtbrv_dag_uniq.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): nasa_dag_uniq.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): pubmed_sub_9000-1.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): uniprotenc_100m.scc.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 2   round: 1
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11258 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 2   round: 2
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11261 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 2   round: 3
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11264 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 2   round: 4
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11267 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 2   round: 5
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11270 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 4   round: 1
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11273 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 4   round: 2
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11278 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 4   round: 3
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11283 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 4   round: 4
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11288 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 4   round: 5
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11293 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 8   round: 1
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11298 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 8   round: 2
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11307 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 8   round: 3
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11316 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 8   round: 4
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11325 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 8   round: 5
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11334 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 16   round: 1
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11343 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 16   round: 2
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11360 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 16   round: 3
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11377 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 16   round: 4
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11394 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_150m.scc.gra   threads: 16   round: 5
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 11411 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): uniprotenc_22m.scc.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): v10.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): v100.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): v1000.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): vchocyc_dag_uniq.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): xmark_dag_uniq.gra   threads: 16   round: 5
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 2   round: 1
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 2   round: 2
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 2   round: 3
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 2   round: 4
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 2   round: 5
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 4   round: 1
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 4   round: 2
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 4   round: 3
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 4   round: 4
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 4   round: 5
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 8   round: 1
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 8   round: 2
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 8   round: 3
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 8   round: 4
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 8   round: 5
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 16   round: 1
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 16   round: 2
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 16   round: 3
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 16   round: 4
+
+program: Jones/testv3   graph(dir): yago_sub_6642.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): agrocyc_dag_uniq.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): amaze_dag_uniq.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): anthra_dag_uniq.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): arXiv_sub_6000-1.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): ba10k2d.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): ba10k5d.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): cit-Patents.scc.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): citeseer.scc.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): citeseer_sub_10720.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): citeseerx.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): cuda.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): ecoo_dag_uniq.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): go_sub_6793.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): go_uniprot.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): human_dag_uniq.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): kegg_dag_uniq.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): mtbrv_dag_uniq.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): nasa_dag_uniq.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): pubmed_sub_9000-1.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): uniprotenc_100m.scc.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 2   round: 1
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16188 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 2   round: 2
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16191 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 2   round: 3
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16194 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 2   round: 4
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16197 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 2   round: 5
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16200 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 4   round: 1
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16203 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 4   round: 2
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16208 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 4   round: 3
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16213 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 4   round: 4
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16218 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 4   round: 5
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16223 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 8   round: 1
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16228 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 8   round: 2
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16237 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 8   round: 3
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16246 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 8   round: 4
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16255 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 8   round: 5
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16264 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 16   round: 1
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16273 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 16   round: 2
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16290 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 16   round: 3
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16307 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 16   round: 4
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16324 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_150m.scc.gra   threads: 16   round: 5
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 1) > this->size() (which is 0)
+./executor.sh: line 49: 16341 Aborted                 (core dumped) ./$w Graphs/$g $t a.out >> report.log
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): uniprotenc_22m.scc.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): v10.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): v10.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): v10.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): v10.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): v10.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): v10.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): v10.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): v10.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): v10.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): v10.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): v10.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): v10.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): v10.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): v10.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): v10.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): v10.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): v10.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): v10.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): v10.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): v10.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): v100.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): v100.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): v100.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): v100.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): v100.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): v100.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): v100.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): v100.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): v100.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): v100.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): v100.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): v100.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): v100.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): v100.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): v100.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): v100.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): v100.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): v100.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): v100.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): v100.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): v1000.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): vchocyc_dag_uniq.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): xmark_dag_uniq.gra   threads: 16   round: 5
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 2   round: 1
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 2   round: 2
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 2   round: 3
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 2   round: 4
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 2   round: 5
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 4   round: 1
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 4   round: 2
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 4   round: 3
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 4   round: 4
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 4   round: 5
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 8   round: 1
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 8   round: 2
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 8   round: 3
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 8   round: 4
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 8   round: 5
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 16   round: 1
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 16   round: 2
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 16   round: 3
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 16   round: 4
+
+program: Ldf/test   graph(dir): yago_sub_6642.gra   threads: 16   round: 5
+
+fcardano@TheComoMeter:/mnt/u/Master Local/GraphColoringQ1$
+fcardano@TheComoMeter:/mnt/u/Master Local/GraphColoringQ1$

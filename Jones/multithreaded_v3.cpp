@@ -397,7 +397,6 @@ void jones_thread(int thread_index)
 		for (map<int, int>::const_iterator node_interator = to_be_evaluated.begin();
 			 node_interator != to_be_evaluated.end(); ++node_interator)
 		{
-			// cout << "Sono " << thread_index << " assegno " << node_interator->second << " a " << node_interator->first << endl;
 			node_color[node_interator->first - 1] = node_interator->second;
 			node_assigned.erase(node_interator->first);
 			if (node_interator->second == color)
@@ -557,7 +556,7 @@ int main(int argc, char** argv) {
 	results_file << graph_path.substr(graph_path.find_last_of("/\\") + 1) << ","
 		<< number_nodes << ","
 		<< number_edges << ","
-		<< number_threads << ","
+		<< argv[2] << ","
 		<< max_color << ","
 		<< to_string(chrono::duration_cast<chrono::microseconds>(end_write - start_main).count()) << ","
 		<< time_average << ","

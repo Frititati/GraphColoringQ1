@@ -53,13 +53,11 @@ void wait_single(int name) {
 	if (barrier_counter == 0) {
 		// fix number_threads to adjust for exited threads
 		barrier_counter = number_threads;
-		// cout << "notify2 " << name << " " << barrier_counter << " " << number_threads << endl;
 		barrier_cv.notify_all();
 
 		// leave without going to the condition wait
 		return;
 	}
-	// cout << "waiting2 " << name << " " << barrier_counter << " " << number_threads << endl;
 	barrier_cv.wait(lck);
 }
 
@@ -82,7 +80,6 @@ void wait_leave(int number_of_colored_nodes, int name) {
 		number_threads = number_threads - number_exited_threads;
 		number_exited_threads = 0;
 		barrier_counter = number_threads;
-		// cout << "notify2 " << name << " " << barrier_counter << " " << number_threads << endl;
 		barrier_cv.notify_all();
 
 		// leave without going to the condition wait
@@ -257,10 +254,7 @@ void jones_thread(int thread_index) {
 		for(map<int, int >::const_iterator node_interator = to_be_evaluated.begin();
 			node_interator != to_be_evaluated.end(); ++node_interator)
 		{
-			// debugMutex.lock();
-			// cout << "node:" << node_interator->first << " new color:" << node_interator->second << endl;
 			node_color[node_interator->first - 1] = node_interator->second;
-			// debugMutex.unlock();
 			node_assigned.erase(node_interator->first);
 			if (node_interator->second == color)
 			{
@@ -288,11 +282,9 @@ int main(int argc, char** argv) {
 	{
 		// not enought parameters
 		cout << "Not enough parameters passed, please refer to this guide:" << endl;
-		cout << "<execution file> <graph file> <number of threads>" << endl;
+		cout << "<execution file> <graph file> <number of threads> [optional] <output file>" << endl;
 		return 1;
 	}
-
-	// TODO : we have to check if this is exeception prone
 
 	fstream graph_file;
 	graph_path = argv[1];
@@ -302,7 +294,7 @@ int main(int argc, char** argv) {
 	{
 		// file does not exists
 		cout << "File cannot be found, please refer to this guide:" << endl;
-		cout << "<execution file> <graph file> <number of threads>" << endl;
+		cout << "<execution file> <graph file> <number of threads> [optional] <output file>" << endl;
 		return 1;
 	}
 	
@@ -323,8 +315,6 @@ int main(int argc, char** argv) {
 
 	}
 
-	cout << "number nodes:" << number_nodes << endl;
-
 	graph_file.close();
 
 	// for (auto i : temp) cout << i << endl;
@@ -339,7 +329,15 @@ int main(int argc, char** argv) {
 	// unsync the I/O of C and C++.
 	ios_base::sync_with_stdio(false);
 
-	number_threads = stoi(argv[2]);
+	try {
+		number_threads = stoi(argv[2]);
+	} catch (exception& e) {
+		// number of threads not found
+		cout << "Number of threads not found, please refer to this guide:" << endl;
+		cout << "<execution file> <graph file> <number of threads> [optional] <output file>" << endl;
+		return 1;
+	}
+
 	barrier_counter = number_threads;
 
 	thread thread_array[number_threads];
@@ -413,7 +411,8 @@ int main(int argc, char** argv) {
 	results_file.open("jones_2.csv", std::ios_base::app);
 	results_file << graph_path.substr(graph_path.find_last_of("/\\") + 1) << ","
 		<< number_nodes << ","
-		<< number_threads << ","
+		<< number_edges << ","
+		<< argv[2] << ","
 		<< max_color << ","
 		<< to_string(chrono::duration_cast<chrono::microseconds>(end_write - start_main).count()) << ","
 		<< time_average << ","
