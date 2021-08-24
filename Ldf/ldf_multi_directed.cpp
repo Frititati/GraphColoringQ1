@@ -378,16 +378,16 @@ int main(int argc, char **argv)
 
 	// print results
 
-	cout << "Number of nodes: " << number_nodes << "\tNumber of edges: " << number_edges << endl;
-	for (map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
-		 it != node_edge_connections.end(); ++it)
-	{
-		cout << "At node: " << it->first << "\t We have connections: ";
-		for (auto i : it->second)
-			cout << i << " ";
+	// cout << "Number of nodes: " << number_nodes << "\tNumber of edges: " << number_edges << endl;
+	// for (map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
+	// 	 it != node_edge_connections.end(); ++it)
+	// {
+	// 	cout << "At node: " << it->first << "\t We have connections: ";
+	// 	for (auto i : it->second)
+	// 		cout << i << " ";
 		
-		cout << "\tDegree: " << node_degree[it->first - 1] << endl;
-	}
+	// 	cout << "\tDegree: " << node_degree[it->first - 1] << endl;
+	// }
 
 	graph_file.close();
 
