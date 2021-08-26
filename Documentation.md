@@ -177,18 +177,18 @@ To begin the development of the project, we prepared small achievable objectives
 
 ## Sequential Optimization Jones-Plassman
 
-The approach we took when optimizing always began with looking at the loops the algorithm had to accomplish during it's execution. We attempted to reduce these occurrences or place multiple functions in the same loop (to avoid repeating them). This was not necessarely the case with the first sequential optimization of the Jones-Plassman sequential however this didn't discourage us from looking at other potential improvements. We then looked at the varios datastructures present in the algorithm, in our experience this approach yielded better result. For example, the first data structures we utilized (present in the std namespace) is the ***std::set***. This not only provided a better data structure but also rendered the code simpler especially within the iterative step when we find a local maxima and assign it to be colored next:
+The approach we took when optimizing always began with looking at the loops the algorithm had to accomplish during it's execution. We attempted to reduce these occurrences or place multiple functions in the same loop (to avoid repeating them). This was not necessarely the case with the first sequential optimization of the Jones-Plassman sequential however this didn't discourage us from looking at other potential improvements. We then looked at the varios datastructures present in the algorithm, in our experience this approach yielded better result. For example, the first data structures we utilized (present in the std namespace) is the ***std::set***. This not only provided a better data structure but also rendered the code simpler especially within the iterative step.
 
 ```c++
 if (is_highest)
 {
-  std::set<int> colors_used_interation;
-  std::set_difference(colors_used_global.begin(), colors_used_global.end(), colors_used_local.begin(), colors_used_local.end(), std::inserter(colors_used_interation, colors_used_interation.end()));
-  auto choosen = colors_used_interation.begin();
+  std::set<int> colors_used_iteration;
+  std::set_difference(colors_used_global.begin(), colors_used_global.end(), colors_used_local.begin(), colors_used_local.end(), std::inserter(colors_used_iteration, colors_used_iteration.end()));
+  auto choosen = colors_used_iteration.begin();
   to_be_evaluated.insert(std::pair<int, int>(node_key_this, *choosen));
 }
 ```
-This code snippet is taken from **'sequential_second_attempt.cpp'**. As previously stated this is at the end of the iteractive step for a node, which the algorithm has recognized as the highest in it's local area this is denoted by the `is_highest` boolean. In the 3<sup>rd</sup>-5<sup>th</sup> line we use 3 different *std::set*: `colors_used_interaction` is the set where the smallest (first index) available color is selected, `colors_used_global` is the set where all available colors are present, `colors_used_interation` is the set of all colors this node cannot be colored (as belong to adjacent nodes). Here the *std::set* come in very useful as the built-in function `set_difference` is not only faster of possible custom loops but also sorts the possible colors which means we can always take the first of the list in the following operation.
+This code snippet is taken from **'sequential_second_attempt.cpp'**. This is at the end of the iteractive step for a node, which the algorithm has recognized as the highest in its local area, this is denoted by the `is_highest` boolean. In the 3<sup>rd</sup>-5<sup>th</sup> line we use 3 different *std::set*: `colors_used_iteration` is the set where the smallest (first index) available color is selected, `colors_used_global` is the set where all available colors are present, `colors_used_local` is the set of all colors this node cannot be colored (as they belong to adjacent nodes). Here the *std::set* comes in very useful as the built-in function `set_difference` is not only faster of possible custom loops but also sorts the possible colors which means we can always take the first of the list in the following operation.
 
 
 
