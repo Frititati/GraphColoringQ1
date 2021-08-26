@@ -188,6 +188,7 @@ if (is_highest)
   to_be_evaluated.insert(std::pair<int, int>(node_key_this, *choosen));
 }
 ```
+This code snippet is taken from **'sequential_second_attempt.cpp'**. As previously stated this is at the end of the iteractive step for a node, which the algorithm has recognized as the highest in it's local area this is denoted by the `is_highest` boolean. In the 3<sup>rd</sup>-5<sup>th</sup> line we use 3 different *std::set*: `colors_used_interaction` is the set we will select the smallest color (first index),  
 
 
 
