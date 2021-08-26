@@ -33,14 +33,16 @@
   + [Parallel](#parallel)
   + [Tester](#tester) 
 - [Development details](#development-details)
-  + [Jones-Plassman](#jones-plassman)
+  + [Jones-Plassman (JP)](#jones-plassman)
     + [JP Reading phase](#jp-reading-phase)
     + [JP Coloring phase](#jp-coloring-phase)
     + [JP Writing phase](#jp-writing-phase)
-  + [Largest Degree First](#largest-degree-first)
+  + [Largest Degree First (LDF)](#largest-degree-first)
     + [LDF Reading phase](#ldf-reading-phase)
     + [LDF Coloring phase](#ldf-coloring-phase)
     + [LDF Writing phase](#ldf-writing-phase)
+- [Development Philosophy](#development-philosophy)
+  + [Sequential Optimization Jones-Plassman](#sequential-optimization-jones\-plassman)
 - [Performance tests](#performance-tests)
 - [Conclusions](#conclusions)
 
@@ -168,6 +170,26 @@ The coloring phase of the LDF algorithm differs from the Jones-Plassman one only
 The writing phase coincides exactly with that related to the Jones-Plassman algorithm, described in detail in the corresponded paragraph of the previous section.
 
 <br />
+
+# Development Philosophy
+
+To begin the development of the project, we prepared small achievable objectives in incrementing complexity. The goal was to set up a good basis, such that development would not be unstructured or messy. For example we developed a file parser for the DIMACS and DIMACS10 formats, the basic data structure to store node-data, and a graph tester such that any algorithm we would end up developing could be tested (whether it colored graphs correctly). Furthermore, after the base structure was completed, we focused solely on implementing one algorithm, this was the Jones-Plassman approach to graph coloring. We began with a sequential unoptimized approach following the literature, this was to get familiarized with the algorithm. Fortunately we had the graph tester as many of the initial outputs seemed to be correct but actually produced wrongful results. After a fully working first version of the Jones-Plassman sequantial algorithm, we then looked towards optimizing it.
+
+## Sequential Optimization Jones-Plassman
+
+The approach we took when optimizing always began with looking at the loops the algorithm had to accomplish during it's execution. We attempted to reduce these occurrences or place multiple functions in the same loop (to avoid repeating them). This was not necessarely the case with the first sequential optimization of the Jones-Plassman sequential however this didn't discourage us from looking at other potential improvements. We then looked at the varios datastructures present in the algorithm, in our experience this approach yielded better result. For example, the first data structures we utilized (present in the std namespace) is the ***std::set***. This not only provided a better data structure but also rendered the code simpler especially within the iterative step when we find a local maxima and assign it to be colored next:
+
+```c++
+if (is_highest)
+{
+  std::set<int> colors_used_interation;
+  std::set_difference(colors_used_global.begin(), colors_used_global.end(), colors_used_local.begin(), colors_used_local.end(), std::inserter(colors_used_interation, colors_used_interation.end()));
+  auto choosen = colors_used_interation.begin();
+  to_be_evaluated.insert(std::pair<int, int>(node_key_this, *choosen));
+}
+```
+
+
 
 # Performance tests
 
