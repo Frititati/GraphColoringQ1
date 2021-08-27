@@ -189,7 +189,7 @@ int main(int argc, char ** argv) {
 	string line;
 	int new_node_index = 1;
 	int number_nodes;
-	int number_edges;
+	int number_edges = 0;
 
 	// we used srand to set seed for randomization of node numbers
 	srand(time(NULL));

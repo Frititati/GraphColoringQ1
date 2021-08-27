@@ -1,0 +1,1249 @@
+fcardano@TheComoMeter:/mnt/u/Master Local/GraphColoringQ1$
+fcardano@TheComoMeter:/mnt/u/Master Local/GraphColoringQ1$ ./executor.sh
+rm: cannot remove 'Jones/testv2': No such file or directory
+rm: cannot remove 'Jones/testv3': No such file or directory
+rm: cannot remove 'Jones/testv5': No such file or directory
+rm: cannot remove 'Ldf/test': No such file or directory
+cat: report.log: No such file or directory
+rm: cannot remove 'report.log': No such file or directory
+program: Jones/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): ba10k2d.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): ba10k2d.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): ba10k2d.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): ba10k2d.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): ba10k2d.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): ba10k5d.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): ba10k5d.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): ba10k5d.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): ba10k5d.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): ba10k5d.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): citeseer.scc.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): citeseer.scc.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): citeseer.scc.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): citeseer.scc.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): citeseer.scc.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): citeseerx.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): citeseerx.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): citeseerx.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): citeseerx.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): citeseerx.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): cuda.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): cuda.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): cuda.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): cuda.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): cuda.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): go_sub_6793.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): go_sub_6793.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): go_sub_6793.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): go_sub_6793.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): go_sub_6793.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): go_uniprot.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): go_uniprot.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): go_uniprot.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): go_uniprot.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): go_uniprot.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): human_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): human_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): human_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): human_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): human_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): v10.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): v10.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): v10.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): v10.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): v10.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): v100.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): v100.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): v100.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): v100.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): v100.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): v1000.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): v1000.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): v1000.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): v1000.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): v1000.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_1   graph(dir): yago_sub_6642.gra   round: 1
+
+program: Jones/test_seq_1   graph(dir): yago_sub_6642.gra   round: 2
+
+program: Jones/test_seq_1   graph(dir): yago_sub_6642.gra   round: 3
+
+program: Jones/test_seq_1   graph(dir): yago_sub_6642.gra   round: 4
+
+program: Jones/test_seq_1   graph(dir): yago_sub_6642.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): agrocyc_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): agrocyc_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): agrocyc_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): agrocyc_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): agrocyc_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): amaze_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): amaze_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): amaze_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): amaze_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): amaze_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): anthra_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): anthra_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): anthra_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): anthra_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): anthra_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): arXiv_sub_6000-1.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): arXiv_sub_6000-1.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): arXiv_sub_6000-1.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): arXiv_sub_6000-1.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): arXiv_sub_6000-1.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): ba10k2d.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): ba10k2d.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): ba10k2d.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): ba10k2d.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): ba10k2d.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): ba10k5d.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): ba10k5d.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): ba10k5d.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): ba10k5d.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): ba10k5d.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): cit-Patents.scc.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): cit-Patents.scc.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): cit-Patents.scc.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): cit-Patents.scc.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): cit-Patents.scc.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): citeseer.scc.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): citeseer.scc.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): citeseer.scc.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): citeseer.scc.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): citeseer.scc.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): citeseer_sub_10720.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): citeseer_sub_10720.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): citeseer_sub_10720.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): citeseer_sub_10720.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): citeseer_sub_10720.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): citeseerx.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): citeseerx.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): citeseerx.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): citeseerx.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): citeseerx.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): cuda.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): cuda.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): cuda.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): cuda.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): cuda.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): ecoo_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): ecoo_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): ecoo_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): ecoo_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): ecoo_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): go_sub_6793.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): go_sub_6793.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): go_sub_6793.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): go_sub_6793.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): go_sub_6793.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): go_uniprot.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): go_uniprot.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): go_uniprot.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): go_uniprot.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): go_uniprot.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): human_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): human_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): human_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): human_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): human_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): kegg_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): kegg_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): kegg_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): kegg_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): kegg_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): mtbrv_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): mtbrv_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): mtbrv_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): mtbrv_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): mtbrv_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): nasa_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): nasa_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): nasa_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): nasa_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): nasa_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): pubmed_sub_9000-1.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): pubmed_sub_9000-1.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): pubmed_sub_9000-1.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): pubmed_sub_9000-1.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): pubmed_sub_9000-1.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_100m.scc.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_100m.scc.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_100m.scc.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_100m.scc.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_100m.scc.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_150m.scc.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_150m.scc.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_150m.scc.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_150m.scc.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_150m.scc.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_22m.scc.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_22m.scc.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_22m.scc.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_22m.scc.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_22m.scc.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): v10.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): v10.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): v10.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): v10.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): v10.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): v100.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): v100.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): v100.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): v100.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): v100.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): v1000.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): v1000.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): v1000.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): v1000.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): v1000.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): vchocyc_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): vchocyc_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): vchocyc_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): vchocyc_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): vchocyc_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): xmark_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): xmark_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): xmark_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): xmark_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): xmark_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2   graph(dir): yago_sub_6642.gra   round: 1
+
+program: Jones/test_seq_2   graph(dir): yago_sub_6642.gra   round: 2
+
+program: Jones/test_seq_2   graph(dir): yago_sub_6642.gra   round: 3
+
+program: Jones/test_seq_2   graph(dir): yago_sub_6642.gra   round: 4
+
+program: Jones/test_seq_2   graph(dir): yago_sub_6642.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): agrocyc_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): agrocyc_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): agrocyc_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): agrocyc_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): agrocyc_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): amaze_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): amaze_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): amaze_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): amaze_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): amaze_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): anthra_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): anthra_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): anthra_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): anthra_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): anthra_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): arXiv_sub_6000-1.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): arXiv_sub_6000-1.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): arXiv_sub_6000-1.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): arXiv_sub_6000-1.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): arXiv_sub_6000-1.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k2d.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k2d.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k2d.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k2d.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k2d.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k5d.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k5d.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k5d.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k5d.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k5d.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): cit-Patents.scc.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): cit-Patents.scc.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): cit-Patents.scc.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): cit-Patents.scc.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): cit-Patents.scc.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer.scc.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer.scc.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer.scc.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer.scc.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer.scc.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer_sub_10720.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer_sub_10720.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer_sub_10720.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer_sub_10720.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer_sub_10720.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseerx.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseerx.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseerx.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseerx.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseerx.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): cuda.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): cuda.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): cuda.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): cuda.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): cuda.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): ecoo_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): ecoo_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): ecoo_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): ecoo_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): ecoo_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_sub_6793.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_sub_6793.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_sub_6793.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_sub_6793.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_sub_6793.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_uniprot.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_uniprot.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_uniprot.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_uniprot.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_uniprot.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): human_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): human_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): human_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): human_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): human_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): kegg_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): kegg_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): kegg_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): kegg_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): kegg_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): mtbrv_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): mtbrv_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): mtbrv_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): mtbrv_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): mtbrv_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): nasa_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): nasa_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): nasa_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): nasa_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): nasa_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): pubmed_sub_9000-1.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): pubmed_sub_9000-1.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): pubmed_sub_9000-1.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): pubmed_sub_9000-1.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): pubmed_sub_9000-1.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_100m.scc.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_100m.scc.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_100m.scc.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_100m.scc.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_100m.scc.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_150m.scc.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_150m.scc.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_150m.scc.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_150m.scc.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_150m.scc.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_22m.scc.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_22m.scc.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_22m.scc.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_22m.scc.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_22m.scc.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): v10.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): v10.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): v10.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): v10.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): v10.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): v100.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): v100.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): v100.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): v100.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): v100.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): v1000.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): v1000.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): v1000.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): v1000.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): v1000.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): vchocyc_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): vchocyc_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): vchocyc_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): vchocyc_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): vchocyc_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): xmark_dag_uniq.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): xmark_dag_uniq.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): xmark_dag_uniq.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): xmark_dag_uniq.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): xmark_dag_uniq.gra   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(dir): yago_sub_6642.gra   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(dir): yago_sub_6642.gra   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(dir): yago_sub_6642.gra   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(dir): yago_sub_6642.gra   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(dir): yago_sub_6642.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): ba10k2d.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): ba10k2d.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): ba10k2d.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): ba10k2d.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): ba10k2d.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): ba10k5d.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): ba10k5d.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): ba10k5d.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): ba10k5d.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): ba10k5d.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): citeseer.scc.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): citeseer.scc.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): citeseer.scc.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): citeseer.scc.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): citeseer.scc.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): citeseerx.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): citeseerx.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): citeseerx.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): citeseerx.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): citeseerx.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): cuda.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): cuda.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): cuda.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): cuda.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): cuda.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): go_sub_6793.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): go_sub_6793.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): go_sub_6793.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): go_sub_6793.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): go_sub_6793.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): go_uniprot.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): go_uniprot.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): go_uniprot.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): go_uniprot.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): go_uniprot.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): human_dag_uniq.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): human_dag_uniq.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): human_dag_uniq.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): human_dag_uniq.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): human_dag_uniq.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): v10.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): v10.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): v10.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): v10.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): v10.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): v100.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): v100.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): v100.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): v100.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): v100.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): v1000.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): v1000.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): v1000.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): v1000.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): v1000.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 5
+
+program: Ldf/test_seq_1   graph(dir): yago_sub_6642.gra   round: 1
+
+program: Ldf/test_seq_1   graph(dir): yago_sub_6642.gra   round: 2
+
+program: Ldf/test_seq_1   graph(dir): yago_sub_6642.gra   round: 3
+
+program: Ldf/test_seq_1   graph(dir): yago_sub_6642.gra   round: 4
+
+program: Ldf/test_seq_1   graph(dir): yago_sub_6642.gra   round: 5
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 1
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 2
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 3
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 4
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 5
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 1
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 2
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 3
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 4
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 5
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 1
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 2
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 3
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 4
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 5
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_15_s0.graph   round: 1
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_15_s0.graph   round: 2
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_15_s0.graph   round: 3
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_15_s0.graph   round: 4
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_15_s0.graph   round: 5
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_21_s0.graph   round: 1
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_21_s0.graph   round: 2
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_21_s0.graph   round: 3
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_21_s0.graph   round: 4
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_21_s0.graph   round: 5
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_24_s0.graph   round: 1
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_24_s0.graph   round: 2
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_24_s0.graph   round: 3
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_24_s0.graph   round: 4
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_24_s0.graph   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_15_s0.graph   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_15_s0.graph   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_15_s0.graph   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_15_s0.graph   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_15_s0.graph   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_21_s0.graph   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_21_s0.graph   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_21_s0.graph   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_21_s0.graph   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_21_s0.graph   round: 5
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_24_s0.graph   round: 1
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_24_s0.graph   round: 2
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_24_s0.graph   round: 3
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_24_s0.graph   round: 4
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_24_s0.graph   round: 5
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 1
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 2
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 3
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 4
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 5
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 1
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 2
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 3
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 4
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 5
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 1
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 2
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 3
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 4
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 5
+
+fcardano@TheComoMeter:/mnt/u/Master Local/GraphColoringQ1$

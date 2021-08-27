@@ -176,7 +176,7 @@ int main(int argc, char **argv)
     string line;
     int counter = 1;
     int number_node;
-    int number_edges;
+    int number_edges = 0;
     int number_node_color;
     int number_edge_color;
 
@@ -296,6 +296,8 @@ int main(int argc, char **argv)
 
     // Recording end time.
     auto end = chrono::steady_clock::now();
+
+    // cout << "edges: " << number_edges << endl;
 
     // Calculating total time taken by the program.
     cout << "Elapsed time in nanoseconds: "

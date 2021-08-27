@@ -1,0 +1,4030 @@
+program: Jones/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 1
+Colors used: 14
+Elapsed reading time in microseconds: 87161 µs
+Elapsed algo time in microseconds: 16699 µs
+Elapsed writing time in microseconds: 2527 µs
+Elapsed time in microseconds: 106388 µs
+
+program: Jones/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 2
+Colors used: 14
+Elapsed reading time in microseconds: 89706 µs
+Elapsed algo time in microseconds: 16377 µs
+Elapsed writing time in microseconds: 2739 µs
+Elapsed time in microseconds: 108822 µs
+
+program: Jones/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 3
+Colors used: 14
+Elapsed reading time in microseconds: 94111 µs
+Elapsed algo time in microseconds: 18379 µs
+Elapsed writing time in microseconds: 2713 µs
+Elapsed time in microseconds: 115203 µs
+
+program: Jones/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 4
+Colors used: 14
+Elapsed reading time in microseconds: 96662 µs
+Elapsed algo time in microseconds: 18538 µs
+Elapsed writing time in microseconds: 2884 µs
+Elapsed time in microseconds: 118084 µs
+
+program: Jones/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 5
+Colors used: 14
+Elapsed reading time in microseconds: 92517 µs
+Elapsed algo time in microseconds: 18771 µs
+Elapsed writing time in microseconds: 2678 µs
+Elapsed time in microseconds: 113968 µs
+
+program: Jones/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 1
+Colors used: 9
+Elapsed reading time in microseconds: 21421 µs
+Elapsed algo time in microseconds: 5382 µs
+Elapsed writing time in microseconds: 1090 µs
+Elapsed time in microseconds: 27893 µs
+
+program: Jones/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 2
+Colors used: 9
+Elapsed reading time in microseconds: 21277 µs
+Elapsed algo time in microseconds: 5494 µs
+Elapsed writing time in microseconds: 1134 µs
+Elapsed time in microseconds: 27906 µs
+
+program: Jones/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 3
+Colors used: 9
+Elapsed reading time in microseconds: 21532 µs
+Elapsed algo time in microseconds: 5356 µs
+Elapsed writing time in microseconds: 1147 µs
+Elapsed time in microseconds: 28036 µs
+
+program: Jones/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 4
+Colors used: 8
+Elapsed reading time in microseconds: 19493 µs
+Elapsed algo time in microseconds: 4584 µs
+Elapsed writing time in microseconds: 934 µs
+Elapsed time in microseconds: 25012 µs
+
+program: Jones/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 5
+Colors used: 8
+Elapsed reading time in microseconds: 19240 µs
+Elapsed algo time in microseconds: 4425 µs
+Elapsed writing time in microseconds: 937 µs
+Elapsed time in microseconds: 24603 µs
+
+program: Jones/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 1
+Colors used: 13
+Elapsed reading time in microseconds: 86453 µs
+Elapsed algo time in microseconds: 15681 µs
+Elapsed writing time in microseconds: 2318 µs
+Elapsed time in microseconds: 104454 µs
+
+program: Jones/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 2
+Colors used: 13
+Elapsed reading time in microseconds: 89809 µs
+Elapsed algo time in microseconds: 16795 µs
+Elapsed writing time in microseconds: 2464 µs
+Elapsed time in microseconds: 109069 µs
+
+program: Jones/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 3
+Colors used: 13
+Elapsed reading time in microseconds: 87263 µs
+Elapsed algo time in microseconds: 15583 µs
+Elapsed writing time in microseconds: 2485 µs
+Elapsed time in microseconds: 105332 µs
+
+program: Jones/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 4
+Colors used: 13
+Elapsed reading time in microseconds: 86817 µs
+Elapsed algo time in microseconds: 15063 µs
+Elapsed writing time in microseconds: 2778 µs
+Elapsed time in microseconds: 104658 µs
+
+program: Jones/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 5
+Colors used: 13
+Elapsed reading time in microseconds: 92750 µs
+Elapsed algo time in microseconds: 17569 µs
+Elapsed writing time in microseconds: 2903 µs
+Elapsed time in microseconds: 113223 µs
+
+program: Jones/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 1
+Colors used: 109
+Elapsed reading time in microseconds: 65247 µs
+Elapsed algo time in microseconds: 72074 µs
+Elapsed writing time in microseconds: 1666 µs
+Elapsed time in microseconds: 138988 µs
+
+program: Jones/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 2
+Colors used: 109
+Elapsed reading time in microseconds: 58825 µs
+Elapsed algo time in microseconds: 72735 µs
+Elapsed writing time in microseconds: 1367 µs
+Elapsed time in microseconds: 132928 µs
+
+program: Jones/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 3
+Colors used: 109
+Elapsed reading time in microseconds: 58230 µs
+Elapsed algo time in microseconds: 71809 µs
+Elapsed writing time in microseconds: 1398 µs
+Elapsed time in microseconds: 131438 µs
+
+program: Jones/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 4
+Colors used: 110
+Elapsed reading time in microseconds: 57971 µs
+Elapsed algo time in microseconds: 71937 µs
+Elapsed writing time in microseconds: 1434 µs
+Elapsed time in microseconds: 131343 µs
+
+program: Jones/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 5
+Colors used: 110
+Elapsed reading time in microseconds: 59913 µs
+Elapsed algo time in microseconds: 74514 µs
+Elapsed writing time in microseconds: 1410 µs
+Elapsed time in microseconds: 135838 µs
+
+program: Jones/test_seq_1   graph(dir): ba10k2d.gra   round: 1
+Colors used: 22
+Elapsed reading time in microseconds: 39916 µs
+Elapsed algo time in microseconds: 19220 µs
+Elapsed writing time in microseconds: 2382 µs
+Elapsed time in microseconds: 61519 µs
+
+program: Jones/test_seq_1   graph(dir): ba10k2d.gra   round: 2
+Colors used: 22
+Elapsed reading time in microseconds: 40018 µs
+Elapsed algo time in microseconds: 19095 µs
+Elapsed writing time in microseconds: 1972 µs
+Elapsed time in microseconds: 61085 µs
+
+program: Jones/test_seq_1   graph(dir): ba10k2d.gra   round: 3
+Colors used: 22
+Elapsed reading time in microseconds: 41751 µs
+Elapsed algo time in microseconds: 18651 µs
+Elapsed writing time in microseconds: 2004 µs
+Elapsed time in microseconds: 62406 µs
+
+program: Jones/test_seq_1   graph(dir): ba10k2d.gra   round: 4
+Colors used: 22
+Elapsed reading time in microseconds: 41409 µs
+Elapsed algo time in microseconds: 22108 µs
+Elapsed writing time in microseconds: 2413 µs
+Elapsed time in microseconds: 65931 µs
+
+program: Jones/test_seq_1   graph(dir): ba10k2d.gra   round: 5
+Colors used: 22
+Elapsed reading time in microseconds: 45792 µs
+Elapsed algo time in microseconds: 22159 µs
+Elapsed writing time in microseconds: 2519 µs
+Elapsed time in microseconds: 70470 µs
+
+program: Jones/test_seq_1   graph(dir): ba10k5d.gra   round: 1
+Colors used: 49
+Elapsed reading time in microseconds: 67656 µs
+Elapsed algo time in microseconds: 49863 µs
+Elapsed writing time in microseconds: 2222 µs
+Elapsed time in microseconds: 119742 µs
+
+program: Jones/test_seq_1   graph(dir): ba10k5d.gra   round: 2
+Colors used: 49
+Elapsed reading time in microseconds: 59718 µs
+Elapsed algo time in microseconds: 48489 µs
+Elapsed writing time in microseconds: 2051 µs
+Elapsed time in microseconds: 110258 µs
+
+program: Jones/test_seq_1   graph(dir): ba10k5d.gra   round: 3
+Colors used: 42
+Elapsed reading time in microseconds: 61317 µs
+Elapsed algo time in microseconds: 49376 µs
+Elapsed writing time in microseconds: 2226 µs
+Elapsed time in microseconds: 112920 µs
+
+program: Jones/test_seq_1   graph(dir): ba10k5d.gra   round: 4
+Colors used: 42
+Elapsed reading time in microseconds: 61229 µs
+Elapsed algo time in microseconds: 49588 µs
+Elapsed writing time in microseconds: 2408 µs
+Elapsed time in microseconds: 113226 µs
+
+program: Jones/test_seq_1   graph(dir): ba10k5d.gra   round: 5
+Colors used: 42
+Elapsed reading time in microseconds: 62759 µs
+Elapsed algo time in microseconds: 55247 µs
+Elapsed writing time in microseconds: 2450 µs
+Elapsed time in microseconds: 120457 µs
+
+program: Jones/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 1
+Colors used: 110
+Elapsed reading time in microseconds: 43613954 µs
+Elapsed algo time in microseconds: 48724478 µs
+Elapsed writing time in microseconds: 731136 µs
+Elapsed time in microseconds: 93069569 µs
+
+program: Jones/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 2
+Colors used: 117
+Elapsed reading time in microseconds: 43967872 µs
+Elapsed algo time in microseconds: 49783317 µs
+Elapsed writing time in microseconds: 624493 µs
+Elapsed time in microseconds: 94375682 µs
+
+program: Jones/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 3
+Colors used: 105
+Elapsed reading time in microseconds: 43405185 µs
+Elapsed algo time in microseconds: 47417624 µs
+Elapsed writing time in microseconds: 629981 µs
+Elapsed time in microseconds: 91452790 µs
+
+program: Jones/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 4
+Colors used: 108
+Elapsed reading time in microseconds: 43510720 µs
+Elapsed algo time in microseconds: 51599367 µs
+Elapsed writing time in microseconds: 648571 µs
+Elapsed time in microseconds: 95758659 µs
+
+program: Jones/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 5
+Colors used: 107
+Elapsed reading time in microseconds: 43957670 µs
+Elapsed algo time in microseconds: 47217236 µs
+Elapsed writing time in microseconds: 745349 µs
+Elapsed time in microseconds: 91920256 µs
+
+program: Jones/test_seq_1   graph(dir): citeseer.scc.gra   round: 1
+Colors used: 10
+Elapsed reading time in microseconds: 3910654 µs
+Elapsed algo time in microseconds: 966941 µs
+Elapsed writing time in microseconds: 110896 µs
+Elapsed time in microseconds: 4988492 µs
+
+program: Jones/test_seq_1   graph(dir): citeseer.scc.gra   round: 2
+Colors used: 10
+Elapsed reading time in microseconds: 3834302 µs
+Elapsed algo time in microseconds: 1036049 µs
+Elapsed writing time in microseconds: 111838 µs
+Elapsed time in microseconds: 4982189 µs
+
+program: Jones/test_seq_1   graph(dir): citeseer.scc.gra   round: 3
+Colors used: 9
+Elapsed reading time in microseconds: 3811211 µs
+Elapsed algo time in microseconds: 991369 µs
+Elapsed writing time in microseconds: 115882 µs
+Elapsed time in microseconds: 4918462 µs
+
+program: Jones/test_seq_1   graph(dir): citeseer.scc.gra   round: 4
+Colors used: 10
+Elapsed reading time in microseconds: 3846224 µs
+Elapsed algo time in microseconds: 949249 µs
+Elapsed writing time in microseconds: 111961 µs
+Elapsed time in microseconds: 4907435 µs
+
+program: Jones/test_seq_1   graph(dir): citeseer.scc.gra   round: 5
+Colors used: 10
+Elapsed reading time in microseconds: 3803240 µs
+Elapsed algo time in microseconds: 966315 µs
+Elapsed writing time in microseconds: 112839 µs
+Elapsed time in microseconds: 4882395 µs
+
+program: Jones/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 1
+Colors used: 38
+Elapsed reading time in microseconds: 71572 µs
+Elapsed algo time in microseconds: 36020 µs
+Elapsed writing time in microseconds: 2375 µs
+Elapsed time in microseconds: 109968 µs
+
+program: Jones/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 2
+Colors used: 38
+Elapsed reading time in microseconds: 67414 µs
+Elapsed algo time in microseconds: 35572 µs
+Elapsed writing time in microseconds: 2280 µs
+Elapsed time in microseconds: 105267 µs
+
+program: Jones/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 3
+Colors used: 47
+Elapsed reading time in microseconds: 67266 µs
+Elapsed algo time in microseconds: 39481 µs
+Elapsed writing time in microseconds: 2455 µs
+Elapsed time in microseconds: 109203 µs
+
+program: Jones/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 4
+Colors used: 47
+Elapsed reading time in microseconds: 67747 µs
+Elapsed algo time in microseconds: 39628 µs
+Elapsed writing time in microseconds: 2585 µs
+Elapsed time in microseconds: 109961 µs
+
+program: Jones/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 5
+Colors used: 47
+Elapsed reading time in microseconds: 67759 µs
+Elapsed algo time in microseconds: 39434 µs
+Elapsed writing time in microseconds: 2254 µs
+Elapsed time in microseconds: 109448 µs
+
+program: Jones/test_seq_1   graph(dir): citeseerx.gra   round: 1
+Colors used: 125
+Elapsed reading time in microseconds: 61142862 µs
+Elapsed algo time in microseconds: 63830998 µs
+Elapsed writing time in microseconds: 1112195 µs
+Elapsed time in microseconds: 126086056 µs
+
+program: Jones/test_seq_1   graph(dir): citeseerx.gra   round: 2
+Colors used: 123
+Elapsed reading time in microseconds: 61192100 µs
+Elapsed algo time in microseconds: 60543977 µs
+Elapsed writing time in microseconds: 1169709 µs
+Elapsed time in microseconds: 122905788 µs
+
+program: Jones/test_seq_1   graph(dir): citeseerx.gra   round: 3
+Colors used: 122
+Elapsed reading time in microseconds: 60670702 µs
+Elapsed algo time in microseconds: 61252084 µs
+Elapsed writing time in microseconds: 1075024 µs
+Elapsed time in microseconds: 122997811 µs
+
+program: Jones/test_seq_1   graph(dir): citeseerx.gra   round: 4
+Colors used: 130
+Elapsed reading time in microseconds: 61294836 µs
+Elapsed algo time in microseconds: 65539070 µs
+Elapsed writing time in microseconds: 1135683 µs
+Elapsed time in microseconds: 127969590 µs
+
+program: Jones/test_seq_1   graph(dir): citeseerx.gra   round: 5
+Colors used: 127
+Elapsed reading time in microseconds: 63812794 µs
+Elapsed algo time in microseconds: 60981595 µs
+Elapsed writing time in microseconds: 1155262 µs
+Elapsed time in microseconds: 125949652 µs
+
+program: Jones/test_seq_1   graph(dir): cuda.gra   round: 1
+Colors used: 5
+Elapsed reading time in microseconds: 409 µs
+Elapsed algo time in microseconds: 181 µs
+Elapsed writing time in microseconds: 1959 µs
+Elapsed time in microseconds: 2550 µs
+
+program: Jones/test_seq_1   graph(dir): cuda.gra   round: 2
+Colors used: 5
+Elapsed reading time in microseconds: 293 µs
+Elapsed algo time in microseconds: 219 µs
+Elapsed writing time in microseconds: 369 µs
+Elapsed time in microseconds: 882 µs
+
+program: Jones/test_seq_1   graph(dir): cuda.gra   round: 3
+Colors used: 5
+Elapsed reading time in microseconds: 291 µs
+Elapsed algo time in microseconds: 165 µs
+Elapsed writing time in microseconds: 364 µs
+Elapsed time in microseconds: 821 µs
+
+program: Jones/test_seq_1   graph(dir): cuda.gra   round: 4
+Colors used: 5
+Elapsed reading time in microseconds: 286 µs
+Elapsed algo time in microseconds: 195 µs
+Elapsed writing time in microseconds: 367 µs
+Elapsed time in microseconds: 850 µs
+
+program: Jones/test_seq_1   graph(dir): cuda.gra   round: 5
+Colors used: 5
+Elapsed reading time in microseconds: 291 µs
+Elapsed algo time in microseconds: 166 µs
+Elapsed writing time in microseconds: 379 µs
+Elapsed time in microseconds: 836 µs
+
+program: Jones/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 1
+Colors used: 11
+Elapsed reading time in microseconds: 91304 µs
+Elapsed algo time in microseconds: 16138 µs
+Elapsed writing time in microseconds: 2868 µs
+Elapsed time in microseconds: 110311 µs
+
+program: Jones/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 2
+Colors used: 11
+Elapsed reading time in microseconds: 98203 µs
+Elapsed algo time in microseconds: 16208 µs
+Elapsed writing time in microseconds: 2885 µs
+Elapsed time in microseconds: 117296 µs
+
+program: Jones/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 3
+Colors used: 11
+Elapsed reading time in microseconds: 97897 µs
+Elapsed algo time in microseconds: 16011 µs
+Elapsed writing time in microseconds: 2599 µs
+Elapsed time in microseconds: 116507 µs
+
+program: Jones/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 4
+Colors used: 11
+Elapsed reading time in microseconds: 102784 µs
+Elapsed algo time in microseconds: 16200 µs
+Elapsed writing time in microseconds: 2863 µs
+Elapsed time in microseconds: 121848 µs
+
+program: Jones/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 5
+Colors used: 14
+Elapsed reading time in microseconds: 89412 µs
+Elapsed algo time in microseconds: 15424 µs
+Elapsed writing time in microseconds: 2331 µs
+Elapsed time in microseconds: 107168 µs
+
+program: Jones/test_seq_1   graph(dir): go_sub_6793.gra   round: 1
+Colors used: 17
+Elapsed reading time in microseconds: 42700 µs
+Elapsed algo time in microseconds: 11606 µs
+Elapsed writing time in microseconds: 1509 µs
+Elapsed time in microseconds: 55816 µs
+
+program: Jones/test_seq_1   graph(dir): go_sub_6793.gra   round: 2
+Colors used: 17
+Elapsed reading time in microseconds: 40987 µs
+Elapsed algo time in microseconds: 11608 µs
+Elapsed writing time in microseconds: 1545 µs
+Elapsed time in microseconds: 54140 µs
+
+program: Jones/test_seq_1   graph(dir): go_sub_6793.gra   round: 3
+Colors used: 17
+Elapsed reading time in microseconds: 41199 µs
+Elapsed algo time in microseconds: 11863 µs
+Elapsed writing time in microseconds: 1693 µs
+Elapsed time in microseconds: 54756 µs
+
+program: Jones/test_seq_1   graph(dir): go_sub_6793.gra   round: 4
+Colors used: 17
+Elapsed reading time in microseconds: 41194 µs
+Elapsed algo time in microseconds: 11562 µs
+Elapsed writing time in microseconds: 1529 µs
+Elapsed time in microseconds: 54286 µs
+
+program: Jones/test_seq_1   graph(dir): go_sub_6793.gra   round: 5
+Colors used: 17
+Elapsed reading time in microseconds: 41545 µs
+Elapsed algo time in microseconds: 11715 µs
+Elapsed writing time in microseconds: 1731 µs
+Elapsed time in microseconds: 54992 µs
+
+program: Jones/test_seq_1   graph(dir): go_uniprot.gra   round: 1
+Colors used: 186
+Elapsed reading time in microseconds: 50035426 µs
+Elapsed algo time in microseconds: 150125172 µs
+Elapsed writing time in microseconds: 1282815 µs
+Elapsed time in microseconds: 201443413 µs
+
+program: Jones/test_seq_1   graph(dir): go_uniprot.gra   round: 2
+Colors used: 189
+Elapsed reading time in microseconds: 49568231 µs
+Elapsed algo time in microseconds: 142862932 µs
+Elapsed writing time in microseconds: 1256463 µs
+Elapsed time in microseconds: 193687627 µs
+
+program: Jones/test_seq_1   graph(dir): go_uniprot.gra   round: 3
+Colors used: 182
+Elapsed reading time in microseconds: 48719678 µs
+Elapsed algo time in microseconds: 146338129 µs
+Elapsed writing time in microseconds: 1322778 µs
+Elapsed time in microseconds: 196380585 µs
+
+program: Jones/test_seq_1   graph(dir): go_uniprot.gra   round: 4
+Colors used: 179
+Elapsed reading time in microseconds: 48967686 µs
+Elapsed algo time in microseconds: 141614356 µs
+Elapsed writing time in microseconds: 1268547 µs
+Elapsed time in microseconds: 191850589 µs
+
+program: Jones/test_seq_1   graph(dir): go_uniprot.gra   round: 5
+Colors used: 194
+Elapsed reading time in microseconds: 48690889 µs
+Elapsed algo time in microseconds: 157145421 µs
+Elapsed writing time in microseconds: 1294085 µs
+Elapsed time in microseconds: 207130396 µs
+
+program: Jones/test_seq_1   graph(dir): human_dag_uniq.gra   round: 1
+Colors used: 12
+Elapsed reading time in microseconds: 281117 µs
+Elapsed algo time in microseconds: 46784 µs
+Elapsed writing time in microseconds: 8026 µs
+Elapsed time in microseconds: 335928 µs
+
+program: Jones/test_seq_1   graph(dir): human_dag_uniq.gra   round: 2
+Colors used: 12
+Elapsed reading time in microseconds: 290129 µs
+Elapsed algo time in microseconds: 52897 µs
+Elapsed writing time in microseconds: 7298 µs
+Elapsed time in microseconds: 350325 µs
+
+program: Jones/test_seq_1   graph(dir): human_dag_uniq.gra   round: 3
+Colors used: 12
+Elapsed reading time in microseconds: 293101 µs
+Elapsed algo time in microseconds: 50336 µs
+Elapsed writing time in microseconds: 8292 µs
+Elapsed time in microseconds: 351730 µs
+
+program: Jones/test_seq_1   graph(dir): human_dag_uniq.gra   round: 4
+Colors used: 13
+Elapsed reading time in microseconds: 272069 µs
+Elapsed algo time in microseconds: 46438 µs
+Elapsed writing time in microseconds: 6922 µs
+Elapsed time in microseconds: 325430 µs
+
+program: Jones/test_seq_1   graph(dir): human_dag_uniq.gra   round: 5
+Colors used: 13
+Elapsed reading time in microseconds: 283762 µs
+Elapsed algo time in microseconds: 46787 µs
+Elapsed writing time in microseconds: 6665 µs
+Elapsed time in microseconds: 337214 µs
+
+program: Jones/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 1
+Colors used: 10
+Elapsed reading time in microseconds: 18834 µs
+Elapsed algo time in microseconds: 4163 µs
+Elapsed writing time in microseconds: 1146 µs
+Elapsed time in microseconds: 24144 µs
+
+program: Jones/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 2
+Colors used: 10
+Elapsed reading time in microseconds: 18958 µs
+Elapsed algo time in microseconds: 4400 µs
+Elapsed writing time in microseconds: 1063 µs
+Elapsed time in microseconds: 24422 µs
+
+program: Jones/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 3
+Colors used: 10
+Elapsed reading time in microseconds: 19171 µs
+Elapsed algo time in microseconds: 4627 µs
+Elapsed writing time in microseconds: 1154 µs
+Elapsed time in microseconds: 24952 µs
+
+program: Jones/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 4
+Colors used: 10
+Elapsed reading time in microseconds: 19047 µs
+Elapsed algo time in microseconds: 4426 µs
+Elapsed writing time in microseconds: 898 µs
+Elapsed time in microseconds: 24373 µs
+
+program: Jones/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 5
+Colors used: 10
+Elapsed reading time in microseconds: 18990 µs
+Elapsed algo time in microseconds: 4830 µs
+Elapsed writing time in microseconds: 1108 µs
+Elapsed time in microseconds: 24928 µs
+
+program: Jones/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 1
+Colors used: 11
+Elapsed reading time in microseconds: 71208 µs
+Elapsed algo time in microseconds: 12234 µs
+Elapsed writing time in microseconds: 2280 µs
+Elapsed time in microseconds: 85724 µs
+
+program: Jones/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 2
+Colors used: 11
+Elapsed reading time in microseconds: 71895 µs
+Elapsed algo time in microseconds: 11179 µs
+Elapsed writing time in microseconds: 2012 µs
+Elapsed time in microseconds: 85087 µs
+
+program: Jones/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 3
+Colors used: 11
+Elapsed reading time in microseconds: 74084 µs
+Elapsed algo time in microseconds: 12543 µs
+Elapsed writing time in microseconds: 2195 µs
+Elapsed time in microseconds: 88823 µs
+
+program: Jones/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 4
+Colors used: 11
+Elapsed reading time in microseconds: 71178 µs
+Elapsed algo time in microseconds: 11271 µs
+Elapsed writing time in microseconds: 1917 µs
+Elapsed time in microseconds: 84367 µs
+
+program: Jones/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 5
+Colors used: 11
+Elapsed reading time in microseconds: 66086 µs
+Elapsed algo time in microseconds: 11162 µs
+Elapsed writing time in microseconds: 2145 µs
+Elapsed time in microseconds: 79394 µs
+
+program: Jones/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 1
+Colors used: 11
+Elapsed reading time in microseconds: 34814 µs
+Elapsed algo time in microseconds: 6894 µs
+Elapsed writing time in microseconds: 1318 µs
+Elapsed time in microseconds: 43027 µs
+
+program: Jones/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 2
+Colors used: 11
+Elapsed reading time in microseconds: 32801 µs
+Elapsed algo time in microseconds: 7277 µs
+Elapsed writing time in microseconds: 1543 µs
+Elapsed time in microseconds: 41622 µs
+
+program: Jones/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 3
+Colors used: 11
+Elapsed reading time in microseconds: 32635 µs
+Elapsed algo time in microseconds: 7298 µs
+Elapsed writing time in microseconds: 1370 µs
+Elapsed time in microseconds: 41304 µs
+
+program: Jones/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 4
+Colors used: 11
+Elapsed reading time in microseconds: 33171 µs
+Elapsed algo time in microseconds: 7659 µs
+Elapsed writing time in microseconds: 1345 µs
+Elapsed time in microseconds: 42175 µs
+
+program: Jones/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 5
+Colors used: 11
+Elapsed reading time in microseconds: 32638 µs
+Elapsed algo time in microseconds: 6997 µs
+Elapsed writing time in microseconds: 1265 µs
+Elapsed time in microseconds: 40901 µs
+
+program: Jones/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 1
+Colors used: 57
+Elapsed reading time in microseconds: 71527 µs
+Elapsed algo time in microseconds: 44875 µs
+Elapsed writing time in microseconds: 1868 µs
+Elapsed time in microseconds: 118270 µs
+
+program: Jones/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 2
+Colors used: 57
+Elapsed reading time in microseconds: 70116 µs
+Elapsed algo time in microseconds: 44244 µs
+Elapsed writing time in microseconds: 1935 µs
+Elapsed time in microseconds: 116296 µs
+
+program: Jones/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 3
+Colors used: 62
+Elapsed reading time in microseconds: 71471 µs
+Elapsed algo time in microseconds: 49466 µs
+Elapsed writing time in microseconds: 2146 µs
+Elapsed time in microseconds: 123085 µs
+
+program: Jones/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 4
+Colors used: 62
+Elapsed reading time in microseconds: 78122 µs
+Elapsed algo time in microseconds: 46051 µs
+Elapsed writing time in microseconds: 1986 µs
+Elapsed time in microseconds: 126160 µs
+
+program: Jones/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 5
+Colors used: 62
+Elapsed reading time in microseconds: 70196 µs
+Elapsed algo time in microseconds: 45930 µs
+Elapsed writing time in microseconds: 2394 µs
+Elapsed time in microseconds: 118521 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 1
+Colors used: 11
+Elapsed reading time in microseconds: 59903490 µs
+Elapsed algo time in microseconds: 34728338 µs
+Elapsed writing time in microseconds: 2962887 µs
+Elapsed time in microseconds: 97594716 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 2
+Colors used: 11
+Elapsed reading time in microseconds: 61531852 µs
+Elapsed algo time in microseconds: 33063066 µs
+Elapsed writing time in microseconds: 2701388 µs
+Elapsed time in microseconds: 97296307 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 3
+Colors used: 11
+Elapsed reading time in microseconds: 59905195 µs
+Elapsed algo time in microseconds: 33295149 µs
+Elapsed writing time in microseconds: 2716938 µs
+Elapsed time in microseconds: 95917283 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 4
+Colors used: 11
+Elapsed reading time in microseconds: 59146852 µs
+Elapsed algo time in microseconds: 34525671 µs
+Elapsed writing time in microseconds: 2686463 µs
+Elapsed time in microseconds: 96358987 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 5
+Colors used: 11
+Elapsed reading time in microseconds: 59896255 µs
+Elapsed algo time in microseconds: 29635165 µs
+Elapsed writing time in microseconds: 2689982 µs
+Elapsed time in microseconds: 92221404 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 1
+Colors used: 8
+Elapsed reading time in microseconds: 34774997 µs
+Elapsed algo time in microseconds: 27736662 µs
+Elapsed writing time in microseconds: 3901911 µs
+Elapsed time in microseconds: 66413571 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 2
+Colors used: 11
+Elapsed reading time in microseconds: 34720786 µs
+Elapsed algo time in microseconds: 27923377 µs
+Elapsed writing time in microseconds: 4084497 µs
+Elapsed time in microseconds: 66728660 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 3
+Colors used: 9
+Elapsed reading time in microseconds: 33883486 µs
+Elapsed algo time in microseconds: 28230948 µs
+Elapsed writing time in microseconds: 4158105 µs
+Elapsed time in microseconds: 66272540 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 4
+Colors used: 9
+Elapsed reading time in microseconds: 33715509 µs
+Elapsed algo time in microseconds: 28196174 µs
+Elapsed writing time in microseconds: 4308718 µs
+Elapsed time in microseconds: 66220403 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 5
+Colors used: 9
+Elapsed reading time in microseconds: 33854182 µs
+Elapsed algo time in microseconds: 28112587 µs
+Elapsed writing time in microseconds: 4147623 µs
+Elapsed time in microseconds: 66114393 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 1
+Colors used: 7
+Elapsed reading time in microseconds: 5451077 µs
+Elapsed algo time in microseconds: 2671387 µs
+Elapsed writing time in microseconds: 272665 µs
+Elapsed time in microseconds: 8395130 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 2
+Colors used: 7
+Elapsed reading time in microseconds: 5308642 µs
+Elapsed algo time in microseconds: 2260055 µs
+Elapsed writing time in microseconds: 268082 µs
+Elapsed time in microseconds: 7836779 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 3
+Colors used: 5
+Elapsed reading time in microseconds: 5419828 µs
+Elapsed algo time in microseconds: 1929829 µs
+Elapsed writing time in microseconds: 267115 µs
+Elapsed time in microseconds: 7616772 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 4
+Colors used: 7
+Elapsed reading time in microseconds: 5439631 µs
+Elapsed algo time in microseconds: 2296817 µs
+Elapsed writing time in microseconds: 279595 µs
+Elapsed time in microseconds: 8016044 µs
+
+program: Jones/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 5
+Colors used: 7
+Elapsed reading time in microseconds: 5409080 µs
+Elapsed algo time in microseconds: 2828835 µs
+Elapsed writing time in microseconds: 263047 µs
+Elapsed time in microseconds: 8500964 µs
+
+program: Jones/test_seq_1   graph(dir): v10.gra   round: 1
+Colors used: 8
+Elapsed reading time in microseconds: 406 µs
+Elapsed algo time in microseconds: 195 µs
+Elapsed writing time in microseconds: 691 µs
+Elapsed time in microseconds: 1293 µs
+
+program: Jones/test_seq_1   graph(dir): v10.gra   round: 2
+Colors used: 8
+Elapsed reading time in microseconds: 350 µs
+Elapsed algo time in microseconds: 195 µs
+Elapsed writing time in microseconds: 439 µs
+Elapsed time in microseconds: 985 µs
+
+program: Jones/test_seq_1   graph(dir): v10.gra   round: 3
+Colors used: 8
+Elapsed reading time in microseconds: 299 µs
+Elapsed algo time in microseconds: 167 µs
+Elapsed writing time in microseconds: 374 µs
+Elapsed time in microseconds: 841 µs
+
+program: Jones/test_seq_1   graph(dir): v10.gra   round: 4
+Colors used: 8
+Elapsed reading time in microseconds: 300 µs
+Elapsed algo time in microseconds: 170 µs
+Elapsed writing time in microseconds: 363 µs
+Elapsed time in microseconds: 834 µs
+
+program: Jones/test_seq_1   graph(dir): v10.gra   round: 5
+Colors used: 8
+Elapsed reading time in microseconds: 300 µs
+Elapsed algo time in microseconds: 172 µs
+Elapsed writing time in microseconds: 350 µs
+Elapsed time in microseconds: 823 µs
+
+program: Jones/test_seq_1   graph(dir): v100.gra   round: 1
+Colors used: 91
+Elapsed reading time in microseconds: 5086 µs
+Elapsed algo time in microseconds: 2014 µs
+Elapsed writing time in microseconds: 406 µs
+Elapsed time in microseconds: 7508 µs
+
+program: Jones/test_seq_1   graph(dir): v100.gra   round: 2
+Colors used: 91
+Elapsed reading time in microseconds: 2371 µs
+Elapsed algo time in microseconds: 1962 µs
+Elapsed writing time in microseconds: 369 µs
+Elapsed time in microseconds: 4702 µs
+
+program: Jones/test_seq_1   graph(dir): v100.gra   round: 3
+Colors used: 91
+Elapsed reading time in microseconds: 2425 µs
+Elapsed algo time in microseconds: 1938 µs
+Elapsed writing time in microseconds: 373 µs
+Elapsed time in microseconds: 4737 µs
+
+program: Jones/test_seq_1   graph(dir): v100.gra   round: 4
+Colors used: 91
+Elapsed reading time in microseconds: 2511 µs
+Elapsed algo time in microseconds: 1902 µs
+Elapsed writing time in microseconds: 405 µs
+Elapsed time in microseconds: 4819 µs
+
+program: Jones/test_seq_1   graph(dir): v100.gra   round: 5
+Colors used: 91
+Elapsed reading time in microseconds: 2513 µs
+Elapsed algo time in microseconds: 1852 µs
+Elapsed writing time in microseconds: 390 µs
+Elapsed time in microseconds: 4756 µs
+
+program: Jones/test_seq_1   graph(dir): v1000.gra   round: 1
+Colors used: 877
+Elapsed reading time in microseconds: 202272 µs
+Elapsed algo time in microseconds: 277099 µs
+Elapsed writing time in microseconds: 655 µs
+Elapsed time in microseconds: 480027 µs
+
+program: Jones/test_seq_1   graph(dir): v1000.gra   round: 2
+Colors used: 877
+Elapsed reading time in microseconds: 194744 µs
+Elapsed algo time in microseconds: 268182 µs
+Elapsed writing time in microseconds: 694 µs
+Elapsed time in microseconds: 463621 µs
+
+program: Jones/test_seq_1   graph(dir): v1000.gra   round: 3
+Colors used: 866
+Elapsed reading time in microseconds: 212197 µs
+Elapsed algo time in microseconds: 259786 µs
+Elapsed writing time in microseconds: 630 µs
+Elapsed time in microseconds: 472614 µs
+
+program: Jones/test_seq_1   graph(dir): v1000.gra   round: 4
+Colors used: 866
+Elapsed reading time in microseconds: 193188 µs
+Elapsed algo time in microseconds: 258250 µs
+Elapsed writing time in microseconds: 586 µs
+Elapsed time in microseconds: 452024 µs
+
+program: Jones/test_seq_1   graph(dir): v1000.gra   round: 5
+Colors used: 863
+Elapsed reading time in microseconds: 202215 µs
+Elapsed algo time in microseconds: 259075 µs
+Elapsed writing time in microseconds: 597 µs
+Elapsed time in microseconds: 461888 µs
+
+program: Jones/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 1
+Colors used: 15
+Elapsed reading time in microseconds: 68326 µs
+Elapsed algo time in microseconds: 12016 µs
+Elapsed writing time in microseconds: 1866 µs
+Elapsed time in microseconds: 82209 µs
+
+program: Jones/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 2
+Colors used: 15
+Elapsed reading time in microseconds: 65393 µs
+Elapsed algo time in microseconds: 12021 µs
+Elapsed writing time in microseconds: 1773 µs
+Elapsed time in microseconds: 79188 µs
+
+program: Jones/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 3
+Colors used: 13
+Elapsed reading time in microseconds: 66052 µs
+Elapsed algo time in microseconds: 12026 µs
+Elapsed writing time in microseconds: 1893 µs
+Elapsed time in microseconds: 79972 µs
+
+program: Jones/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 4
+Colors used: 13
+Elapsed reading time in microseconds: 64359 µs
+Elapsed algo time in microseconds: 12190 µs
+Elapsed writing time in microseconds: 1885 µs
+Elapsed time in microseconds: 78435 µs
+
+program: Jones/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 5
+Colors used: 13
+Elapsed reading time in microseconds: 65834 µs
+Elapsed algo time in microseconds: 12249 µs
+Elapsed writing time in microseconds: 2147 µs
+Elapsed time in microseconds: 80231 µs
+
+program: Jones/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 1
+Colors used: 15
+Elapsed reading time in microseconds: 38863 µs
+Elapsed algo time in microseconds: 8711 µs
+Elapsed writing time in microseconds: 1448 µs
+Elapsed time in microseconds: 49023 µs
+
+program: Jones/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 2
+Colors used: 15
+Elapsed reading time in microseconds: 36018 µs
+Elapsed algo time in microseconds: 8914 µs
+Elapsed writing time in microseconds: 1385 µs
+Elapsed time in microseconds: 46318 µs
+
+program: Jones/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 3
+Colors used: 15
+Elapsed reading time in microseconds: 35448 µs
+Elapsed algo time in microseconds: 8984 µs
+Elapsed writing time in microseconds: 1319 µs
+Elapsed time in microseconds: 45751 µs
+
+program: Jones/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 4
+Colors used: 15
+Elapsed reading time in microseconds: 36762 µs
+Elapsed algo time in microseconds: 8458 µs
+Elapsed writing time in microseconds: 1289 µs
+Elapsed time in microseconds: 46510 µs
+
+program: Jones/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 5
+Colors used: 15
+Elapsed reading time in microseconds: 34722 µs
+Elapsed algo time in microseconds: 8847 µs
+Elapsed writing time in microseconds: 1392 µs
+Elapsed time in microseconds: 44962 µs
+
+program: Jones/test_seq_1   graph(dir): yago_sub_6642.gra   round: 1
+Colors used: 56
+Elapsed reading time in microseconds: 45447 µs
+Elapsed algo time in microseconds: 33619 µs
+Elapsed writing time in microseconds: 1734 µs
+Elapsed time in microseconds: 80800 µs
+
+program: Jones/test_seq_1   graph(dir): yago_sub_6642.gra   round: 2
+Colors used: 56
+Elapsed reading time in microseconds: 44182 µs
+Elapsed algo time in microseconds: 34157 µs
+Elapsed writing time in microseconds: 1606 µs
+Elapsed time in microseconds: 79945 µs
+
+program: Jones/test_seq_1   graph(dir): yago_sub_6642.gra   round: 3
+Colors used: 56
+Elapsed reading time in microseconds: 44376 µs
+Elapsed algo time in microseconds: 34900 µs
+Elapsed writing time in microseconds: 1887 µs
+Elapsed time in microseconds: 81165 µs
+
+program: Jones/test_seq_1   graph(dir): yago_sub_6642.gra   round: 4
+Colors used: 56
+Elapsed reading time in microseconds: 42969 µs
+Elapsed algo time in microseconds: 32298 µs
+Elapsed writing time in microseconds: 1466 µs
+Elapsed time in microseconds: 76734 µs
+
+program: Jones/test_seq_1   graph(dir): yago_sub_6642.gra   round: 5
+Colors used: 54
+Elapsed reading time in microseconds: 42943 µs
+Elapsed algo time in microseconds: 35748 µs
+Elapsed writing time in microseconds: 1702 µs
+Elapsed time in microseconds: 80393 µs
+
+program: Jones/test_seq_2   graph(dir): agrocyc_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 88032 µs
+Elapsed algo time in microseconds: 35258 µs
+Elapsed writing time in microseconds: 2562 µs
+Elapsed time in microseconds: 125852 µs
+
+program: Jones/test_seq_2   graph(dir): agrocyc_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 87442 µs
+Elapsed algo time in microseconds: 37422 µs
+Elapsed writing time in microseconds: 2862 µs
+Elapsed time in microseconds: 127726 µs
+
+program: Jones/test_seq_2   graph(dir): agrocyc_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 96007 µs
+Elapsed algo time in microseconds: 37393 µs
+Elapsed writing time in microseconds: 2487 µs
+Elapsed time in microseconds: 135888 µs
+
+program: Jones/test_seq_2   graph(dir): agrocyc_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 96365 µs
+Elapsed algo time in microseconds: 40334 µs
+Elapsed writing time in microseconds: 2860 µs
+Elapsed time in microseconds: 139560 µs
+
+program: Jones/test_seq_2   graph(dir): agrocyc_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 86723 µs
+Elapsed algo time in microseconds: 36879 µs
+Elapsed writing time in microseconds: 2492 µs
+Elapsed time in microseconds: 126095 µs
+
+program: Jones/test_seq_2   graph(dir): amaze_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 20012 µs
+Elapsed algo time in microseconds: 12030 µs
+Elapsed writing time in microseconds: 1121 µs
+Elapsed time in microseconds: 33163 µs
+
+program: Jones/test_seq_2   graph(dir): amaze_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 20044 µs
+Elapsed algo time in microseconds: 12648 µs
+Elapsed writing time in microseconds: 1073 µs
+Elapsed time in microseconds: 33766 µs
+
+program: Jones/test_seq_2   graph(dir): amaze_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 19916 µs
+Elapsed algo time in microseconds: 12455 µs
+Elapsed writing time in microseconds: 1295 µs
+Elapsed time in microseconds: 33667 µs
+
+program: Jones/test_seq_2   graph(dir): amaze_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 19736 µs
+Elapsed algo time in microseconds: 12054 µs
+Elapsed writing time in microseconds: 1084 µs
+Elapsed time in microseconds: 32875 µs
+
+program: Jones/test_seq_2   graph(dir): amaze_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 21541 µs
+Elapsed algo time in microseconds: 13588 µs
+Elapsed writing time in microseconds: 1158 µs
+Elapsed time in microseconds: 36288 µs
+
+program: Jones/test_seq_2   graph(dir): anthra_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 97994 µs
+Elapsed algo time in microseconds: 47110 µs
+Elapsed writing time in microseconds: 3046 µs
+Elapsed time in microseconds: 148151 µs
+
+program: Jones/test_seq_2   graph(dir): anthra_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 87967 µs
+Elapsed algo time in microseconds: 41772 µs
+Elapsed writing time in microseconds: 3003 µs
+Elapsed time in microseconds: 132743 µs
+
+program: Jones/test_seq_2   graph(dir): anthra_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 88508 µs
+Elapsed algo time in microseconds: 41583 µs
+Elapsed writing time in microseconds: 2383 µs
+Elapsed time in microseconds: 132475 µs
+
+program: Jones/test_seq_2   graph(dir): anthra_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 95921 µs
+Elapsed algo time in microseconds: 47157 µs
+Elapsed writing time in microseconds: 3016 µs
+Elapsed time in microseconds: 146095 µs
+
+program: Jones/test_seq_2   graph(dir): anthra_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 99375 µs
+Elapsed algo time in microseconds: 44092 µs
+Elapsed writing time in microseconds: 2631 µs
+Elapsed time in microseconds: 146098 µs
+
+program: Jones/test_seq_2   graph(dir): arXiv_sub_6000-1.gra   round: 1
+Elapsed reading time in microseconds: 60133 µs
+Elapsed algo time in microseconds: 227721 µs
+Elapsed writing time in microseconds: 1493 µs
+Elapsed time in microseconds: 289348 µs
+
+program: Jones/test_seq_2   graph(dir): arXiv_sub_6000-1.gra   round: 2
+Elapsed reading time in microseconds: 63168 µs
+Elapsed algo time in microseconds: 197112 µs
+Elapsed writing time in microseconds: 1629 µs
+Elapsed time in microseconds: 261910 µs
+
+program: Jones/test_seq_2   graph(dir): arXiv_sub_6000-1.gra   round: 3
+Elapsed reading time in microseconds: 65356 µs
+Elapsed algo time in microseconds: 211147 µs
+Elapsed writing time in microseconds: 1634 µs
+Elapsed time in microseconds: 278139 µs
+
+program: Jones/test_seq_2   graph(dir): arXiv_sub_6000-1.gra   round: 4
+Elapsed reading time in microseconds: 59839 µs
+Elapsed algo time in microseconds: 200324 µs
+Elapsed writing time in microseconds: 1455 µs
+Elapsed time in microseconds: 261619 µs
+
+program: Jones/test_seq_2   graph(dir): arXiv_sub_6000-1.gra   round: 5
+Elapsed reading time in microseconds: 59605 µs
+Elapsed algo time in microseconds: 195076 µs
+Elapsed writing time in microseconds: 1500 µs
+Elapsed time in microseconds: 256181 µs
+
+program: Jones/test_seq_2   graph(dir): ba10k2d.gra   round: 1
+Elapsed reading time in microseconds: 40555 µs
+Elapsed algo time in microseconds: 44982 µs
+Elapsed writing time in microseconds: 2429 µs
+Elapsed time in microseconds: 87966 µs
+
+program: Jones/test_seq_2   graph(dir): ba10k2d.gra   round: 2
+Elapsed reading time in microseconds: 40514 µs
+Elapsed algo time in microseconds: 45493 µs
+Elapsed writing time in microseconds: 2340 µs
+Elapsed time in microseconds: 88348 µs
+
+program: Jones/test_seq_2   graph(dir): ba10k2d.gra   round: 3
+Elapsed reading time in microseconds: 41373 µs
+Elapsed algo time in microseconds: 46703 µs
+Elapsed writing time in microseconds: 2617 µs
+Elapsed time in microseconds: 90695 µs
+
+program: Jones/test_seq_2   graph(dir): ba10k2d.gra   round: 4
+Elapsed reading time in microseconds: 46074 µs
+Elapsed algo time in microseconds: 51479 µs
+Elapsed writing time in microseconds: 3019 µs
+Elapsed time in microseconds: 100573 µs
+
+program: Jones/test_seq_2   graph(dir): ba10k2d.gra   round: 5
+Elapsed reading time in microseconds: 45185 µs
+Elapsed algo time in microseconds: 48389 µs
+Elapsed writing time in microseconds: 2616 µs
+Elapsed time in microseconds: 96192 µs
+
+program: Jones/test_seq_2   graph(dir): ba10k5d.gra   round: 1
+Elapsed reading time in microseconds: 63069 µs
+Elapsed algo time in microseconds: 121448 µs
+Elapsed writing time in microseconds: 1997 µs
+Elapsed time in microseconds: 186515 µs
+
+program: Jones/test_seq_2   graph(dir): ba10k5d.gra   round: 2
+Elapsed reading time in microseconds: 62489 µs
+Elapsed algo time in microseconds: 136663 µs
+Elapsed writing time in microseconds: 2331 µs
+Elapsed time in microseconds: 201484 µs
+
+program: Jones/test_seq_2   graph(dir): ba10k5d.gra   round: 3
+Elapsed reading time in microseconds: 63149 µs
+Elapsed algo time in microseconds: 127825 µs
+Elapsed writing time in microseconds: 2709 µs
+Elapsed time in microseconds: 193684 µs
+
+program: Jones/test_seq_2   graph(dir): ba10k5d.gra   round: 4
+Elapsed reading time in microseconds: 63779 µs
+Elapsed algo time in microseconds: 134858 µs
+Elapsed writing time in microseconds: 2438 µs
+Elapsed time in microseconds: 201075 µs
+
+program: Jones/test_seq_2   graph(dir): ba10k5d.gra   round: 5
+Elapsed reading time in microseconds: 64655 µs
+Elapsed algo time in microseconds: 129759 µs
+Elapsed writing time in microseconds: 2029 µs
+Elapsed time in microseconds: 196444 µs
+
+program: Jones/test_seq_2   graph(dir): cit-Patents.scc.gra   round: 1
+Elapsed reading time in microseconds: 43754058 µs
+Elapsed algo time in microseconds: 92536713 µs
+Elapsed writing time in microseconds: 622826 µs
+Elapsed time in microseconds: 136913598 µs
+
+program: Jones/test_seq_2   graph(dir): cit-Patents.scc.gra   round: 2
+Elapsed reading time in microseconds: 43736761 µs
+Elapsed algo time in microseconds: 97070036 µs
+Elapsed writing time in microseconds: 616075 µs
+Elapsed time in microseconds: 141422873 µs
+
+program: Jones/test_seq_2   graph(dir): cit-Patents.scc.gra   round: 3
+Elapsed reading time in microseconds: 43685895 µs
+Elapsed algo time in microseconds: 96955441 µs
+Elapsed writing time in microseconds: 664577 µs
+Elapsed time in microseconds: 141305913 µs
+
+program: Jones/test_seq_2   graph(dir): cit-Patents.scc.gra   round: 4
+Elapsed reading time in microseconds: 43703909 µs
+Elapsed algo time in microseconds: 97062524 µs
+Elapsed writing time in microseconds: 745971 µs
+Elapsed time in microseconds: 141512405 µs
+
+program: Jones/test_seq_2   graph(dir): cit-Patents.scc.gra   round: 5
+Elapsed reading time in microseconds: 44988377 µs
+Elapsed algo time in microseconds: 95470300 µs
+Elapsed writing time in microseconds: 589117 µs
+Elapsed time in microseconds: 141047795 µs
+
+program: Jones/test_seq_2   graph(dir): citeseer.scc.gra   round: 1
+Elapsed reading time in microseconds: 3868400 µs
+Elapsed algo time in microseconds: 2350880 µs
+Elapsed writing time in microseconds: 135880 µs
+Elapsed time in microseconds: 6355161 µs
+
+program: Jones/test_seq_2   graph(dir): citeseer.scc.gra   round: 2
+Elapsed reading time in microseconds: 3798277 µs
+Elapsed algo time in microseconds: 2382181 µs
+Elapsed writing time in microseconds: 126456 µs
+Elapsed time in microseconds: 6306915 µs
+
+program: Jones/test_seq_2   graph(dir): citeseer.scc.gra   round: 3
+Elapsed reading time in microseconds: 3775948 µs
+Elapsed algo time in microseconds: 2346139 µs
+Elapsed writing time in microseconds: 119837 µs
+Elapsed time in microseconds: 6241925 µs
+
+program: Jones/test_seq_2   graph(dir): citeseer.scc.gra   round: 4
+Elapsed reading time in microseconds: 3812368 µs
+Elapsed algo time in microseconds: 2386003 µs
+Elapsed writing time in microseconds: 131382 µs
+Elapsed time in microseconds: 6329754 µs
+
+program: Jones/test_seq_2   graph(dir): citeseer.scc.gra   round: 5
+Elapsed reading time in microseconds: 3849501 µs
+Elapsed algo time in microseconds: 2407520 µs
+Elapsed writing time in microseconds: 127839 µs
+Elapsed time in microseconds: 6384861 µs
+
+program: Jones/test_seq_2   graph(dir): citeseer_sub_10720.gra   round: 1
+Elapsed reading time in microseconds: 72551 µs
+Elapsed algo time in microseconds: 98059 µs
+Elapsed writing time in microseconds: 2829 µs
+Elapsed time in microseconds: 173439 µs
+
+program: Jones/test_seq_2   graph(dir): citeseer_sub_10720.gra   round: 2
+Elapsed reading time in microseconds: 69409 µs
+Elapsed algo time in microseconds: 99866 µs
+Elapsed writing time in microseconds: 2543 µs
+Elapsed time in microseconds: 171819 µs
+
+program: Jones/test_seq_2   graph(dir): citeseer_sub_10720.gra   round: 3
+Elapsed reading time in microseconds: 75861 µs
+Elapsed algo time in microseconds: 101448 µs
+Elapsed writing time in microseconds: 2546 µs
+Elapsed time in microseconds: 179856 µs
+
+program: Jones/test_seq_2   graph(dir): citeseer_sub_10720.gra   round: 4
+Elapsed reading time in microseconds: 68290 µs
+Elapsed algo time in microseconds: 99680 µs
+Elapsed writing time in microseconds: 2585 µs
+Elapsed time in microseconds: 170556 µs
+
+program: Jones/test_seq_2   graph(dir): citeseer_sub_10720.gra   round: 5
+Elapsed reading time in microseconds: 68958 µs
+Elapsed algo time in microseconds: 99753 µs
+Elapsed writing time in microseconds: 2517 µs
+Elapsed time in microseconds: 171228 µs
+
+program: Jones/test_seq_2   graph(dir): citeseerx.gra   round: 1
+Elapsed reading time in microseconds: 60431923 µs
+Elapsed algo time in microseconds: 115713406 µs
+Elapsed writing time in microseconds: 1101586 µs
+Elapsed time in microseconds: 177246915 µs
+
+program: Jones/test_seq_2   graph(dir): citeseerx.gra   round: 2
+Elapsed reading time in microseconds: 60395780 µs
+Elapsed algo time in microseconds: 120438669 µs
+Elapsed writing time in microseconds: 1091150 µs
+Elapsed time in microseconds: 181925599 µs
+
+program: Jones/test_seq_2   graph(dir): citeseerx.gra   round: 3
+Elapsed reading time in microseconds: 60661530 µs
+Elapsed algo time in microseconds: 123177516 µs
+Elapsed writing time in microseconds: 1136528 µs
+Elapsed time in microseconds: 184975575 µs
+
+program: Jones/test_seq_2   graph(dir): citeseerx.gra   round: 4
+Elapsed reading time in microseconds: 60739459 µs
+Elapsed algo time in microseconds: 117429610 µs
+Elapsed writing time in microseconds: 1083901 µs
+Elapsed time in microseconds: 179252970 µs
+
+program: Jones/test_seq_2   graph(dir): citeseerx.gra   round: 5
+Elapsed reading time in microseconds: 60666860 µs
+Elapsed algo time in microseconds: 120430460 µs
+Elapsed writing time in microseconds: 1046229 µs
+Elapsed time in microseconds: 182143550 µs
+
+program: Jones/test_seq_2   graph(dir): cuda.gra   round: 1
+Elapsed reading time in microseconds: 338 µs
+Elapsed algo time in microseconds: 84 µs
+Elapsed writing time in microseconds: 1807 µs
+Elapsed time in microseconds: 2229 µs
+
+program: Jones/test_seq_2   graph(dir): cuda.gra   round: 2
+Elapsed reading time in microseconds: 325 µs
+Elapsed algo time in microseconds: 84 µs
+Elapsed writing time in microseconds: 421 µs
+Elapsed time in microseconds: 831 µs
+
+program: Jones/test_seq_2   graph(dir): cuda.gra   round: 3
+Elapsed reading time in microseconds: 333 µs
+Elapsed algo time in microseconds: 85 µs
+Elapsed writing time in microseconds: 425 µs
+Elapsed time in microseconds: 844 µs
+
+program: Jones/test_seq_2   graph(dir): cuda.gra   round: 4
+Elapsed reading time in microseconds: 323 µs
+Elapsed algo time in microseconds: 85 µs
+Elapsed writing time in microseconds: 416 µs
+Elapsed time in microseconds: 825 µs
+
+program: Jones/test_seq_2   graph(dir): cuda.gra   round: 5
+Elapsed reading time in microseconds: 323 µs
+Elapsed algo time in microseconds: 84 µs
+Elapsed writing time in microseconds: 437 µs
+Elapsed time in microseconds: 844 µs
+
+program: Jones/test_seq_2   graph(dir): ecoo_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 98769 µs
+Elapsed algo time in microseconds: 37458 µs
+Elapsed writing time in microseconds: 2508 µs
+Elapsed time in microseconds: 138736 µs
+
+program: Jones/test_seq_2   graph(dir): ecoo_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 88335 µs
+Elapsed algo time in microseconds: 35956 µs
+Elapsed writing time in microseconds: 2480 µs
+Elapsed time in microseconds: 126772 µs
+
+program: Jones/test_seq_2   graph(dir): ecoo_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 91021 µs
+Elapsed algo time in microseconds: 48355 µs
+Elapsed writing time in microseconds: 2940 µs
+Elapsed time in microseconds: 142317 µs
+
+program: Jones/test_seq_2   graph(dir): ecoo_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 97497 µs
+Elapsed algo time in microseconds: 41699 µs
+Elapsed writing time in microseconds: 2782 µs
+Elapsed time in microseconds: 141979 µs
+
+program: Jones/test_seq_2   graph(dir): ecoo_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 97449 µs
+Elapsed algo time in microseconds: 40965 µs
+Elapsed writing time in microseconds: 2533 µs
+Elapsed time in microseconds: 140947 µs
+
+program: Jones/test_seq_2   graph(dir): go_sub_6793.gra   round: 1
+Elapsed reading time in microseconds: 40779 µs
+Elapsed algo time in microseconds: 29269 µs
+Elapsed writing time in microseconds: 1858 µs
+Elapsed time in microseconds: 71907 µs
+
+program: Jones/test_seq_2   graph(dir): go_sub_6793.gra   round: 2
+Elapsed reading time in microseconds: 41111 µs
+Elapsed algo time in microseconds: 30019 µs
+Elapsed writing time in microseconds: 1956 µs
+Elapsed time in microseconds: 73086 µs
+
+program: Jones/test_seq_2   graph(dir): go_sub_6793.gra   round: 3
+Elapsed reading time in microseconds: 45492 µs
+Elapsed algo time in microseconds: 29106 µs
+Elapsed writing time in microseconds: 2063 µs
+Elapsed time in microseconds: 76662 µs
+
+program: Jones/test_seq_2   graph(dir): go_sub_6793.gra   round: 4
+Elapsed reading time in microseconds: 45313 µs
+Elapsed algo time in microseconds: 32849 µs
+Elapsed writing time in microseconds: 1937 µs
+Elapsed time in microseconds: 80100 µs
+
+program: Jones/test_seq_2   graph(dir): go_sub_6793.gra   round: 5
+Elapsed reading time in microseconds: 40885 µs
+Elapsed algo time in microseconds: 29446 µs
+Elapsed writing time in microseconds: 1994 µs
+Elapsed time in microseconds: 72326 µs
+
+program: Jones/test_seq_2   graph(dir): go_uniprot.gra   round: 1
+Elapsed reading time in microseconds: 49209967 µs
+Elapsed algo time in microseconds: 260199493 µs
+Elapsed writing time in microseconds: 1225973 µs
+Elapsed time in microseconds: 310635435 µs
+
+program: Jones/test_seq_2   graph(dir): go_uniprot.gra   round: 2
+Elapsed reading time in microseconds: 48998625 µs
+Elapsed algo time in microseconds: 272427842 µs
+Elapsed writing time in microseconds: 1132172 µs
+Elapsed time in microseconds: 322558640 µs
+
+program: Jones/test_seq_2   graph(dir): go_uniprot.gra   round: 3
+Elapsed reading time in microseconds: 48565390 µs
+Elapsed algo time in microseconds: 286736720 µs
+Elapsed writing time in microseconds: 1168464 µs
+Elapsed time in microseconds: 336470574 µs
+
+program: Jones/test_seq_2   graph(dir): go_uniprot.gra   round: 4
+Elapsed reading time in microseconds: 48909971 µs
+Elapsed algo time in microseconds: 269407121 µs
+Elapsed writing time in microseconds: 1202107 µs
+Elapsed time in microseconds: 319519199 µs
+
+program: Jones/test_seq_2   graph(dir): go_uniprot.gra   round: 5
+Elapsed reading time in microseconds: 48940454 µs
+Elapsed algo time in microseconds: 276351215 µs
+Elapsed writing time in microseconds: 1276221 µs
+Elapsed time in microseconds: 326567891 µs
+
+program: Jones/test_seq_2   graph(dir): human_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 298992 µs
+Elapsed algo time in microseconds: 140762 µs
+Elapsed writing time in microseconds: 10106 µs
+Elapsed time in microseconds: 449861 µs
+
+program: Jones/test_seq_2   graph(dir): human_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 288389 µs
+Elapsed algo time in microseconds: 123440 µs
+Elapsed writing time in microseconds: 6863 µs
+Elapsed time in microseconds: 418694 µs
+
+program: Jones/test_seq_2   graph(dir): human_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 280326 µs
+Elapsed algo time in microseconds: 131876 µs
+Elapsed writing time in microseconds: 6650 µs
+Elapsed time in microseconds: 418853 µs
+
+program: Jones/test_seq_2   graph(dir): human_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 281647 µs
+Elapsed algo time in microseconds: 133476 µs
+Elapsed writing time in microseconds: 7625 µs
+Elapsed time in microseconds: 422748 µs
+
+program: Jones/test_seq_2   graph(dir): human_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 276821 µs
+Elapsed algo time in microseconds: 128004 µs
+Elapsed writing time in microseconds: 6956 µs
+Elapsed time in microseconds: 411782 µs
+
+program: Jones/test_seq_2   graph(dir): kegg_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 18912 µs
+Elapsed algo time in microseconds: 12636 µs
+Elapsed writing time in microseconds: 1099 µs
+Elapsed time in microseconds: 32647 µs
+
+program: Jones/test_seq_2   graph(dir): kegg_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 18474 µs
+Elapsed algo time in microseconds: 12771 µs
+Elapsed writing time in microseconds: 1042 µs
+Elapsed time in microseconds: 32288 µs
+
+program: Jones/test_seq_2   graph(dir): kegg_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 20397 µs
+Elapsed algo time in microseconds: 14000 µs
+Elapsed writing time in microseconds: 1230 µs
+Elapsed time in microseconds: 35629 µs
+
+program: Jones/test_seq_2   graph(dir): kegg_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 20864 µs
+Elapsed algo time in microseconds: 14185 µs
+Elapsed writing time in microseconds: 1198 µs
+Elapsed time in microseconds: 36247 µs
+
+program: Jones/test_seq_2   graph(dir): kegg_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 18843 µs
+Elapsed algo time in microseconds: 12800 µs
+Elapsed writing time in microseconds: 999 µs
+Elapsed time in microseconds: 32642 µs
+
+program: Jones/test_seq_2   graph(dir): mtbrv_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 65884 µs
+Elapsed algo time in microseconds: 28117 µs
+Elapsed writing time in microseconds: 1999 µs
+Elapsed time in microseconds: 96001 µs
+
+program: Jones/test_seq_2   graph(dir): mtbrv_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 71796 µs
+Elapsed algo time in microseconds: 30118 µs
+Elapsed writing time in microseconds: 2010 µs
+Elapsed time in microseconds: 103924 µs
+
+program: Jones/test_seq_2   graph(dir): mtbrv_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 67597 µs
+Elapsed algo time in microseconds: 30760 µs
+Elapsed writing time in microseconds: 2320 µs
+Elapsed time in microseconds: 100678 µs
+
+program: Jones/test_seq_2   graph(dir): mtbrv_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 66150 µs
+Elapsed algo time in microseconds: 29588 µs
+Elapsed writing time in microseconds: 1975 µs
+Elapsed time in microseconds: 97714 µs
+
+program: Jones/test_seq_2   graph(dir): mtbrv_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 67306 µs
+Elapsed algo time in microseconds: 30053 µs
+Elapsed writing time in microseconds: 2002 µs
+Elapsed time in microseconds: 99362 µs
+
+program: Jones/test_seq_2   graph(dir): nasa_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 36803 µs
+Elapsed algo time in microseconds: 20440 µs
+Elapsed writing time in microseconds: 1698 µs
+Elapsed time in microseconds: 58942 µs
+
+program: Jones/test_seq_2   graph(dir): nasa_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 35586 µs
+Elapsed algo time in microseconds: 18917 µs
+Elapsed writing time in microseconds: 1570 µs
+Elapsed time in microseconds: 56074 µs
+
+program: Jones/test_seq_2   graph(dir): nasa_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 33001 µs
+Elapsed algo time in microseconds: 18016 µs
+Elapsed writing time in microseconds: 1715 µs
+Elapsed time in microseconds: 52733 µs
+
+program: Jones/test_seq_2   graph(dir): nasa_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 32455 µs
+Elapsed algo time in microseconds: 17943 µs
+Elapsed writing time in microseconds: 1745 µs
+Elapsed time in microseconds: 52144 µs
+
+program: Jones/test_seq_2   graph(dir): nasa_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 32771 µs
+Elapsed algo time in microseconds: 18337 µs
+Elapsed writing time in microseconds: 1719 µs
+Elapsed time in microseconds: 52828 µs
+
+program: Jones/test_seq_2   graph(dir): pubmed_sub_9000-1.gra   round: 1
+Elapsed reading time in microseconds: 71927 µs
+Elapsed algo time in microseconds: 117794 µs
+Elapsed writing time in microseconds: 2264 µs
+Elapsed time in microseconds: 191985 µs
+
+program: Jones/test_seq_2   graph(dir): pubmed_sub_9000-1.gra   round: 2
+Elapsed reading time in microseconds: 77749 µs
+Elapsed algo time in microseconds: 125085 µs
+Elapsed writing time in microseconds: 1921 µs
+Elapsed time in microseconds: 204756 µs
+
+program: Jones/test_seq_2   graph(dir): pubmed_sub_9000-1.gra   round: 3
+Elapsed reading time in microseconds: 74038 µs
+Elapsed algo time in microseconds: 114785 µs
+Elapsed writing time in microseconds: 1908 µs
+Elapsed time in microseconds: 190732 µs
+
+program: Jones/test_seq_2   graph(dir): pubmed_sub_9000-1.gra   round: 4
+Elapsed reading time in microseconds: 71095 µs
+Elapsed algo time in microseconds: 118616 µs
+Elapsed writing time in microseconds: 2173 µs
+Elapsed time in microseconds: 191885 µs
+
+program: Jones/test_seq_2   graph(dir): pubmed_sub_9000-1.gra   round: 5
+Elapsed reading time in microseconds: 77618 µs
+Elapsed algo time in microseconds: 126050 µs
+Elapsed writing time in microseconds: 1934 µs
+Elapsed time in microseconds: 205603 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_100m.scc.gra   round: 1
+Elapsed reading time in microseconds: 59644413 µs
+Elapsed algo time in microseconds: 83129218 µs
+Elapsed writing time in microseconds: 2709661 µs
+Elapsed time in microseconds: 145483293 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_100m.scc.gra   round: 2
+Elapsed reading time in microseconds: 59321137 µs
+Elapsed algo time in microseconds: 64321035 µs
+Elapsed writing time in microseconds: 2663566 µs
+Elapsed time in microseconds: 126305738 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_100m.scc.gra   round: 3
+Elapsed reading time in microseconds: 59194558 µs
+Elapsed algo time in microseconds: 89122066 µs
+Elapsed writing time in microseconds: 2752412 µs
+Elapsed time in microseconds: 151069037 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_100m.scc.gra   round: 4
+Elapsed reading time in microseconds: 59358131 µs
+Elapsed algo time in microseconds: 55430683 µs
+Elapsed writing time in microseconds: 2704155 µs
+Elapsed time in microseconds: 117492970 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_100m.scc.gra   round: 5
+Elapsed reading time in microseconds: 60258150 µs
+Elapsed algo time in microseconds: 83103474 µs
+Elapsed writing time in microseconds: 2882951 µs
+Elapsed time in microseconds: 146244576 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_150m.scc.gra   round: 1
+Elapsed reading time in microseconds: 33422058 µs
+Elapsed algo time in microseconds: 76875785 µs
+Elapsed writing time in microseconds: 4013938 µs
+Elapsed time in microseconds: 114311781 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_150m.scc.gra   round: 2
+Elapsed reading time in microseconds: 33368637 µs
+Elapsed algo time in microseconds: 76160618 µs
+Elapsed writing time in microseconds: 4229831 µs
+Elapsed time in microseconds: 113759088 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_150m.scc.gra   round: 3
+Elapsed reading time in microseconds: 33310198 µs
+Elapsed algo time in microseconds: 75351982 µs
+Elapsed writing time in microseconds: 4283868 µs
+Elapsed time in microseconds: 112946049 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_150m.scc.gra   round: 4
+Elapsed reading time in microseconds: 33336331 µs
+Elapsed algo time in microseconds: 76885821 µs
+Elapsed writing time in microseconds: 4203866 µs
+Elapsed time in microseconds: 114426019 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_150m.scc.gra   round: 5
+Elapsed reading time in microseconds: 33673272 µs
+Elapsed algo time in microseconds: 75959385 µs
+Elapsed writing time in microseconds: 4218711 µs
+Elapsed time in microseconds: 113851368 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_22m.scc.gra   round: 1
+Elapsed reading time in microseconds: 5475278 µs
+Elapsed algo time in microseconds: 6415726 µs
+Elapsed writing time in microseconds: 415635 µs
+Elapsed time in microseconds: 12306640 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_22m.scc.gra   round: 2
+Elapsed reading time in microseconds: 5337571 µs
+Elapsed algo time in microseconds: 5395998 µs
+Elapsed writing time in microseconds: 295861 µs
+Elapsed time in microseconds: 11029430 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_22m.scc.gra   round: 3
+Elapsed reading time in microseconds: 5404134 µs
+Elapsed algo time in microseconds: 5140161 µs
+Elapsed writing time in microseconds: 278597 µs
+Elapsed time in microseconds: 10822893 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_22m.scc.gra   round: 4
+Elapsed reading time in microseconds: 5308606 µs
+Elapsed algo time in microseconds: 6738428 µs
+Elapsed writing time in microseconds: 467952 µs
+Elapsed time in microseconds: 12514987 µs
+
+program: Jones/test_seq_2   graph(dir): uniprotenc_22m.scc.gra   round: 5
+Elapsed reading time in microseconds: 5402091 µs
+Elapsed algo time in microseconds: 6261904 µs
+Elapsed writing time in microseconds: 375960 µs
+Elapsed time in microseconds: 12039955 µs
+
+program: Jones/test_seq_2   graph(dir): v10.gra   round: 1
+Elapsed reading time in microseconds: 338 µs
+Elapsed algo time in microseconds: 88 µs
+Elapsed writing time in microseconds: 772 µs
+Elapsed time in microseconds: 1199 µs
+
+program: Jones/test_seq_2   graph(dir): v10.gra   round: 2
+Elapsed reading time in microseconds: 346 µs
+Elapsed algo time in microseconds: 100 µs
+Elapsed writing time in microseconds: 442 µs
+Elapsed time in microseconds: 890 µs
+
+program: Jones/test_seq_2   graph(dir): v10.gra   round: 3
+Elapsed reading time in microseconds: 357 µs
+Elapsed algo time in microseconds: 105 µs
+Elapsed writing time in microseconds: 457 µs
+Elapsed time in microseconds: 920 µs
+
+program: Jones/test_seq_2   graph(dir): v10.gra   round: 4
+Elapsed reading time in microseconds: 349 µs
+Elapsed algo time in microseconds: 102 µs
+Elapsed writing time in microseconds: 440 µs
+Elapsed time in microseconds: 893 µs
+
+program: Jones/test_seq_2   graph(dir): v10.gra   round: 5
+Elapsed reading time in microseconds: 389 µs
+Elapsed algo time in microseconds: 102 µs
+Elapsed writing time in microseconds: 433 µs
+Elapsed time in microseconds: 925 µs
+
+program: Jones/test_seq_2   graph(dir): v100.gra   round: 1
+Elapsed reading time in microseconds: 2272 µs
+Elapsed algo time in microseconds: 7478 µs
+Elapsed writing time in microseconds: 458 µs
+Elapsed time in microseconds: 10210 µs
+
+program: Jones/test_seq_2   graph(dir): v100.gra   round: 2
+Elapsed reading time in microseconds: 2377 µs
+Elapsed algo time in microseconds: 6739 µs
+Elapsed writing time in microseconds: 438 µs
+Elapsed time in microseconds: 9556 µs
+
+program: Jones/test_seq_2   graph(dir): v100.gra   round: 3
+Elapsed reading time in microseconds: 2126 µs
+Elapsed algo time in microseconds: 6863 µs
+Elapsed writing time in microseconds: 485 µs
+Elapsed time in microseconds: 9476 µs
+
+program: Jones/test_seq_2   graph(dir): v100.gra   round: 4
+Elapsed reading time in microseconds: 2257 µs
+Elapsed algo time in microseconds: 7033 µs
+Elapsed writing time in microseconds: 419 µs
+Elapsed time in microseconds: 9710 µs
+
+program: Jones/test_seq_2   graph(dir): v100.gra   round: 5
+Elapsed reading time in microseconds: 2135 µs
+Elapsed algo time in microseconds: 6979 µs
+Elapsed writing time in microseconds: 493 µs
+Elapsed time in microseconds: 9608 µs
+
+program: Jones/test_seq_2   graph(dir): v1000.gra   round: 1
+Elapsed reading time in microseconds: 202466 µs
+Elapsed algo time in microseconds: 1174867 µs
+Elapsed writing time in microseconds: 738 µs
+Elapsed time in microseconds: 1378072 µs
+
+program: Jones/test_seq_2   graph(dir): v1000.gra   round: 2
+Elapsed reading time in microseconds: 195573 µs
+Elapsed algo time in microseconds: 1157539 µs
+Elapsed writing time in microseconds: 687 µs
+Elapsed time in microseconds: 1353800 µs
+
+program: Jones/test_seq_2   graph(dir): v1000.gra   round: 3
+Elapsed reading time in microseconds: 192544 µs
+Elapsed algo time in microseconds: 1156280 µs
+Elapsed writing time in microseconds: 684 µs
+Elapsed time in microseconds: 1349509 µs
+
+program: Jones/test_seq_2   graph(dir): v1000.gra   round: 4
+Elapsed reading time in microseconds: 191022 µs
+Elapsed algo time in microseconds: 1162554 µs
+Elapsed writing time in microseconds: 743 µs
+Elapsed time in microseconds: 1354320 µs
+
+program: Jones/test_seq_2   graph(dir): v1000.gra   round: 5
+Elapsed reading time in microseconds: 190142 µs
+Elapsed algo time in microseconds: 1169512 µs
+Elapsed writing time in microseconds: 675 µs
+Elapsed time in microseconds: 1360331 µs
+
+program: Jones/test_seq_2   graph(dir): vchocyc_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 68455 µs
+Elapsed algo time in microseconds: 29903 µs
+Elapsed writing time in microseconds: 2347 µs
+Elapsed time in microseconds: 100706 µs
+
+program: Jones/test_seq_2   graph(dir): vchocyc_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 65266 µs
+Elapsed algo time in microseconds: 30272 µs
+Elapsed writing time in microseconds: 2008 µs
+Elapsed time in microseconds: 97547 µs
+
+program: Jones/test_seq_2   graph(dir): vchocyc_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 64784 µs
+Elapsed algo time in microseconds: 31123 µs
+Elapsed writing time in microseconds: 1867 µs
+Elapsed time in microseconds: 97774 µs
+
+program: Jones/test_seq_2   graph(dir): vchocyc_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 65745 µs
+Elapsed algo time in microseconds: 30502 µs
+Elapsed writing time in microseconds: 1886 µs
+Elapsed time in microseconds: 98134 µs
+
+program: Jones/test_seq_2   graph(dir): vchocyc_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 65506 µs
+Elapsed algo time in microseconds: 30536 µs
+Elapsed writing time in microseconds: 1903 µs
+Elapsed time in microseconds: 97945 µs
+
+program: Jones/test_seq_2   graph(dir): xmark_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 34866 µs
+Elapsed algo time in microseconds: 21581 µs
+Elapsed writing time in microseconds: 1425 µs
+Elapsed time in microseconds: 57873 µs
+
+program: Jones/test_seq_2   graph(dir): xmark_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 35486 µs
+Elapsed algo time in microseconds: 21447 µs
+Elapsed writing time in microseconds: 1341 µs
+Elapsed time in microseconds: 58275 µs
+
+program: Jones/test_seq_2   graph(dir): xmark_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 35902 µs
+Elapsed algo time in microseconds: 21518 µs
+Elapsed writing time in microseconds: 1472 µs
+Elapsed time in microseconds: 58893 µs
+
+program: Jones/test_seq_2   graph(dir): xmark_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 35853 µs
+Elapsed algo time in microseconds: 21322 µs
+Elapsed writing time in microseconds: 1566 µs
+Elapsed time in microseconds: 58742 µs
+
+program: Jones/test_seq_2   graph(dir): xmark_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 35513 µs
+Elapsed algo time in microseconds: 21258 µs
+Elapsed writing time in microseconds: 1565 µs
+Elapsed time in microseconds: 58336 µs
+
+program: Jones/test_seq_2   graph(dir): yago_sub_6642.gra   round: 1
+Elapsed reading time in microseconds: 44018 µs
+Elapsed algo time in microseconds: 97611 µs
+Elapsed writing time in microseconds: 1765 µs
+Elapsed time in microseconds: 143395 µs
+
+program: Jones/test_seq_2   graph(dir): yago_sub_6642.gra   round: 2
+Elapsed reading time in microseconds: 44057 µs
+Elapsed algo time in microseconds: 96496 µs
+Elapsed writing time in microseconds: 1522 µs
+Elapsed time in microseconds: 142076 µs
+
+program: Jones/test_seq_2   graph(dir): yago_sub_6642.gra   round: 3
+Elapsed reading time in microseconds: 43789 µs
+Elapsed algo time in microseconds: 85953 µs
+Elapsed writing time in microseconds: 1488 µs
+Elapsed time in microseconds: 131231 µs
+
+program: Jones/test_seq_2   graph(dir): yago_sub_6642.gra   round: 4
+Elapsed reading time in microseconds: 43476 µs
+Elapsed algo time in microseconds: 85187 µs
+Elapsed writing time in microseconds: 1447 µs
+Elapsed time in microseconds: 130111 µs
+
+program: Jones/test_seq_2   graph(dir): yago_sub_6642.gra   round: 5
+Elapsed reading time in microseconds: 44446 µs
+Elapsed algo time in microseconds: 87647 µs
+Elapsed writing time in microseconds: 1535 µs
+Elapsed time in microseconds: 133630 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): agrocyc_dag_uniq.gra   round: 1
+Colors used: 9
+Elapsed reading time in microseconds: 88712 µs
+Elapsed algo time in microseconds: 21422 µs
+Elapsed writing time in microseconds: 2848 µs
+Elapsed time in microseconds: 112983 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): agrocyc_dag_uniq.gra   round: 2
+Colors used: 9
+Elapsed reading time in microseconds: 88850 µs
+Elapsed algo time in microseconds: 22098 µs
+Elapsed writing time in microseconds: 2519 µs
+Elapsed time in microseconds: 113468 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): agrocyc_dag_uniq.gra   round: 3
+Colors used: 9
+Elapsed reading time in microseconds: 89672 µs
+Elapsed algo time in microseconds: 24275 µs
+Elapsed writing time in microseconds: 2592 µs
+Elapsed time in microseconds: 116540 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): agrocyc_dag_uniq.gra   round: 4
+Colors used: 9
+Elapsed reading time in microseconds: 98332 µs
+Elapsed algo time in microseconds: 25040 µs
+Elapsed writing time in microseconds: 2500 µs
+Elapsed time in microseconds: 125873 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): agrocyc_dag_uniq.gra   round: 5
+Colors used: 10
+Elapsed reading time in microseconds: 88162 µs
+Elapsed algo time in microseconds: 23607 µs
+Elapsed writing time in microseconds: 2542 µs
+Elapsed time in microseconds: 114312 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): amaze_dag_uniq.gra   round: 1
+Colors used: 7
+Elapsed reading time in microseconds: 20277 µs
+Elapsed algo time in microseconds: 7121 µs
+Elapsed writing time in microseconds: 1323 µs
+Elapsed time in microseconds: 28722 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): amaze_dag_uniq.gra   round: 2
+Colors used: 7
+Elapsed reading time in microseconds: 19854 µs
+Elapsed algo time in microseconds: 6434 µs
+Elapsed writing time in microseconds: 1002 µs
+Elapsed time in microseconds: 27291 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): amaze_dag_uniq.gra   round: 3
+Colors used: 7
+Elapsed reading time in microseconds: 19639 µs
+Elapsed algo time in microseconds: 7010 µs
+Elapsed writing time in microseconds: 1142 µs
+Elapsed time in microseconds: 27791 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): amaze_dag_uniq.gra   round: 4
+Colors used: 7
+Elapsed reading time in microseconds: 19872 µs
+Elapsed algo time in microseconds: 6656 µs
+Elapsed writing time in microseconds: 958 µs
+Elapsed time in microseconds: 27487 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): amaze_dag_uniq.gra   round: 5
+Colors used: 7
+Elapsed reading time in microseconds: 19280 µs
+Elapsed algo time in microseconds: 6567 µs
+Elapsed writing time in microseconds: 1150 µs
+Elapsed time in microseconds: 26998 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): anthra_dag_uniq.gra   round: 1
+Colors used: 9
+Elapsed reading time in microseconds: 90066 µs
+Elapsed algo time in microseconds: 19218 µs
+Elapsed writing time in microseconds: 2516 µs
+Elapsed time in microseconds: 111800 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): anthra_dag_uniq.gra   round: 2
+Colors used: 9
+Elapsed reading time in microseconds: 87848 µs
+Elapsed algo time in microseconds: 18672 µs
+Elapsed writing time in microseconds: 2704 µs
+Elapsed time in microseconds: 109225 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): anthra_dag_uniq.gra   round: 3
+Colors used: 9
+Elapsed reading time in microseconds: 87316 µs
+Elapsed algo time in microseconds: 18117 µs
+Elapsed writing time in microseconds: 2355 µs
+Elapsed time in microseconds: 107790 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): anthra_dag_uniq.gra   round: 4
+Colors used: 9
+Elapsed reading time in microseconds: 84877 µs
+Elapsed algo time in microseconds: 18562 µs
+Elapsed writing time in microseconds: 2448 µs
+Elapsed time in microseconds: 105888 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): anthra_dag_uniq.gra   round: 5
+Colors used: 9
+Elapsed reading time in microseconds: 94549 µs
+Elapsed algo time in microseconds: 31520 µs
+Elapsed writing time in microseconds: 2770 µs
+Elapsed time in microseconds: 128840 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): arXiv_sub_6000-1.gra   round: 1
+Colors used: 92
+Elapsed reading time in microseconds: 65167 µs
+Elapsed algo time in microseconds: 141957 µs
+Elapsed writing time in microseconds: 1649 µs
+Elapsed time in microseconds: 208775 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): arXiv_sub_6000-1.gra   round: 2
+Colors used: 92
+Elapsed reading time in microseconds: 59306 µs
+Elapsed algo time in microseconds: 141264 µs
+Elapsed writing time in microseconds: 1570 µs
+Elapsed time in microseconds: 202141 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): arXiv_sub_6000-1.gra   round: 3
+Colors used: 92
+Elapsed reading time in microseconds: 58981 µs
+Elapsed algo time in microseconds: 145154 µs
+Elapsed writing time in microseconds: 1383 µs
+Elapsed time in microseconds: 205519 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): arXiv_sub_6000-1.gra   round: 4
+Colors used: 92
+Elapsed reading time in microseconds: 65900 µs
+Elapsed algo time in microseconds: 148580 µs
+Elapsed writing time in microseconds: 1614 µs
+Elapsed time in microseconds: 216094 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): arXiv_sub_6000-1.gra   round: 5
+Colors used: 92
+Elapsed reading time in microseconds: 68797 µs
+Elapsed algo time in microseconds: 161751 µs
+Elapsed writing time in microseconds: 1552 µs
+Elapsed time in microseconds: 232101 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k2d.gra   round: 1
+Colors used: 20
+Elapsed reading time in microseconds: 44266 µs
+Elapsed algo time in microseconds: 33121 µs
+Elapsed writing time in microseconds: 2488 µs
+Elapsed time in microseconds: 79876 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k2d.gra   round: 2
+Colors used: 20
+Elapsed reading time in microseconds: 39720 µs
+Elapsed algo time in microseconds: 29690 µs
+Elapsed writing time in microseconds: 1963 µs
+Elapsed time in microseconds: 71374 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k2d.gra   round: 3
+Colors used: 20
+Elapsed reading time in microseconds: 40602 µs
+Elapsed algo time in microseconds: 29918 µs
+Elapsed writing time in microseconds: 2232 µs
+Elapsed time in microseconds: 72753 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k2d.gra   round: 4
+Colors used: 20
+Elapsed reading time in microseconds: 41350 µs
+Elapsed algo time in microseconds: 30747 µs
+Elapsed writing time in microseconds: 2356 µs
+Elapsed time in microseconds: 74454 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k2d.gra   round: 5
+Colors used: 20
+Elapsed reading time in microseconds: 40427 µs
+Elapsed algo time in microseconds: 32627 µs
+Elapsed writing time in microseconds: 2567 µs
+Elapsed time in microseconds: 75622 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k5d.gra   round: 1
+Colors used: 40
+Elapsed reading time in microseconds: 61914 µs
+Elapsed algo time in microseconds: 85878 µs
+Elapsed writing time in microseconds: 2137 µs
+Elapsed time in microseconds: 149930 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k5d.gra   round: 2
+Colors used: 40
+Elapsed reading time in microseconds: 66124 µs
+Elapsed algo time in microseconds: 86414 µs
+Elapsed writing time in microseconds: 2092 µs
+Elapsed time in microseconds: 154632 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k5d.gra   round: 3
+Colors used: 40
+Elapsed reading time in microseconds: 69068 µs
+Elapsed algo time in microseconds: 90664 µs
+Elapsed writing time in microseconds: 2585 µs
+Elapsed time in microseconds: 162318 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k5d.gra   round: 4
+Colors used: 42
+Elapsed reading time in microseconds: 61355 µs
+Elapsed algo time in microseconds: 91811 µs
+Elapsed writing time in microseconds: 2544 µs
+Elapsed time in microseconds: 155712 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ba10k5d.gra   round: 5
+Colors used: 42
+Elapsed reading time in microseconds: 61759 µs
+Elapsed algo time in microseconds: 92206 µs
+Elapsed writing time in microseconds: 2143 µs
+Elapsed time in microseconds: 156109 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): cit-Patents.scc.gra   round: 1
+Colors used: 106
+Elapsed reading time in microseconds: 43223560 µs
+Elapsed algo time in microseconds: 72865112 µs
+Elapsed writing time in microseconds: 668601 µs
+Elapsed time in microseconds: 116757275 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): cit-Patents.scc.gra   round: 2
+Colors used: 106
+Elapsed reading time in microseconds: 43862165 µs
+Elapsed algo time in microseconds: 74046742 µs
+Elapsed writing time in microseconds: 676526 µs
+Elapsed time in microseconds: 118585434 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): cit-Patents.scc.gra   round: 3
+Colors used: 105
+Elapsed reading time in microseconds: 43478062 µs
+Elapsed algo time in microseconds: 72341745 µs
+Elapsed writing time in microseconds: 675396 µs
+Elapsed time in microseconds: 116495204 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): cit-Patents.scc.gra   round: 4
+Colors used: 107
+Elapsed reading time in microseconds: 43377406 µs
+Elapsed algo time in microseconds: 71835961 µs
+Elapsed writing time in microseconds: 651116 µs
+Elapsed time in microseconds: 115864483 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): cit-Patents.scc.gra   round: 5
+Colors used: 105
+Elapsed reading time in microseconds: 43727184 µs
+Elapsed algo time in microseconds: 70651897 µs
+Elapsed writing time in microseconds: 669868 µs
+Elapsed time in microseconds: 115048950 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer.scc.gra   round: 1
+Colors used: 7
+Elapsed reading time in microseconds: 3874925 µs
+Elapsed algo time in microseconds: 1098399 µs
+Elapsed writing time in microseconds: 118740 µs
+Elapsed time in microseconds: 5092065 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer.scc.gra   round: 2
+Colors used: 7
+Elapsed reading time in microseconds: 3787955 µs
+Elapsed algo time in microseconds: 1194414 µs
+Elapsed writing time in microseconds: 114966 µs
+Elapsed time in microseconds: 5097335 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer.scc.gra   round: 3
+Colors used: 7
+Elapsed reading time in microseconds: 3813644 µs
+Elapsed algo time in microseconds: 1182596 µs
+Elapsed writing time in microseconds: 121556 µs
+Elapsed time in microseconds: 5117798 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer.scc.gra   round: 4
+Colors used: 7
+Elapsed reading time in microseconds: 3812141 µs
+Elapsed algo time in microseconds: 1133405 µs
+Elapsed writing time in microseconds: 122111 µs
+Elapsed time in microseconds: 5067657 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer.scc.gra   round: 5
+Colors used: 7
+Elapsed reading time in microseconds: 3842373 µs
+Elapsed algo time in microseconds: 1091677 µs
+Elapsed writing time in microseconds: 131979 µs
+Elapsed time in microseconds: 5066029 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer_sub_10720.gra   round: 1
+Colors used: 36
+Elapsed reading time in microseconds: 74457 µs
+Elapsed algo time in microseconds: 74373 µs
+Elapsed writing time in microseconds: 2840 µs
+Elapsed time in microseconds: 151671 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer_sub_10720.gra   round: 2
+Colors used: 36
+Elapsed reading time in microseconds: 66774 µs
+Elapsed algo time in microseconds: 69269 µs
+Elapsed writing time in microseconds: 2745 µs
+Elapsed time in microseconds: 138789 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer_sub_10720.gra   round: 3
+Colors used: 34
+Elapsed reading time in microseconds: 69055 µs
+Elapsed algo time in microseconds: 68632 µs
+Elapsed writing time in microseconds: 2483 µs
+Elapsed time in microseconds: 140171 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer_sub_10720.gra   round: 4
+Colors used: 34
+Elapsed reading time in microseconds: 73760 µs
+Elapsed algo time in microseconds: 66658 µs
+Elapsed writing time in microseconds: 2382 µs
+Elapsed time in microseconds: 142800 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseer_sub_10720.gra   round: 5
+Colors used: 34
+Elapsed reading time in microseconds: 71601 µs
+Elapsed algo time in microseconds: 68018 µs
+Elapsed writing time in microseconds: 2295 µs
+Elapsed time in microseconds: 141915 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseerx.gra   round: 1
+Colors used: 119
+Elapsed reading time in microseconds: 59935320 µs
+Elapsed algo time in microseconds: 82739378 µs
+Elapsed writing time in microseconds: 1133113 µs
+Elapsed time in microseconds: 143807812 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseerx.gra   round: 2
+Colors used: 122
+Elapsed reading time in microseconds: 60578738 µs
+Elapsed algo time in microseconds: 88404877 µs
+Elapsed writing time in microseconds: 1142645 µs
+Elapsed time in microseconds: 150126261 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseerx.gra   round: 3
+Colors used: 119
+Elapsed reading time in microseconds: 60375812 µs
+Elapsed algo time in microseconds: 86467532 µs
+Elapsed writing time in microseconds: 1124933 µs
+Elapsed time in microseconds: 147968277 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseerx.gra   round: 4
+Colors used: 119
+Elapsed reading time in microseconds: 60879535 µs
+Elapsed algo time in microseconds: 83189375 µs
+Elapsed writing time in microseconds: 1169358 µs
+Elapsed time in microseconds: 145238270 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): citeseerx.gra   round: 5
+Colors used: 120
+Elapsed reading time in microseconds: 60459883 µs
+Elapsed algo time in microseconds: 83939777 µs
+Elapsed writing time in microseconds: 1183156 µs
+Elapsed time in microseconds: 145582818 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): cuda.gra   round: 1
+Colors used: 3
+Elapsed reading time in microseconds: 332 µs
+Elapsed algo time in microseconds: 169 µs
+Elapsed writing time in microseconds: 1947 µs
+Elapsed time in microseconds: 2450 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): cuda.gra   round: 2
+Colors used: 3
+Elapsed reading time in microseconds: 299 µs
+Elapsed algo time in microseconds: 176 µs
+Elapsed writing time in microseconds: 381 µs
+Elapsed time in microseconds: 857 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): cuda.gra   round: 3
+Colors used: 3
+Elapsed reading time in microseconds: 330 µs
+Elapsed algo time in microseconds: 197 µs
+Elapsed writing time in microseconds: 395 µs
+Elapsed time in microseconds: 923 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): cuda.gra   round: 4
+Colors used: 3
+Elapsed reading time in microseconds: 332 µs
+Elapsed algo time in microseconds: 199 µs
+Elapsed writing time in microseconds: 404 µs
+Elapsed time in microseconds: 936 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): cuda.gra   round: 5
+Colors used: 3
+Elapsed reading time in microseconds: 337 µs
+Elapsed algo time in microseconds: 198 µs
+Elapsed writing time in microseconds: 404 µs
+Elapsed time in microseconds: 940 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ecoo_dag_uniq.gra   round: 1
+Colors used: 10
+Elapsed reading time in microseconds: 86831 µs
+Elapsed algo time in microseconds: 22543 µs
+Elapsed writing time in microseconds: 2823 µs
+Elapsed time in microseconds: 112198 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ecoo_dag_uniq.gra   round: 2
+Colors used: 10
+Elapsed reading time in microseconds: 87833 µs
+Elapsed algo time in microseconds: 22508 µs
+Elapsed writing time in microseconds: 2688 µs
+Elapsed time in microseconds: 113030 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ecoo_dag_uniq.gra   round: 3
+Colors used: 10
+Elapsed reading time in microseconds: 88014 µs
+Elapsed algo time in microseconds: 21736 µs
+Elapsed writing time in microseconds: 2795 µs
+Elapsed time in microseconds: 112545 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ecoo_dag_uniq.gra   round: 4
+Colors used: 10
+Elapsed reading time in microseconds: 88626 µs
+Elapsed algo time in microseconds: 21941 µs
+Elapsed writing time in microseconds: 2421 µs
+Elapsed time in microseconds: 112990 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): ecoo_dag_uniq.gra   round: 5
+Colors used: 10
+Elapsed reading time in microseconds: 93112 µs
+Elapsed algo time in microseconds: 22988 µs
+Elapsed writing time in microseconds: 3261 µs
+Elapsed time in microseconds: 119362 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_sub_6793.gra   round: 1
+Colors used: 14
+Elapsed reading time in microseconds: 52333 µs
+Elapsed algo time in microseconds: 21461 µs
+Elapsed writing time in microseconds: 1889 µs
+Elapsed time in microseconds: 75684 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_sub_6793.gra   round: 2
+Colors used: 14
+Elapsed reading time in microseconds: 45160 µs
+Elapsed algo time in microseconds: 21531 µs
+Elapsed writing time in microseconds: 1788 µs
+Elapsed time in microseconds: 68479 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_sub_6793.gra   round: 3
+Colors used: 14
+Elapsed reading time in microseconds: 45134 µs
+Elapsed algo time in microseconds: 21295 µs
+Elapsed writing time in microseconds: 1718 µs
+Elapsed time in microseconds: 68148 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_sub_6793.gra   round: 4
+Colors used: 14
+Elapsed reading time in microseconds: 45328 µs
+Elapsed algo time in microseconds: 19401 µs
+Elapsed writing time in microseconds: 1669 µs
+Elapsed time in microseconds: 66399 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_sub_6793.gra   round: 5
+Colors used: 14
+Elapsed reading time in microseconds: 41826 µs
+Elapsed algo time in microseconds: 19444 µs
+Elapsed writing time in microseconds: 1732 µs
+Elapsed time in microseconds: 63003 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_uniprot.gra   round: 1
+Colors used: 153
+Elapsed reading time in microseconds: 49544268 µs
+Elapsed algo time in microseconds: 220128229 µs
+Elapsed writing time in microseconds: 1228197 µs
+Elapsed time in microseconds: 270900695 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_uniprot.gra   round: 2
+Colors used: 144
+Elapsed reading time in microseconds: 49153113 µs
+Elapsed algo time in microseconds: 231523763 µs
+Elapsed writing time in microseconds: 1275846 µs
+Elapsed time in microseconds: 281952723 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_uniprot.gra   round: 3
+Colors used: 143
+Elapsed reading time in microseconds: 49336616 µs
+Elapsed algo time in microseconds: 233776516 µs
+Elapsed writing time in microseconds: 1325735 µs
+Elapsed time in microseconds: 284438868 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_uniprot.gra   round: 4
+Colors used: 147
+Elapsed reading time in microseconds: 49164514 µs
+Elapsed algo time in microseconds: 214164575 µs
+Elapsed writing time in microseconds: 1240239 µs
+Elapsed time in microseconds: 264569329 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): go_uniprot.gra   round: 5
+Colors used: 141
+Elapsed reading time in microseconds: 49152375 µs
+Elapsed algo time in microseconds: 227495694 µs
+Elapsed writing time in microseconds: 1258581 µs
+Elapsed time in microseconds: 277906650 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): human_dag_uniq.gra   round: 1
+Colors used: 9
+Elapsed reading time in microseconds: 276249 µs
+Elapsed algo time in microseconds: 58255 µs
+Elapsed writing time in microseconds: 8695 µs
+Elapsed time in microseconds: 343200 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): human_dag_uniq.gra   round: 2
+Colors used: 9
+Elapsed reading time in microseconds: 289661 µs
+Elapsed algo time in microseconds: 60350 µs
+Elapsed writing time in microseconds: 6189 µs
+Elapsed time in microseconds: 356201 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): human_dag_uniq.gra   round: 3
+Colors used: 9
+Elapsed reading time in microseconds: 309646 µs
+Elapsed algo time in microseconds: 72372 µs
+Elapsed writing time in microseconds: 8167 µs
+Elapsed time in microseconds: 390186 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): human_dag_uniq.gra   round: 4
+Colors used: 9
+Elapsed reading time in microseconds: 274392 µs
+Elapsed algo time in microseconds: 61637 µs
+Elapsed writing time in microseconds: 7251 µs
+Elapsed time in microseconds: 343281 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): human_dag_uniq.gra   round: 5
+Colors used: 9
+Elapsed reading time in microseconds: 278145 µs
+Elapsed algo time in microseconds: 62636 µs
+Elapsed writing time in microseconds: 7354 µs
+Elapsed time in microseconds: 348137 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): kegg_dag_uniq.gra   round: 1
+Colors used: 7
+Elapsed reading time in microseconds: 18869 µs
+Elapsed algo time in microseconds: 6776 µs
+Elapsed writing time in microseconds: 1240 µs
+Elapsed time in microseconds: 26885 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): kegg_dag_uniq.gra   round: 2
+Colors used: 7
+Elapsed reading time in microseconds: 20999 µs
+Elapsed algo time in microseconds: 8042 µs
+Elapsed writing time in microseconds: 1184 µs
+Elapsed time in microseconds: 30226 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): kegg_dag_uniq.gra   round: 3
+Colors used: 7
+Elapsed reading time in microseconds: 20493 µs
+Elapsed algo time in microseconds: 7727 µs
+Elapsed writing time in microseconds: 1128 µs
+Elapsed time in microseconds: 29349 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): kegg_dag_uniq.gra   round: 4
+Colors used: 7
+Elapsed reading time in microseconds: 19229 µs
+Elapsed algo time in microseconds: 7273 µs
+Elapsed writing time in microseconds: 1053 µs
+Elapsed time in microseconds: 27556 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): kegg_dag_uniq.gra   round: 5
+Colors used: 7
+Elapsed reading time in microseconds: 19037 µs
+Elapsed algo time in microseconds: 7773 µs
+Elapsed writing time in microseconds: 1206 µs
+Elapsed time in microseconds: 28018 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): mtbrv_dag_uniq.gra   round: 1
+Colors used: 9
+Elapsed reading time in microseconds: 66847 µs
+Elapsed algo time in microseconds: 18027 µs
+Elapsed writing time in microseconds: 2066 µs
+Elapsed time in microseconds: 86941 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): mtbrv_dag_uniq.gra   round: 2
+Colors used: 9
+Elapsed reading time in microseconds: 69081 µs
+Elapsed algo time in microseconds: 17891 µs
+Elapsed writing time in microseconds: 2113 µs
+Elapsed time in microseconds: 89086 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): mtbrv_dag_uniq.gra   round: 3
+Colors used: 9
+Elapsed reading time in microseconds: 73985 µs
+Elapsed algo time in microseconds: 19894 µs
+Elapsed writing time in microseconds: 2272 µs
+Elapsed time in microseconds: 96152 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): mtbrv_dag_uniq.gra   round: 4
+Colors used: 9
+Elapsed reading time in microseconds: 66105 µs
+Elapsed algo time in microseconds: 17559 µs
+Elapsed writing time in microseconds: 1990 µs
+Elapsed time in microseconds: 85654 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): mtbrv_dag_uniq.gra   round: 5
+Colors used: 9
+Elapsed reading time in microseconds: 74747 µs
+Elapsed algo time in microseconds: 19200 µs
+Elapsed writing time in microseconds: 2019 µs
+Elapsed time in microseconds: 95967 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): nasa_dag_uniq.gra   round: 1
+Colors used: 8
+Elapsed reading time in microseconds: 35496 µs
+Elapsed algo time in microseconds: 11651 µs
+Elapsed writing time in microseconds: 1537 µs
+Elapsed time in microseconds: 48685 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): nasa_dag_uniq.gra   round: 2
+Colors used: 8
+Elapsed reading time in microseconds: 33185 µs
+Elapsed algo time in microseconds: 10293 µs
+Elapsed writing time in microseconds: 1315 µs
+Elapsed time in microseconds: 44794 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): nasa_dag_uniq.gra   round: 3
+Colors used: 9
+Elapsed reading time in microseconds: 32098 µs
+Elapsed algo time in microseconds: 11199 µs
+Elapsed writing time in microseconds: 1329 µs
+Elapsed time in microseconds: 44627 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): nasa_dag_uniq.gra   round: 4
+Colors used: 9
+Elapsed reading time in microseconds: 31646 µs
+Elapsed algo time in microseconds: 10337 µs
+Elapsed writing time in microseconds: 1325 µs
+Elapsed time in microseconds: 43309 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): nasa_dag_uniq.gra   round: 5
+Colors used: 9
+Elapsed reading time in microseconds: 32660 µs
+Elapsed algo time in microseconds: 10884 µs
+Elapsed writing time in microseconds: 1437 µs
+Elapsed time in microseconds: 44981 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): pubmed_sub_9000-1.gra   round: 1
+Colors used: 55
+Elapsed reading time in microseconds: 70094 µs
+Elapsed algo time in microseconds: 82486 µs
+Elapsed writing time in microseconds: 2284 µs
+Elapsed time in microseconds: 154865 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): pubmed_sub_9000-1.gra   round: 2
+Colors used: 55
+Elapsed reading time in microseconds: 71387 µs
+Elapsed algo time in microseconds: 80499 µs
+Elapsed writing time in microseconds: 1958 µs
+Elapsed time in microseconds: 153845 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): pubmed_sub_9000-1.gra   round: 3
+Colors used: 55
+Elapsed reading time in microseconds: 70493 µs
+Elapsed algo time in microseconds: 91508 µs
+Elapsed writing time in microseconds: 2275 µs
+Elapsed time in microseconds: 164277 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): pubmed_sub_9000-1.gra   round: 4
+Colors used: 55
+Elapsed reading time in microseconds: 76904 µs
+Elapsed algo time in microseconds: 85797 µs
+Elapsed writing time in microseconds: 2272 µs
+Elapsed time in microseconds: 164974 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): pubmed_sub_9000-1.gra   round: 5
+Colors used: 55
+Elapsed reading time in microseconds: 77071 µs
+Elapsed algo time in microseconds: 83947 µs
+Elapsed writing time in microseconds: 2103 µs
+Elapsed time in microseconds: 163121 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_100m.scc.gra   round: 1
+Colors used: 7
+Elapsed reading time in microseconds: 59425191 µs
+Elapsed algo time in microseconds: 32409785 µs
+Elapsed writing time in microseconds: 2469299 µs
+Elapsed time in microseconds: 94304276 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_100m.scc.gra   round: 2
+Colors used: 7
+Elapsed reading time in microseconds: 60426283 µs
+Elapsed algo time in microseconds: 41101894 µs
+Elapsed writing time in microseconds: 2743259 µs
+Elapsed time in microseconds: 104271436 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_100m.scc.gra   round: 3
+Colors used: 7
+Elapsed reading time in microseconds: 60215869 µs
+Elapsed algo time in microseconds: 39544513 µs
+Elapsed writing time in microseconds: 2858381 µs
+Elapsed time in microseconds: 102618764 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_100m.scc.gra   round: 4
+Colors used: 7
+Elapsed reading time in microseconds: 59629387 µs
+Elapsed algo time in microseconds: 40722106 µs
+Elapsed writing time in microseconds: 3043271 µs
+Elapsed time in microseconds: 103394765 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_100m.scc.gra   round: 5
+Colors used: 7
+Elapsed reading time in microseconds: 59604200 µs
+Elapsed algo time in microseconds: 43766807 µs
+Elapsed writing time in microseconds: 2743301 µs
+Elapsed time in microseconds: 106114309 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_150m.scc.gra   round: 1
+Colors used: 6
+Elapsed reading time in microseconds: 33913501 µs
+Elapsed algo time in microseconds: 29579335 µs
+Elapsed writing time in microseconds: 3916977 µs
+Elapsed time in microseconds: 67409814 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_150m.scc.gra   round: 2
+Colors used: 6
+Elapsed reading time in microseconds: 33971190 µs
+Elapsed algo time in microseconds: 30203120 µs
+Elapsed writing time in microseconds: 4091560 µs
+Elapsed time in microseconds: 68265871 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_150m.scc.gra   round: 3
+Colors used: 6
+Elapsed reading time in microseconds: 33187795 µs
+Elapsed algo time in microseconds: 29956243 µs
+Elapsed writing time in microseconds: 4244162 µs
+Elapsed time in microseconds: 67388201 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_150m.scc.gra   round: 4
+Colors used: 6
+Elapsed reading time in microseconds: 33515283 µs
+Elapsed algo time in microseconds: 29966237 µs
+Elapsed writing time in microseconds: 4274281 µs
+Elapsed time in microseconds: 67755802 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_150m.scc.gra   round: 5
+Colors used: 6
+Elapsed reading time in microseconds: 34067806 µs
+Elapsed algo time in microseconds: 30594148 µs
+Elapsed writing time in microseconds: 4043212 µs
+Elapsed time in microseconds: 68705167 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_22m.scc.gra   round: 1
+Colors used: 5
+Elapsed reading time in microseconds: 5462855 µs
+Elapsed algo time in microseconds: 3470815 µs
+Elapsed writing time in microseconds: 267045 µs
+Elapsed time in microseconds: 9200715 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_22m.scc.gra   round: 2
+Colors used: 5
+Elapsed reading time in microseconds: 5371453 µs
+Elapsed algo time in microseconds: 3259663 µs
+Elapsed writing time in microseconds: 276050 µs
+Elapsed time in microseconds: 8907167 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_22m.scc.gra   round: 3
+Colors used: 5
+Elapsed reading time in microseconds: 5325976 µs
+Elapsed algo time in microseconds: 2846439 µs
+Elapsed writing time in microseconds: 247750 µs
+Elapsed time in microseconds: 8420165 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_22m.scc.gra   round: 4
+Colors used: 5
+Elapsed reading time in microseconds: 5363176 µs
+Elapsed algo time in microseconds: 3081749 µs
+Elapsed writing time in microseconds: 279616 µs
+Elapsed time in microseconds: 8724543 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): uniprotenc_22m.scc.gra   round: 5
+Colors used: 5
+Elapsed reading time in microseconds: 5387985 µs
+Elapsed algo time in microseconds: 3357672 µs
+Elapsed writing time in microseconds: 271529 µs
+Elapsed time in microseconds: 9017187 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v10.gra   round: 1
+Colors used: 7
+Elapsed reading time in microseconds: 393 µs
+Elapsed algo time in microseconds: 227 µs
+Elapsed writing time in microseconds: 699 µs
+Elapsed time in microseconds: 1319 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v10.gra   round: 2
+Colors used: 7
+Elapsed reading time in microseconds: 346 µs
+Elapsed algo time in microseconds: 225 µs
+Elapsed writing time in microseconds: 363 µs
+Elapsed time in microseconds: 935 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v10.gra   round: 3
+Colors used: 7
+Elapsed reading time in microseconds: 354 µs
+Elapsed algo time in microseconds: 222 µs
+Elapsed writing time in microseconds: 368 µs
+Elapsed time in microseconds: 945 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v10.gra   round: 4
+Colors used: 7
+Elapsed reading time in microseconds: 340 µs
+Elapsed algo time in microseconds: 234 µs
+Elapsed writing time in microseconds: 361 µs
+Elapsed time in microseconds: 936 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v10.gra   round: 5
+Colors used: 7
+Elapsed reading time in microseconds: 300 µs
+Elapsed algo time in microseconds: 197 µs
+Elapsed writing time in microseconds: 329 µs
+Elapsed time in microseconds: 828 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v100.gra   round: 1
+Colors used: 79
+Elapsed reading time in microseconds: 2179 µs
+Elapsed algo time in microseconds: 5356 µs
+Elapsed writing time in microseconds: 371 µs
+Elapsed time in microseconds: 7907 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v100.gra   round: 2
+Colors used: 79
+Elapsed reading time in microseconds: 2464 µs
+Elapsed algo time in microseconds: 5482 µs
+Elapsed writing time in microseconds: 333 µs
+Elapsed time in microseconds: 8279 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v100.gra   round: 3
+Colors used: 79
+Elapsed reading time in microseconds: 2493 µs
+Elapsed algo time in microseconds: 5377 µs
+Elapsed writing time in microseconds: 333 µs
+Elapsed time in microseconds: 8204 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v100.gra   round: 4
+Colors used: 79
+Elapsed reading time in microseconds: 2143 µs
+Elapsed algo time in microseconds: 5659 µs
+Elapsed writing time in microseconds: 390 µs
+Elapsed time in microseconds: 8193 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v100.gra   round: 5
+Colors used: 79
+Elapsed reading time in microseconds: 2308 µs
+Elapsed algo time in microseconds: 6141 µs
+Elapsed writing time in microseconds: 348 µs
+Elapsed time in microseconds: 8798 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v1000.gra   round: 1
+Colors used: 753
+Elapsed reading time in microseconds: 202175 µs
+Elapsed algo time in microseconds: 732990 µs
+Elapsed writing time in microseconds: 629 µs
+Elapsed time in microseconds: 935795 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v1000.gra   round: 2
+Colors used: 753
+Elapsed reading time in microseconds: 207588 µs
+Elapsed algo time in microseconds: 729753 µs
+Elapsed writing time in microseconds: 587 µs
+Elapsed time in microseconds: 937929 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v1000.gra   round: 3
+Colors used: 753
+Elapsed reading time in microseconds: 204793 µs
+Elapsed algo time in microseconds: 757566 µs
+Elapsed writing time in microseconds: 597 µs
+Elapsed time in microseconds: 962956 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v1000.gra   round: 4
+Colors used: 753
+Elapsed reading time in microseconds: 199775 µs
+Elapsed algo time in microseconds: 735314 µs
+Elapsed writing time in microseconds: 600 µs
+Elapsed time in microseconds: 935689 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): v1000.gra   round: 5
+Colors used: 753
+Elapsed reading time in microseconds: 194696 µs
+Elapsed algo time in microseconds: 732712 µs
+Elapsed writing time in microseconds: 615 µs
+Elapsed time in microseconds: 928023 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): vchocyc_dag_uniq.gra   round: 1
+Colors used: 9
+Elapsed reading time in microseconds: 67029 µs
+Elapsed algo time in microseconds: 16023 µs
+Elapsed writing time in microseconds: 1878 µs
+Elapsed time in microseconds: 84931 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): vchocyc_dag_uniq.gra   round: 2
+Colors used: 9
+Elapsed reading time in microseconds: 67656 µs
+Elapsed algo time in microseconds: 16001 µs
+Elapsed writing time in microseconds: 1842 µs
+Elapsed time in microseconds: 85500 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): vchocyc_dag_uniq.gra   round: 3
+Colors used: 9
+Elapsed reading time in microseconds: 66296 µs
+Elapsed algo time in microseconds: 17401 µs
+Elapsed writing time in microseconds: 2122 µs
+Elapsed time in microseconds: 85820 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): vchocyc_dag_uniq.gra   round: 4
+Colors used: 9
+Elapsed reading time in microseconds: 67843 µs
+Elapsed algo time in microseconds: 17481 µs
+Elapsed writing time in microseconds: 1865 µs
+Elapsed time in microseconds: 87190 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): vchocyc_dag_uniq.gra   round: 5
+Colors used: 9
+Elapsed reading time in microseconds: 73355 µs
+Elapsed algo time in microseconds: 19774 µs
+Elapsed writing time in microseconds: 2284 µs
+Elapsed time in microseconds: 95414 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): xmark_dag_uniq.gra   round: 1
+Colors used: 10
+Elapsed reading time in microseconds: 40240 µs
+Elapsed algo time in microseconds: 13389 µs
+Elapsed writing time in microseconds: 1408 µs
+Elapsed time in microseconds: 55039 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): xmark_dag_uniq.gra   round: 2
+Colors used: 10
+Elapsed reading time in microseconds: 39301 µs
+Elapsed algo time in microseconds: 13670 µs
+Elapsed writing time in microseconds: 1489 µs
+Elapsed time in microseconds: 54461 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): xmark_dag_uniq.gra   round: 3
+Colors used: 10
+Elapsed reading time in microseconds: 39116 µs
+Elapsed algo time in microseconds: 13591 µs
+Elapsed writing time in microseconds: 1512 µs
+Elapsed time in microseconds: 54221 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): xmark_dag_uniq.gra   round: 4
+Colors used: 10
+Elapsed reading time in microseconds: 35917 µs
+Elapsed algo time in microseconds: 11671 µs
+Elapsed writing time in microseconds: 1613 µs
+Elapsed time in microseconds: 49202 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): xmark_dag_uniq.gra   round: 5
+Colors used: 10
+Elapsed reading time in microseconds: 35017 µs
+Elapsed algo time in microseconds: 12460 µs
+Elapsed writing time in microseconds: 1294 µs
+Elapsed time in microseconds: 48773 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): yago_sub_6642.gra   round: 1
+Colors used: 31
+Elapsed reading time in microseconds: 44568 µs
+Elapsed algo time in microseconds: 58373 µs
+Elapsed writing time in microseconds: 1490 µs
+Elapsed time in microseconds: 104431 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): yago_sub_6642.gra   round: 2
+Colors used: 31
+Elapsed reading time in microseconds: 43749 µs
+Elapsed algo time in microseconds: 58458 µs
+Elapsed writing time in microseconds: 1417 µs
+Elapsed time in microseconds: 103625 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): yago_sub_6642.gra   round: 3
+Colors used: 31
+Elapsed reading time in microseconds: 45144 µs
+Elapsed algo time in microseconds: 59498 µs
+Elapsed writing time in microseconds: 2112 µs
+Elapsed time in microseconds: 106754 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): yago_sub_6642.gra   round: 4
+Colors used: 31
+Elapsed reading time in microseconds: 43863 µs
+Elapsed algo time in microseconds: 77777 µs
+Elapsed writing time in microseconds: 1731 µs
+Elapsed time in microseconds: 123372 µs
+
+program: Jones/test_seq_2_spinoff   graph(dir): yago_sub_6642.gra   round: 5
+Colors used: 31
+Elapsed reading time in microseconds: 48893 µs
+Elapsed algo time in microseconds: 88738 µs
+Elapsed writing time in microseconds: 1742 µs
+Elapsed time in microseconds: 139374 µs
+
+program: Ldf/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 87665 µs
+Elapsed algo time in microseconds: 39104 µs
+Elapsed writing time in microseconds: 2960 µs
+Elapsed time in microseconds: 129730 µs
+
+program: Ldf/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 91636 µs
+Elapsed algo time in microseconds: 39103 µs
+Elapsed writing time in microseconds: 2574 µs
+Elapsed time in microseconds: 133314 µs
+
+program: Ldf/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 96009 µs
+Elapsed algo time in microseconds: 43364 µs
+Elapsed writing time in microseconds: 2947 µs
+Elapsed time in microseconds: 142321 µs
+
+program: Ldf/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 93423 µs
+Elapsed algo time in microseconds: 38096 µs
+Elapsed writing time in microseconds: 2527 µs
+Elapsed time in microseconds: 134047 µs
+
+program: Ldf/test_seq_1   graph(dir): agrocyc_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 95300 µs
+Elapsed algo time in microseconds: 38268 µs
+Elapsed writing time in microseconds: 2535 µs
+Elapsed time in microseconds: 136103 µs
+
+program: Ldf/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 20289 µs
+Elapsed algo time in microseconds: 11107 µs
+Elapsed writing time in microseconds: 1130 µs
+Elapsed time in microseconds: 32527 µs
+
+program: Ldf/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 19754 µs
+Elapsed algo time in microseconds: 11033 µs
+Elapsed writing time in microseconds: 1097 µs
+Elapsed time in microseconds: 31884 µs
+
+program: Ldf/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 19900 µs
+Elapsed algo time in microseconds: 11063 µs
+Elapsed writing time in microseconds: 1392 µs
+Elapsed time in microseconds: 32356 µs
+
+program: Ldf/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 20341 µs
+Elapsed algo time in microseconds: 10679 µs
+Elapsed writing time in microseconds: 1107 µs
+Elapsed time in microseconds: 32128 µs
+
+program: Ldf/test_seq_1   graph(dir): amaze_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 22088 µs
+Elapsed algo time in microseconds: 11679 µs
+Elapsed writing time in microseconds: 1297 µs
+Elapsed time in microseconds: 35065 µs
+
+program: Ldf/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 97551 µs
+Elapsed algo time in microseconds: 41385 µs
+Elapsed writing time in microseconds: 3196 µs
+Elapsed time in microseconds: 142133 µs
+
+program: Ldf/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 97290 µs
+Elapsed algo time in microseconds: 41589 µs
+Elapsed writing time in microseconds: 3359 µs
+Elapsed time in microseconds: 142238 µs
+
+program: Ldf/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 92484 µs
+Elapsed algo time in microseconds: 37369 µs
+Elapsed writing time in microseconds: 3255 µs
+Elapsed time in microseconds: 133109 µs
+
+program: Ldf/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 86599 µs
+Elapsed algo time in microseconds: 36819 µs
+Elapsed writing time in microseconds: 3186 µs
+Elapsed time in microseconds: 126605 µs
+
+program: Ldf/test_seq_1   graph(dir): anthra_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 88700 µs
+Elapsed algo time in microseconds: 37626 µs
+Elapsed writing time in microseconds: 3371 µs
+Elapsed time in microseconds: 129698 µs
+
+program: Ldf/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 1
+Elapsed reading time in microseconds: 60875 µs
+Elapsed algo time in microseconds: 596009 µs
+Elapsed writing time in microseconds: 1697 µs
+Elapsed time in microseconds: 658582 µs
+
+program: Ldf/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 2
+Elapsed reading time in microseconds: 59622 µs
+Elapsed algo time in microseconds: 587689 µs
+Elapsed writing time in microseconds: 2031 µs
+Elapsed time in microseconds: 649343 µs
+
+program: Ldf/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 3
+Elapsed reading time in microseconds: 65199 µs
+Elapsed algo time in microseconds: 550473 µs
+Elapsed writing time in microseconds: 1691 µs
+Elapsed time in microseconds: 617364 µs
+
+program: Ldf/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 4
+Elapsed reading time in microseconds: 59182 µs
+Elapsed algo time in microseconds: 549379 µs
+Elapsed writing time in microseconds: 1709 µs
+Elapsed time in microseconds: 610271 µs
+
+program: Ldf/test_seq_1   graph(dir): arXiv_sub_6000-1.gra   round: 5
+Elapsed reading time in microseconds: 61097 µs
+Elapsed algo time in microseconds: 535714 µs
+Elapsed writing time in microseconds: 2080 µs
+Elapsed time in microseconds: 598892 µs
+
+program: Ldf/test_seq_1   graph(dir): ba10k2d.gra   round: 1
+Elapsed reading time in microseconds: 42217 µs
+Elapsed algo time in microseconds: 65537 µs
+Elapsed writing time in microseconds: 2457 µs
+Elapsed time in microseconds: 110211 µs
+
+program: Ldf/test_seq_1   graph(dir): ba10k2d.gra   round: 2
+Elapsed reading time in microseconds: 40921 µs
+Elapsed algo time in microseconds: 66495 µs
+Elapsed writing time in microseconds: 2402 µs
+Elapsed time in microseconds: 109819 µs
+
+program: Ldf/test_seq_1   graph(dir): ba10k2d.gra   round: 3
+Elapsed reading time in microseconds: 41982 µs
+Elapsed algo time in microseconds: 68067 µs
+Elapsed writing time in microseconds: 2801 µs
+Elapsed time in microseconds: 112851 µs
+
+program: Ldf/test_seq_1   graph(dir): ba10k2d.gra   round: 4
+Elapsed reading time in microseconds: 41754 µs
+Elapsed algo time in microseconds: 66728 µs
+Elapsed writing time in microseconds: 2371 µs
+Elapsed time in microseconds: 110854 µs
+
+program: Ldf/test_seq_1   graph(dir): ba10k2d.gra   round: 5
+Elapsed reading time in microseconds: 41412 µs
+Elapsed algo time in microseconds: 68132 µs
+Elapsed writing time in microseconds: 2379 µs
+Elapsed time in microseconds: 111924 µs
+
+program: Ldf/test_seq_1   graph(dir): ba10k5d.gra   round: 1
+Elapsed reading time in microseconds: 62902 µs
+Elapsed algo time in microseconds: 203291 µs
+Elapsed writing time in microseconds: 2434 µs
+Elapsed time in microseconds: 268629 µs
+
+program: Ldf/test_seq_1   graph(dir): ba10k5d.gra   round: 2
+Elapsed reading time in microseconds: 63349 µs
+Elapsed algo time in microseconds: 217997 µs
+Elapsed writing time in microseconds: 2503 µs
+Elapsed time in microseconds: 283849 µs
+
+program: Ldf/test_seq_1   graph(dir): ba10k5d.gra   round: 3
+Elapsed reading time in microseconds: 62177 µs
+Elapsed algo time in microseconds: 207199 µs
+Elapsed writing time in microseconds: 2493 µs
+Elapsed time in microseconds: 271871 µs
+
+program: Ldf/test_seq_1   graph(dir): ba10k5d.gra   round: 4
+Elapsed reading time in microseconds: 62751 µs
+Elapsed algo time in microseconds: 205311 µs
+Elapsed writing time in microseconds: 2730 µs
+Elapsed time in microseconds: 270793 µs
+
+program: Ldf/test_seq_1   graph(dir): ba10k5d.gra   round: 5
+Elapsed reading time in microseconds: 62712 µs
+Elapsed algo time in microseconds: 217250 µs
+Elapsed writing time in microseconds: 2848 µs
+Elapsed time in microseconds: 282810 µs
+
+program: Ldf/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 1
+Elapsed reading time in microseconds: 43352498 µs
+Elapsed algo time in microseconds: 278011060 µs
+Elapsed writing time in microseconds: 1607052 µs
+Elapsed time in microseconds: 322970610 µs
+
+program: Ldf/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 2
+Elapsed reading time in microseconds: 43407568 µs
+Elapsed algo time in microseconds: 276751932 µs
+Elapsed writing time in microseconds: 1594525 µs
+Elapsed time in microseconds: 321754026 µs
+
+program: Ldf/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 3
+Elapsed reading time in microseconds: 43738734 µs
+Elapsed algo time in microseconds: 264470121 µs
+Elapsed writing time in microseconds: 1559255 µs
+Elapsed time in microseconds: 309768111 µs
+
+program: Ldf/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 4
+Elapsed reading time in microseconds: 43522913 µs
+Elapsed algo time in microseconds: 271803916 µs
+Elapsed writing time in microseconds: 1711138 µs
+Elapsed time in microseconds: 317037968 µs
+
+program: Ldf/test_seq_1   graph(dir): cit-Patents.scc.gra   round: 5
+Elapsed reading time in microseconds: 43589432 µs
+Elapsed algo time in microseconds: 286219823 µs
+Elapsed writing time in microseconds: 1618879 µs
+Elapsed time in microseconds: 331428135 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseer.scc.gra   round: 1
+Elapsed reading time in microseconds: 3897689 µs
+Elapsed algo time in microseconds: 2161339 µs
+Elapsed writing time in microseconds: 193064 µs
+Elapsed time in microseconds: 6252093 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseer.scc.gra   round: 2
+Elapsed reading time in microseconds: 3847426 µs
+Elapsed algo time in microseconds: 2175193 µs
+Elapsed writing time in microseconds: 192090 µs
+Elapsed time in microseconds: 6214710 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseer.scc.gra   round: 3
+Elapsed reading time in microseconds: 3819342 µs
+Elapsed algo time in microseconds: 2166484 µs
+Elapsed writing time in microseconds: 190774 µs
+Elapsed time in microseconds: 6176601 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseer.scc.gra   round: 4
+Elapsed reading time in microseconds: 3948744 µs
+Elapsed algo time in microseconds: 2173295 µs
+Elapsed writing time in microseconds: 198414 µs
+Elapsed time in microseconds: 6320454 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseer.scc.gra   round: 5
+Elapsed reading time in microseconds: 3967219 µs
+Elapsed algo time in microseconds: 2311225 µs
+Elapsed writing time in microseconds: 198485 µs
+Elapsed time in microseconds: 6476930 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 1
+Elapsed reading time in microseconds: 75591 µs
+Elapsed algo time in microseconds: 157578 µs
+Elapsed writing time in microseconds: 3179 µs
+Elapsed time in microseconds: 236349 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 2
+Elapsed reading time in microseconds: 76533 µs
+Elapsed algo time in microseconds: 158320 µs
+Elapsed writing time in microseconds: 3250 µs
+Elapsed time in microseconds: 238103 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 3
+Elapsed reading time in microseconds: 75096 µs
+Elapsed algo time in microseconds: 154489 µs
+Elapsed writing time in microseconds: 3030 µs
+Elapsed time in microseconds: 232616 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 4
+Elapsed reading time in microseconds: 75076 µs
+Elapsed algo time in microseconds: 157929 µs
+Elapsed writing time in microseconds: 3234 µs
+Elapsed time in microseconds: 236239 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseer_sub_10720.gra   round: 5
+Elapsed reading time in microseconds: 76745 µs
+Elapsed algo time in microseconds: 158546 µs
+Elapsed writing time in microseconds: 3173 µs
+Elapsed time in microseconds: 238465 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseerx.gra   round: 1
+Elapsed reading time in microseconds: 65559998 µs
+Elapsed algo time in microseconds: 180089252 µs
+Elapsed writing time in microseconds: 1673163 µs
+Elapsed time in microseconds: 247322414 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseerx.gra   round: 2
+Elapsed reading time in microseconds: 61879344 µs
+Elapsed algo time in microseconds: 176831452 µs
+Elapsed writing time in microseconds: 1646539 µs
+Elapsed time in microseconds: 240357336 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseerx.gra   round: 3
+Elapsed reading time in microseconds: 60510760 µs
+Elapsed algo time in microseconds: 183829692 µs
+Elapsed writing time in microseconds: 1698398 µs
+Elapsed time in microseconds: 246038851 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseerx.gra   round: 4
+Elapsed reading time in microseconds: 61206076 µs
+Elapsed algo time in microseconds: 178643721 µs
+Elapsed writing time in microseconds: 1628530 µs
+Elapsed time in microseconds: 241478328 µs
+
+program: Ldf/test_seq_1   graph(dir): citeseerx.gra   round: 5
+Elapsed reading time in microseconds: 61732447 µs
+Elapsed algo time in microseconds: 178712966 µs
+Elapsed writing time in microseconds: 1690534 µs
+Elapsed time in microseconds: 242135948 µs
+
+program: Ldf/test_seq_1   graph(dir): cuda.gra   round: 1
+Elapsed reading time in microseconds: 395 µs
+Elapsed algo time in microseconds: 84 µs
+Elapsed writing time in microseconds: 1819 µs
+Elapsed time in microseconds: 2299 µs
+
+program: Ldf/test_seq_1   graph(dir): cuda.gra   round: 2
+Elapsed reading time in microseconds: 337 µs
+Elapsed algo time in microseconds: 88 µs
+Elapsed writing time in microseconds: 472 µs
+Elapsed time in microseconds: 898 µs
+
+program: Ldf/test_seq_1   graph(dir): cuda.gra   round: 3
+Elapsed reading time in microseconds: 338 µs
+Elapsed algo time in microseconds: 84 µs
+Elapsed writing time in microseconds: 468 µs
+Elapsed time in microseconds: 891 µs
+
+program: Ldf/test_seq_1   graph(dir): cuda.gra   round: 4
+Elapsed reading time in microseconds: 339 µs
+Elapsed algo time in microseconds: 86 µs
+Elapsed writing time in microseconds: 484 µs
+Elapsed time in microseconds: 910 µs
+
+program: Ldf/test_seq_1   graph(dir): cuda.gra   round: 5
+Elapsed reading time in microseconds: 341 µs
+Elapsed algo time in microseconds: 82 µs
+Elapsed writing time in microseconds: 464 µs
+Elapsed time in microseconds: 888 µs
+
+program: Ldf/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 97445 µs
+Elapsed algo time in microseconds: 42219 µs
+Elapsed writing time in microseconds: 3408 µs
+Elapsed time in microseconds: 143072 µs
+
+program: Ldf/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 98566 µs
+Elapsed algo time in microseconds: 41149 µs
+Elapsed writing time in microseconds: 3044 µs
+Elapsed time in microseconds: 142760 µs
+
+program: Ldf/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 87604 µs
+Elapsed algo time in microseconds: 38602 µs
+Elapsed writing time in microseconds: 3011 µs
+Elapsed time in microseconds: 129218 µs
+
+program: Ldf/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 89799 µs
+Elapsed algo time in microseconds: 37334 µs
+Elapsed writing time in microseconds: 2781 µs
+Elapsed time in microseconds: 129916 µs
+
+program: Ldf/test_seq_1   graph(dir): ecoo_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 93197 µs
+Elapsed algo time in microseconds: 42828 µs
+Elapsed writing time in microseconds: 3678 µs
+Elapsed time in microseconds: 139705 µs
+
+program: Ldf/test_seq_1   graph(dir): go_sub_6793.gra   round: 1
+Elapsed reading time in microseconds: 52140 µs
+Elapsed algo time in microseconds: 39442 µs
+Elapsed writing time in microseconds: 2286 µs
+Elapsed time in microseconds: 93870 µs
+
+program: Ldf/test_seq_1   graph(dir): go_sub_6793.gra   round: 2
+Elapsed reading time in microseconds: 45316 µs
+Elapsed algo time in microseconds: 36731 µs
+Elapsed writing time in microseconds: 1855 µs
+Elapsed time in microseconds: 83902 µs
+
+program: Ldf/test_seq_1   graph(dir): go_sub_6793.gra   round: 3
+Elapsed reading time in microseconds: 42491 µs
+Elapsed algo time in microseconds: 34733 µs
+Elapsed writing time in microseconds: 1835 µs
+Elapsed time in microseconds: 79060 µs
+
+program: Ldf/test_seq_1   graph(dir): go_sub_6793.gra   round: 4
+Elapsed reading time in microseconds: 41584 µs
+Elapsed algo time in microseconds: 34591 µs
+Elapsed writing time in microseconds: 1765 µs
+Elapsed time in microseconds: 77941 µs
+
+program: Ldf/test_seq_1   graph(dir): go_sub_6793.gra   round: 5
+Elapsed reading time in microseconds: 41532 µs
+Elapsed algo time in microseconds: 35087 µs
+Elapsed writing time in microseconds: 1887 µs
+Elapsed time in microseconds: 78507 µs
+
+program: Ldf/test_seq_1   graph(dir): go_uniprot.gra   round: 1
+Elapsed reading time in microseconds: 49365216 µs
+Elapsed algo time in microseconds: 45931121 µs
+Elapsed writing time in microseconds: 1192638 µs
+Elapsed time in microseconds: 96488975 µs
+
+program: Ldf/test_seq_1   graph(dir): go_uniprot.gra   round: 2
+Elapsed reading time in microseconds: 48819426 µs
+Elapsed algo time in microseconds: 46067961 µs
+Elapsed writing time in microseconds: 1187187 µs
+Elapsed time in microseconds: 96074575 µs
+
+program: Ldf/test_seq_1   graph(dir): go_uniprot.gra   round: 3
+Elapsed reading time in microseconds: 48980455 µs
+Elapsed algo time in microseconds: 45918219 µs
+Elapsed writing time in microseconds: 1181550 µs
+Elapsed time in microseconds: 96080225 µs
+
+program: Ldf/test_seq_1   graph(dir): go_uniprot.gra   round: 4
+Elapsed reading time in microseconds: 49067814 µs
+Elapsed algo time in microseconds: 46003045 µs
+Elapsed writing time in microseconds: 1135209 µs
+Elapsed time in microseconds: 96206069 µs
+
+program: Ldf/test_seq_1   graph(dir): go_uniprot.gra   round: 5
+Elapsed reading time in microseconds: 48701095 µs
+Elapsed algo time in microseconds: 45698491 µs
+Elapsed writing time in microseconds: 1268634 µs
+Elapsed time in microseconds: 95668222 µs
+
+program: Ldf/test_seq_1   graph(dir): human_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 304933 µs
+Elapsed algo time in microseconds: 115530 µs
+Elapsed writing time in microseconds: 9008 µs
+Elapsed time in microseconds: 429473 µs
+
+program: Ldf/test_seq_1   graph(dir): human_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 272475 µs
+Elapsed algo time in microseconds: 122347 µs
+Elapsed writing time in microseconds: 8573 µs
+Elapsed time in microseconds: 403395 µs
+
+program: Ldf/test_seq_1   graph(dir): human_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 303962 µs
+Elapsed algo time in microseconds: 116474 µs
+Elapsed writing time in microseconds: 7222 µs
+Elapsed time in microseconds: 427660 µs
+
+program: Ldf/test_seq_1   graph(dir): human_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 276570 µs
+Elapsed algo time in microseconds: 121159 µs
+Elapsed writing time in microseconds: 7226 µs
+Elapsed time in microseconds: 404956 µs
+
+program: Ldf/test_seq_1   graph(dir): human_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 278401 µs
+Elapsed algo time in microseconds: 122800 µs
+Elapsed writing time in microseconds: 7518 µs
+Elapsed time in microseconds: 408720 µs
+
+program: Ldf/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 18440 µs
+Elapsed algo time in microseconds: 11185 µs
+Elapsed writing time in microseconds: 1167 µs
+Elapsed time in microseconds: 30794 µs
+
+program: Ldf/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 18219 µs
+Elapsed algo time in microseconds: 10560 µs
+Elapsed writing time in microseconds: 1273 µs
+Elapsed time in microseconds: 30053 µs
+
+program: Ldf/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 18235 µs
+Elapsed algo time in microseconds: 11087 µs
+Elapsed writing time in microseconds: 1099 µs
+Elapsed time in microseconds: 30422 µs
+
+program: Ldf/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 18658 µs
+Elapsed algo time in microseconds: 10804 µs
+Elapsed writing time in microseconds: 1090 µs
+Elapsed time in microseconds: 30553 µs
+
+program: Ldf/test_seq_1   graph(dir): kegg_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 18883 µs
+Elapsed algo time in microseconds: 10571 µs
+Elapsed writing time in microseconds: 1251 µs
+Elapsed time in microseconds: 30706 µs
+
+program: Ldf/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 68075 µs
+Elapsed algo time in microseconds: 28307 µs
+Elapsed writing time in microseconds: 2297 µs
+Elapsed time in microseconds: 98680 µs
+
+program: Ldf/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 67500 µs
+Elapsed algo time in microseconds: 30692 µs
+Elapsed writing time in microseconds: 2452 µs
+Elapsed time in microseconds: 100645 µs
+
+program: Ldf/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 66169 µs
+Elapsed algo time in microseconds: 29179 µs
+Elapsed writing time in microseconds: 2275 µs
+Elapsed time in microseconds: 97623 µs
+
+program: Ldf/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 73984 µs
+Elapsed algo time in microseconds: 33536 µs
+Elapsed writing time in microseconds: 2549 µs
+Elapsed time in microseconds: 110069 µs
+
+program: Ldf/test_seq_1   graph(dir): mtbrv_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 71210 µs
+Elapsed algo time in microseconds: 28962 µs
+Elapsed writing time in microseconds: 2257 µs
+Elapsed time in microseconds: 102430 µs
+
+program: Ldf/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 31950 µs
+Elapsed algo time in microseconds: 19050 µs
+Elapsed writing time in microseconds: 1563 µs
+Elapsed time in microseconds: 52563 µs
+
+program: Ldf/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 33137 µs
+Elapsed algo time in microseconds: 20245 µs
+Elapsed writing time in microseconds: 1717 µs
+Elapsed time in microseconds: 55101 µs
+
+program: Ldf/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 32759 µs
+Elapsed algo time in microseconds: 19083 µs
+Elapsed writing time in microseconds: 1725 µs
+Elapsed time in microseconds: 53568 µs
+
+program: Ldf/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 33110 µs
+Elapsed algo time in microseconds: 18710 µs
+Elapsed writing time in microseconds: 1519 µs
+Elapsed time in microseconds: 53340 µs
+
+program: Ldf/test_seq_1   graph(dir): nasa_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 32899 µs
+Elapsed algo time in microseconds: 19040 µs
+Elapsed writing time in microseconds: 1501 µs
+Elapsed time in microseconds: 53442 µs
+
+program: Ldf/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 1
+Elapsed reading time in microseconds: 69150 µs
+Elapsed algo time in microseconds: 213496 µs
+Elapsed writing time in microseconds: 2216 µs
+Elapsed time in microseconds: 284862 µs
+
+program: Ldf/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 2
+Elapsed reading time in microseconds: 71569 µs
+Elapsed algo time in microseconds: 202657 µs
+Elapsed writing time in microseconds: 2569 µs
+Elapsed time in microseconds: 276796 µs
+
+program: Ldf/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 3
+Elapsed reading time in microseconds: 73182 µs
+Elapsed algo time in microseconds: 194518 µs
+Elapsed writing time in microseconds: 2155 µs
+Elapsed time in microseconds: 269856 µs
+
+program: Ldf/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 4
+Elapsed reading time in microseconds: 69249 µs
+Elapsed algo time in microseconds: 193538 µs
+Elapsed writing time in microseconds: 2536 µs
+Elapsed time in microseconds: 265324 µs
+
+program: Ldf/test_seq_1   graph(dir): pubmed_sub_9000-1.gra   round: 5
+Elapsed reading time in microseconds: 69925 µs
+Elapsed algo time in microseconds: 199299 µs
+Elapsed writing time in microseconds: 2228 µs
+Elapsed time in microseconds: 271453 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 1
+Elapsed reading time in microseconds: 59899113 µs
+Elapsed algo time in microseconds: 59853833 µs
+Elapsed writing time in microseconds: 3994717 µs
+Elapsed time in microseconds: 123747664 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 2
+Elapsed reading time in microseconds: 60398150 µs
+Elapsed algo time in microseconds: 60486412 µs
+Elapsed writing time in microseconds: 4244221 µs
+Elapsed time in microseconds: 125128784 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 3
+Elapsed reading time in microseconds: 60219458 µs
+Elapsed algo time in microseconds: 60774300 µs
+Elapsed writing time in microseconds: 4195911 µs
+Elapsed time in microseconds: 125189669 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 4
+Elapsed reading time in microseconds: 60138348 µs
+Elapsed algo time in microseconds: 60784544 µs
+Elapsed writing time in microseconds: 4199515 µs
+Elapsed time in microseconds: 125122408 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_100m.scc.gra   round: 5
+Elapsed reading time in microseconds: 59746994 µs
+Elapsed algo time in microseconds: 60054370 µs
+Elapsed writing time in microseconds: 4003401 µs
+Elapsed time in microseconds: 123804766 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 1
+Elapsed reading time in microseconds: 51263118 µs
+Elapsed algo time in microseconds: 74482798 µs
+Elapsed writing time in microseconds: 4493233 µs
+Elapsed time in microseconds: 130239149 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 2
+Elapsed reading time in microseconds: 51558486 µs
+Elapsed algo time in microseconds: 74524515 µs
+Elapsed writing time in microseconds: 4534783 µs
+Elapsed time in microseconds: 130617785 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 3
+Elapsed reading time in microseconds: 51979875 µs
+Elapsed algo time in microseconds: 74240706 µs
+Elapsed writing time in microseconds: 4510571 µs
+Elapsed time in microseconds: 130731153 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 4
+Elapsed reading time in microseconds: 52287417 µs
+Elapsed algo time in microseconds: 73937552 µs
+Elapsed writing time in microseconds: 4624948 µs
+Elapsed time in microseconds: 130849918 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_150m.scc.gra   round: 5
+Elapsed reading time in microseconds: 52058682 µs
+Elapsed algo time in microseconds: 75697603 µs
+Elapsed writing time in microseconds: 4385112 µs
+Elapsed time in microseconds: 132141398 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 1
+Elapsed reading time in microseconds: 5531592 µs
+Elapsed algo time in microseconds: 5511725 µs
+Elapsed writing time in microseconds: 437612 µs
+Elapsed time in microseconds: 11480930 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 2
+Elapsed reading time in microseconds: 5436188 µs
+Elapsed algo time in microseconds: 5599254 µs
+Elapsed writing time in microseconds: 425364 µs
+Elapsed time in microseconds: 11460806 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 3
+Elapsed reading time in microseconds: 5413646 µs
+Elapsed algo time in microseconds: 5497897 µs
+Elapsed writing time in microseconds: 418528 µs
+Elapsed time in microseconds: 11330073 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 4
+Elapsed reading time in microseconds: 5576275 µs
+Elapsed algo time in microseconds: 5479048 µs
+Elapsed writing time in microseconds: 413660 µs
+Elapsed time in microseconds: 11468984 µs
+
+program: Ldf/test_seq_1   graph(dir): uniprotenc_22m.scc.gra   round: 5
+Elapsed reading time in microseconds: 5413687 µs
+Elapsed algo time in microseconds: 5463855 µs
+Elapsed writing time in microseconds: 411535 µs
+Elapsed time in microseconds: 11289078 µs
+
+program: Ldf/test_seq_1   graph(dir): v10.gra   round: 1
+Elapsed reading time in microseconds: 391 µs
+Elapsed algo time in microseconds: 111 µs
+Elapsed writing time in microseconds: 768 µs
+Elapsed time in microseconds: 1272 µs
+
+program: Ldf/test_seq_1   graph(dir): v10.gra   round: 2
+Elapsed reading time in microseconds: 354 µs
+Elapsed algo time in microseconds: 111 µs
+Elapsed writing time in microseconds: 436 µs
+Elapsed time in microseconds: 903 µs
+
+program: Ldf/test_seq_1   graph(dir): v10.gra   round: 3
+Elapsed reading time in microseconds: 350 µs
+Elapsed algo time in microseconds: 112 µs
+Elapsed writing time in microseconds: 431 µs
+Elapsed time in microseconds: 894 µs
+
+program: Ldf/test_seq_1   graph(dir): v10.gra   round: 4
+Elapsed reading time in microseconds: 355 µs
+Elapsed algo time in microseconds: 116 µs
+Elapsed writing time in microseconds: 458 µs
+Elapsed time in microseconds: 930 µs
+
+program: Ldf/test_seq_1   graph(dir): v10.gra   round: 5
+Elapsed reading time in microseconds: 347 µs
+Elapsed algo time in microseconds: 110 µs
+Elapsed writing time in microseconds: 462 µs
+Elapsed time in microseconds: 920 µs
+
+program: Ldf/test_seq_1   graph(dir): v100.gra   round: 1
+Elapsed reading time in microseconds: 2522 µs
+Elapsed algo time in microseconds: 9108 µs
+Elapsed writing time in microseconds: 457 µs
+Elapsed time in microseconds: 12088 µs
+
+program: Ldf/test_seq_1   graph(dir): v100.gra   round: 2
+Elapsed reading time in microseconds: 2267 µs
+Elapsed algo time in microseconds: 8496 µs
+Elapsed writing time in microseconds: 422 µs
+Elapsed time in microseconds: 11186 µs
+
+program: Ldf/test_seq_1   graph(dir): v100.gra   round: 3
+Elapsed reading time in microseconds: 2517 µs
+Elapsed algo time in microseconds: 9175 µs
+Elapsed writing time in microseconds: 499 µs
+Elapsed time in microseconds: 12192 µs
+
+program: Ldf/test_seq_1   graph(dir): v100.gra   round: 4
+Elapsed reading time in microseconds: 2633 µs
+Elapsed algo time in microseconds: 8020 µs
+Elapsed writing time in microseconds: 529 µs
+Elapsed time in microseconds: 11183 µs
+
+program: Ldf/test_seq_1   graph(dir): v100.gra   round: 5
+Elapsed reading time in microseconds: 2135 µs
+Elapsed algo time in microseconds: 8163 µs
+Elapsed writing time in microseconds: 488 µs
+Elapsed time in microseconds: 10787 µs
+
+program: Ldf/test_seq_1   graph(dir): v1000.gra   round: 1
+Elapsed reading time in microseconds: 195821 µs
+Elapsed algo time in microseconds: 1678817 µs
+Elapsed writing time in microseconds: 697 µs
+Elapsed time in microseconds: 1875337 µs
+
+program: Ldf/test_seq_1   graph(dir): v1000.gra   round: 2
+Elapsed reading time in microseconds: 199115 µs
+Elapsed algo time in microseconds: 1682818 µs
+Elapsed writing time in microseconds: 700 µs
+Elapsed time in microseconds: 1882634 µs
+
+program: Ldf/test_seq_1   graph(dir): v1000.gra   round: 3
+Elapsed reading time in microseconds: 192688 µs
+Elapsed algo time in microseconds: 1704175 µs
+Elapsed writing time in microseconds: 725 µs
+Elapsed time in microseconds: 1897590 µs
+
+program: Ldf/test_seq_1   graph(dir): v1000.gra   round: 4
+Elapsed reading time in microseconds: 214312 µs
+Elapsed algo time in microseconds: 1645850 µs
+Elapsed writing time in microseconds: 692 µs
+Elapsed time in microseconds: 1860855 µs
+
+program: Ldf/test_seq_1   graph(dir): v1000.gra   round: 5
+Elapsed reading time in microseconds: 194945 µs
+Elapsed algo time in microseconds: 1607705 µs
+Elapsed writing time in microseconds: 759 µs
+Elapsed time in microseconds: 1803410 µs
+
+program: Ldf/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 73798 µs
+Elapsed algo time in microseconds: 31830 µs
+Elapsed writing time in microseconds: 2581 µs
+Elapsed time in microseconds: 108210 µs
+
+program: Ldf/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 71039 µs
+Elapsed algo time in microseconds: 28201 µs
+Elapsed writing time in microseconds: 2642 µs
+Elapsed time in microseconds: 101882 µs
+
+program: Ldf/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 66168 µs
+Elapsed algo time in microseconds: 27537 µs
+Elapsed writing time in microseconds: 2195 µs
+Elapsed time in microseconds: 95900 µs
+
+program: Ldf/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 73528 µs
+Elapsed algo time in microseconds: 31680 µs
+Elapsed writing time in microseconds: 2553 µs
+Elapsed time in microseconds: 107762 µs
+
+program: Ldf/test_seq_1   graph(dir): vchocyc_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 72096 µs
+Elapsed algo time in microseconds: 29185 µs
+Elapsed writing time in microseconds: 2324 µs
+Elapsed time in microseconds: 103606 µs
+
+program: Ldf/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 1
+Elapsed reading time in microseconds: 36225 µs
+Elapsed algo time in microseconds: 20321 µs
+Elapsed writing time in microseconds: 1610 µs
+Elapsed time in microseconds: 58158 µs
+
+program: Ldf/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 2
+Elapsed reading time in microseconds: 35698 µs
+Elapsed algo time in microseconds: 19700 µs
+Elapsed writing time in microseconds: 1645 µs
+Elapsed time in microseconds: 57045 µs
+
+program: Ldf/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 3
+Elapsed reading time in microseconds: 35976 µs
+Elapsed algo time in microseconds: 20378 µs
+Elapsed writing time in microseconds: 1800 µs
+Elapsed time in microseconds: 58155 µs
+
+program: Ldf/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 4
+Elapsed reading time in microseconds: 36575 µs
+Elapsed algo time in microseconds: 20793 µs
+Elapsed writing time in microseconds: 1783 µs
+Elapsed time in microseconds: 59152 µs
+
+program: Ldf/test_seq_1   graph(dir): xmark_dag_uniq.gra   round: 5
+Elapsed reading time in microseconds: 36656 µs
+Elapsed algo time in microseconds: 20105 µs
+Elapsed writing time in microseconds: 1786 µs
+Elapsed time in microseconds: 58548 µs
+
+program: Ldf/test_seq_1   graph(dir): yago_sub_6642.gra   round: 1
+Elapsed reading time in microseconds: 43858 µs
+Elapsed algo time in microseconds: 60564 µs
+Elapsed writing time in microseconds: 2182 µs
+Elapsed time in microseconds: 106605 µs
+
+program: Ldf/test_seq_1   graph(dir): yago_sub_6642.gra   round: 2
+Elapsed reading time in microseconds: 48313 µs
+Elapsed algo time in microseconds: 59816 µs
+Elapsed writing time in microseconds: 2062 µs
+Elapsed time in microseconds: 110192 µs
+
+program: Ldf/test_seq_1   graph(dir): yago_sub_6642.gra   round: 3
+Elapsed reading time in microseconds: 49264 µs
+Elapsed algo time in microseconds: 60958 µs
+Elapsed writing time in microseconds: 2011 µs
+Elapsed time in microseconds: 112235 µs
+
+program: Ldf/test_seq_1   graph(dir): yago_sub_6642.gra   round: 4
+Elapsed reading time in microseconds: 43399 µs
+Elapsed algo time in microseconds: 53872 µs
+Elapsed writing time in microseconds: 1669 µs
+Elapsed time in microseconds: 98941 µs
+
+program: Ldf/test_seq_1   graph(dir): yago_sub_6642.gra   round: 5
+Elapsed reading time in microseconds: 44779 µs
+Elapsed algo time in microseconds: 54897 µs
+Elapsed writing time in microseconds: 1808 µs
+Elapsed time in microseconds: 101485 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 1
+Colors used: 25
+Elapsed reading time in microseconds: 123334 µs
+Elapsed algo time in microseconds: 91378 µs
+Elapsed writing time in microseconds: 5764 µs
+Elapsed time in microseconds: 220476 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 2
+Colors used: 25
+Elapsed reading time in microseconds: 127598 µs
+Elapsed algo time in microseconds: 90401 µs
+Elapsed writing time in microseconds: 6372 µs
+Elapsed time in microseconds: 224372 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 3
+Colors used: 25
+Elapsed reading time in microseconds: 124179 µs
+Elapsed algo time in microseconds: 90284 µs
+Elapsed writing time in microseconds: 6100 µs
+Elapsed time in microseconds: 220564 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 4
+Colors used: 26
+Elapsed reading time in microseconds: 124132 µs
+Elapsed algo time in microseconds: 91912 µs
+Elapsed writing time in microseconds: 6484 µs
+Elapsed time in microseconds: 222529 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 5
+Colors used: 26
+Elapsed reading time in microseconds: 126769 µs
+Elapsed algo time in microseconds: 93055 µs
+Elapsed writing time in microseconds: 6726 µs
+Elapsed time in microseconds: 226551 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 1
+Colors used: 39
+Elapsed reading time in microseconds: 9487334 µs
+Elapsed algo time in microseconds: 10595314 µs
+Elapsed writing time in microseconds: 375961 µs
+Elapsed time in microseconds: 20458609 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 2
+Colors used: 39
+Elapsed reading time in microseconds: 9358546 µs
+Elapsed algo time in microseconds: 10616796 µs
+Elapsed writing time in microseconds: 348074 µs
+Elapsed time in microseconds: 20323417 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 3
+Colors used: 37
+Elapsed reading time in microseconds: 9483664 µs
+Elapsed algo time in microseconds: 10484037 µs
+Elapsed writing time in microseconds: 363848 µs
+Elapsed time in microseconds: 20331550 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 4
+Colors used: 36
+Elapsed reading time in microseconds: 9365183 µs
+Elapsed algo time in microseconds: 10512014 µs
+Elapsed writing time in microseconds: 359091 µs
+Elapsed time in microseconds: 20236289 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 5
+Colors used: 40
+Elapsed reading time in microseconds: 9778669 µs
+Elapsed algo time in microseconds: 10704506 µs
+Elapsed writing time in microseconds: 380704 µs
+Elapsed time in microseconds: 20863880 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 1
+Colors used: 43
+Elapsed reading time in microseconds: 83506627 µs
+Elapsed algo time in microseconds: 97868128 µs
+Elapsed writing time in microseconds: 2870533 µs
+Elapsed time in microseconds: 184245289 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 2
+Colors used: 45
+Elapsed reading time in microseconds: 81355186 µs
+Elapsed algo time in microseconds: 98488603 µs
+Elapsed writing time in microseconds: 2908565 µs
+Elapsed time in microseconds: 182752354 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 3
+Colors used: 43
+Elapsed reading time in microseconds: 83680160 µs
+Elapsed algo time in microseconds: 98224542 µs
+Elapsed writing time in microseconds: 3008227 µs
+Elapsed time in microseconds: 184912930 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 4
+Colors used: 44
+Elapsed reading time in microseconds: 82951536 µs
+Elapsed algo time in microseconds: 97828102 µs
+Elapsed writing time in microseconds: 2873106 µs
+Elapsed time in microseconds: 183652745 µs
+
+program: Jones/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 5
+Colors used: 43
+Elapsed reading time in microseconds: 83555147 µs
+Elapsed algo time in microseconds: 98331828 µs
+Elapsed writing time in microseconds: 3019419 µs
+Elapsed time in microseconds: 184906395 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_15_s0.graph   round: 1
+Elapsed reading time in microseconds: 124351 µs
+Elapsed algo time in microseconds: 283124 µs
+Elapsed writing time in microseconds: 16653 µs
+Elapsed time in microseconds: 424129 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_15_s0.graph   round: 2
+Elapsed reading time in microseconds: 136286 µs
+Elapsed algo time in microseconds: 301814 µs
+Elapsed writing time in microseconds: 7654 µs
+Elapsed time in microseconds: 445754 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_15_s0.graph   round: 3
+Elapsed reading time in microseconds: 124176 µs
+Elapsed algo time in microseconds: 273159 µs
+Elapsed writing time in microseconds: 7089 µs
+Elapsed time in microseconds: 404424 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_15_s0.graph   round: 4
+Elapsed reading time in microseconds: 120979 µs
+Elapsed algo time in microseconds: 276740 µs
+Elapsed writing time in microseconds: 7401 µs
+Elapsed time in microseconds: 405120 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_15_s0.graph   round: 5
+Elapsed reading time in microseconds: 121191 µs
+Elapsed algo time in microseconds: 275612 µs
+Elapsed writing time in microseconds: 7260 µs
+Elapsed time in microseconds: 404064 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_21_s0.graph   round: 1
+Elapsed reading time in microseconds: 9722535 µs
+Elapsed algo time in microseconds: 28479786 µs
+Elapsed writing time in microseconds: 878112 µs
+Elapsed time in microseconds: 39080434 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_21_s0.graph   round: 2
+Elapsed reading time in microseconds: 9541776 µs
+Elapsed algo time in microseconds: 28390338 µs
+Elapsed writing time in microseconds: 881329 µs
+Elapsed time in microseconds: 38813445 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_21_s0.graph   round: 3
+Elapsed reading time in microseconds: 9492201 µs
+Elapsed algo time in microseconds: 28141480 µs
+Elapsed writing time in microseconds: 917417 µs
+Elapsed time in microseconds: 38551098 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_21_s0.graph   round: 4
+Elapsed reading time in microseconds: 9667140 µs
+Elapsed algo time in microseconds: 28300689 µs
+Elapsed writing time in microseconds: 887547 µs
+Elapsed time in microseconds: 38855377 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_21_s0.graph   round: 5
+Elapsed reading time in microseconds: 9590754 µs
+Elapsed algo time in microseconds: 28122380 µs
+Elapsed writing time in microseconds: 883303 µs
+Elapsed time in microseconds: 38596438 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_24_s0.graph   round: 1
+Elapsed reading time in microseconds: 86482876 µs
+Elapsed algo time in microseconds: 267170803 µs
+Elapsed writing time in microseconds: 7406365 µs
+Elapsed time in microseconds: 361060045 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_24_s0.graph   round: 2
+Elapsed reading time in microseconds: 83996566 µs
+Elapsed algo time in microseconds: 267551274 µs
+Elapsed writing time in microseconds: 7919597 µs
+Elapsed time in microseconds: 359467438 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_24_s0.graph   round: 3
+Elapsed reading time in microseconds: 83748491 µs
+Elapsed algo time in microseconds: 265399235 µs
+Elapsed writing time in microseconds: 7218029 µs
+Elapsed time in microseconds: 356365756 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_24_s0.graph   round: 4
+Elapsed reading time in microseconds: 83970849 µs
+Elapsed algo time in microseconds: 266554899 µs
+Elapsed writing time in microseconds: 7476629 µs
+Elapsed time in microseconds: 358002377 µs
+
+program: Jones/test_seq_2   graph(undir): rgg_n_2_24_s0.graph   round: 5
+Elapsed reading time in microseconds: 83060599 µs
+Elapsed algo time in microseconds: 265392209 µs
+Elapsed writing time in microseconds: 7320388 µs
+Elapsed time in microseconds: 355773197 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_15_s0.graph   round: 1
+Colors used: 23
+Elapsed reading time in microseconds: 138688 µs
+Elapsed algo time in microseconds: 178700 µs
+Elapsed writing time in microseconds: 10146 µs
+Elapsed time in microseconds: 327535 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_15_s0.graph   round: 2
+Colors used: 23
+Elapsed reading time in microseconds: 120241 µs
+Elapsed algo time in microseconds: 192555 µs
+Elapsed writing time in microseconds: 6846 µs
+Elapsed time in microseconds: 319642 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_15_s0.graph   round: 3
+Colors used: 23
+Elapsed reading time in microseconds: 133894 µs
+Elapsed algo time in microseconds: 195976 µs
+Elapsed writing time in microseconds: 6907 µs
+Elapsed time in microseconds: 336777 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_15_s0.graph   round: 4
+Colors used: 22
+Elapsed reading time in microseconds: 124741 µs
+Elapsed algo time in microseconds: 179926 µs
+Elapsed writing time in microseconds: 6349 µs
+Elapsed time in microseconds: 311017 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_15_s0.graph   round: 5
+Colors used: 22
+Elapsed reading time in microseconds: 121412 µs
+Elapsed algo time in microseconds: 187048 µs
+Elapsed writing time in microseconds: 7251 µs
+Elapsed time in microseconds: 315711 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_21_s0.graph   round: 1
+Colors used: 34
+Elapsed reading time in microseconds: 9459103 µs
+Elapsed algo time in microseconds: 19017330 µs
+Elapsed writing time in microseconds: 374768 µs
+Elapsed time in microseconds: 28851202 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_21_s0.graph   round: 2
+Colors used: 37
+Elapsed reading time in microseconds: 9647145 µs
+Elapsed algo time in microseconds: 19191154 µs
+Elapsed writing time in microseconds: 374123 µs
+Elapsed time in microseconds: 29212423 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_21_s0.graph   round: 3
+Colors used: 35
+Elapsed reading time in microseconds: 9348459 µs
+Elapsed algo time in microseconds: 19113878 µs
+Elapsed writing time in microseconds: 397299 µs
+Elapsed time in microseconds: 28859638 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_21_s0.graph   round: 4
+Colors used: 34
+Elapsed reading time in microseconds: 9579903 µs
+Elapsed algo time in microseconds: 19136726 µs
+Elapsed writing time in microseconds: 368449 µs
+Elapsed time in microseconds: 29085079 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_21_s0.graph   round: 5
+Colors used: 36
+Elapsed reading time in microseconds: 9409107 µs
+Elapsed algo time in microseconds: 19315674 µs
+Elapsed writing time in microseconds: 390172 µs
+Elapsed time in microseconds: 29114954 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_24_s0.graph   round: 1
+Colors used: 40
+Elapsed reading time in microseconds: 83367981 µs
+Elapsed algo time in microseconds: 177241011 µs
+Elapsed writing time in microseconds: 3051678 µs
+Elapsed time in microseconds: 263660671 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_24_s0.graph   round: 2
+Colors used: 41
+Elapsed reading time in microseconds: 83884195 µs
+Elapsed algo time in microseconds: 177166363 µs
+Elapsed writing time in microseconds: 2977882 µs
+Elapsed time in microseconds: 264028442 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_24_s0.graph   round: 3
+Colors used: 40
+Elapsed reading time in microseconds: 82909537 µs
+Elapsed algo time in microseconds: 177190690 µs
+Elapsed writing time in microseconds: 3087039 µs
+Elapsed time in microseconds: 263187267 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_24_s0.graph   round: 4
+Colors used: 41
+Elapsed reading time in microseconds: 83264690 µs
+Elapsed algo time in microseconds: 177761372 µs
+Elapsed writing time in microseconds: 2846492 µs
+Elapsed time in microseconds: 263872554 µs
+
+program: Jones/test_seq_2_spinoff   graph(undir): rgg_n_2_24_s0.graph   round: 5
+Colors used: 42
+Elapsed reading time in microseconds: 83577371 µs
+Elapsed algo time in microseconds: 177242026 µs
+Elapsed writing time in microseconds: 2975328 µs
+Elapsed time in microseconds: 263794727 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 1
+Elapsed reading time in microseconds: 129578 µs
+Elapsed algo time in microseconds: 434109 µs
+Elapsed writing time in microseconds: 10715 µs
+Elapsed time in microseconds: 574403 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 2
+Elapsed reading time in microseconds: 125911 µs
+Elapsed algo time in microseconds: 394510 µs
+Elapsed writing time in microseconds: 7764 µs
+Elapsed time in microseconds: 528186 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 3
+Elapsed reading time in microseconds: 125103 µs
+Elapsed algo time in microseconds: 394729 µs
+Elapsed writing time in microseconds: 7349 µs
+Elapsed time in microseconds: 527182 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 4
+Elapsed reading time in microseconds: 131464 µs
+Elapsed algo time in microseconds: 408312 µs
+Elapsed writing time in microseconds: 8367 µs
+Elapsed time in microseconds: 548144 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_15_s0.graph   round: 5
+Elapsed reading time in microseconds: 129161 µs
+Elapsed algo time in microseconds: 396919 µs
+Elapsed writing time in microseconds: 8398 µs
+Elapsed time in microseconds: 534479 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 1
+Elapsed reading time in microseconds: 9831671 µs
+Elapsed algo time in microseconds: 42451575 µs
+Elapsed writing time in microseconds: 903077 µs
+Elapsed time in microseconds: 53186324 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 2
+Elapsed reading time in microseconds: 9723599 µs
+Elapsed algo time in microseconds: 42501959 µs
+Elapsed writing time in microseconds: 924679 µs
+Elapsed time in microseconds: 53150238 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 3
+Elapsed reading time in microseconds: 9744890 µs
+Elapsed algo time in microseconds: 42539249 µs
+Elapsed writing time in microseconds: 936763 µs
+Elapsed time in microseconds: 53220903 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 4
+Elapsed reading time in microseconds: 9949104 µs
+Elapsed algo time in microseconds: 41861846 µs
+Elapsed writing time in microseconds: 931266 µs
+Elapsed time in microseconds: 52742217 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_21_s0.graph   round: 5
+Elapsed reading time in microseconds: 9849705 µs
+Elapsed algo time in microseconds: 42301111 µs
+Elapsed writing time in microseconds: 885525 µs
+Elapsed time in microseconds: 53036342 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 1
+Elapsed reading time in microseconds: 85330028 µs
+Elapsed algo time in microseconds: 402450681 µs
+Elapsed writing time in microseconds: 6091032 µs
+Elapsed time in microseconds: 493871742 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 2
+Elapsed reading time in microseconds: 86401152 µs
+Elapsed algo time in microseconds: 402691970 µs
+Elapsed writing time in microseconds: 7494954 µs
+Elapsed time in microseconds: 496588077 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 3
+Elapsed reading time in microseconds: 86675957 µs
+Elapsed algo time in microseconds: 406837663 µs
+Elapsed writing time in microseconds: 6151980 µs
+Elapsed time in microseconds: 499665600 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 4
+Elapsed reading time in microseconds: 86378812 µs
+Elapsed algo time in microseconds: 404739782 µs
+Elapsed writing time in microseconds: 7644313 µs
+Elapsed time in microseconds: 498762908 µs
+
+program: Ldf/test_seq_1   graph(undir): rgg_n_2_24_s0.graph   round: 5
+Elapsed reading time in microseconds: 84764190 µs
+Elapsed algo time in microseconds: 408689131 µs
+Elapsed writing time in microseconds: 6267533 µs
+Elapsed time in microseconds: 499720856 µs
+
