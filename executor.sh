@@ -28,8 +28,8 @@ repetitions=(1 2 3 4 5)
 # number_threads=(16)
 # repetitions=(1)
 
-workers_undirected=('Jones/testv2' 'Jones/testv3' 'Jones/testv5' 'Ldf/test')
-workers_directed=('Jones/testv3' 'Ldf/test')
+workers_undirected=('Jones/test_multi_2' 'Jones/test_multi_3' 'Jones/test_multi_5' 'Ldf/test_multi_1')
+workers_directed=('Jones/test_multi_3' 'Ldf/test_multi_1')
 
 workers_sequential=('Jones/test_seq_1' 'Jones/test_seq_2' 'Jones/test_seq_2_spinoff' 'Ldf/test_seq_1')
 
