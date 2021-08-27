@@ -34,6 +34,7 @@ int number_exited_threads = 0;
 bool directed = 0;
 // number of all nodes
 int number_nodes = 0;
+int number_edges = 0;
 
 // path to the graph
 string graph_path;
@@ -114,6 +115,12 @@ void wait_single_special(int name)
 				temp_node_edge[i].push_back(it->first);
 		}
 		node_edge_connections = temp_node_edge;
+		// compute number_edges
+		for (map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
+			 it != node_edge_connections.end(); ++it)
+		{
+			number_edges += it->second.size();
+		}
 
 		// compute degrees
 		int j = 0;
@@ -459,7 +466,6 @@ int main(int argc, char** argv) {
 	}
 	
 	string line;
-	int number_edges;
 
 	// we used srand to set seed for randomization of node numbers
 	srand(time(NULL));

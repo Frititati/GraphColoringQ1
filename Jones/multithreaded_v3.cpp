@@ -31,6 +31,7 @@ int number_exited_threads = 0;
 bool directed = 0;
 // number of all nodes
 int number_nodes = 0;
+int number_edges = 0;
 
 // path to the graph
 string graph_path;
@@ -107,7 +108,13 @@ void wait_single_special(int name) {
 				temp_node_edge[i].push_back(it -> first);
 		}
 		node_edge_connections = temp_node_edge;
+		// compute number_edges
 
+		for (map<int, vector<int> >::const_iterator it = node_edge_connections.begin();
+			 it != node_edge_connections.end(); ++it)
+		{
+			number_edges += it->second.size();
+		}
 		barrier_counter = number_threads;
 		barrier_cv.notify_all();
 		return;
@@ -381,7 +388,6 @@ int main(int argc, char ** argv) {
 	}
 
 	string line;
-	int number_edges;
 
 	// we used srand to set seed for randomization of node numbers
 	srand(time(NULL));
@@ -472,19 +478,19 @@ int main(int argc, char ** argv) {
 
 	// unsigned int n = std::thread::hardware_concurrency();
 	// std::cout << n << " concurrent threads are supported.\n";
-
-	std::ofstream results_file;
-	results_file.open("jones_multi_3.csv", std::ios_base::app);
-	results_file << graph_path.substr(graph_path.find_last_of("/\\") + 1) << "," <<
-		number_nodes << "," <<
-		number_edges << "," <<
-		argv[2] << "," <<
-		max_color << "," <<
-		chrono::duration_cast < chrono::microseconds > (end_write - start_main).count() << "," <<
-		read_time_average << "," <<
-		algo_time << "," <<
-		chrono::duration_cast < chrono::microseconds > (end_write - start_write).count() << ",\n";
-	results_file.close();
+	cout << "number of edges: " << number_edges << endl;
+	// std::ofstream results_file;
+	// results_file.open("jones_multi_3.csv", std::ios_base::app);
+	// results_file << graph_path.substr(graph_path.find_last_of("/\\") + 1) << "," <<
+	// 	number_nodes << "," <<
+	// 	number_edges << "," <<
+	// 	argv[2] << "," <<
+	// 	max_color << "," <<
+	// 	chrono::duration_cast < chrono::microseconds > (end_write - start_main).count() << "," <<
+	// 	read_time_average << "," <<
+	// 	algo_time << "," <<
+	// 	chrono::duration_cast < chrono::microseconds > (end_write - start_write).count() << ",\n";
+	// results_file.close();
 
 	return 0;
 }

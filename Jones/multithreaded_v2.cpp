@@ -271,7 +271,7 @@ int main(int argc, char ** argv) {
 	}
 
 	string line;
-	int number_edges;
+	int number_edges = 0;
 
 	// we used srand to set seed for randomization of node numbers
 	srand(time(NULL));
@@ -358,6 +358,7 @@ int main(int argc, char ** argv) {
 	cout << "Elapsed writing time in microseconds: " << chrono::duration_cast < chrono::microseconds > (end_write - start_write).count() << " µs" << endl;
 	cout << "Elapsed time in microseconds: " << chrono::duration_cast < chrono::microseconds > (end_write - start_main).count() << " µs" << endl;
 
+	
 	// unsigned int n = std::thread::hardware_concurrency();
 	// std::cout << n << " concurrent threads are supported.\n";
 
