@@ -188,7 +188,10 @@ if (is_highest)
   to_be_evaluated.insert(std::pair<int, int>(node_key_this, *choosen));
 }
 ```
-This code snippet is taken from **'sequential_second_attempt.cpp'**. This is at the end of the iterative step for a node, which the algorithm has recognized as the highest in its local area, this is denoted by the `is_highest` boolean. In the 3<sup>rd</sup>-5<sup>th</sup> line we use 3 different *std::set*: `colors_used_iteration` is the set where the smallest (first index) available color is selected, `colors_used_global` is the set where all available colors are present, `colors_used_local` is the set of all colors this node cannot be colored (as they belong to adjacent nodes). Here the *std::set* comes in very useful as the built-in function `set_difference` is not only faster of possible custom loops but also sorts the possible colors which means we can always take the first of the list in the following operation.
+This code snippet is taken from **'sequential_second_attempt.cpp'**. This is at the end of the iterative step for a node, which the algorithm has recognized as the highest in its local area, this is denoted by the `is_highest` boolean. In the 3<sup>rd</sup>-5<sup>th</sup> line we use 3 different *std::set*: `colors_used_iteration` is the set where the smallest (first index) available color is selected, `colors_used_global` is the set where all available colors are present, `colors_used_local` is the set of all colors this node cannot be colored (as they belong to adjacent nodes). Here the *std::set* comes in very useful as the built-in function `set_difference` is not only faster of possible custom loops but also sorts the possible colors which means we can always take the first of the list in the following operation. Here is a list of reasons why we switched from *std::vector* to *std::set*:
+- *std::set* is a data structure that only keeps unique values, this is useful as we used it primarely for colors which don't need to be counted, also if we were to try to insert the same color twice it would simply not add it without returning an error.
+- *std::set* are sorted such that when using colors we can always take the smallest available (first index).
+- *std::set* has the set_difference built-in function which compares 2 sets and outputs another sorted set.
 
 ## Sequential Spin Off Optimization
 
