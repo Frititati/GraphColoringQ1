@@ -44,6 +44,15 @@
 - [Development Philosophy](#development-philosophy)
   + [Sequential Optimization Jones-Plassman](#sequential-optimization-jones\-plassman)
 - [Performance tests](#performance-tests)
+  + [Sequentials](#sequentials)
+    + [JP sequential](#jp-sequential)
+    + [LDF sequential](#ldf-sequential)
+  + [Parallels](#parallels)
+    + [JP parallel](#jp-parallel)
+    + [LDF parallel](#ldf-parallel)
+  + [Others](#others)
+    + [JP sequential spin-off](#jp-sequential-spin-off)
+    + [JP parallel v5](#jp-parallel-v5)
 - [Conclusions](#conclusions)
 
 </details>
@@ -203,6 +212,67 @@ During the optimization describeded in the last step we also realized another po
 
 
 # Performance tests
+
+## Sequentials
+
+### JP sequential
+
+### LDF sequential
+
+## Parallels
+
+### JP parallel
+
+#### **Undirectional**
+
+| threads   |                  | rgg_n_2_15_s0.graph | rgg_n_2_21_s0.graph | rgg_n_2_24_s0.graph |
+|:---------:|:----------------:|:-------------------:|:-------------------:|:-------------------:|
+|           | **number nodes** |        32768        |       2097152       |       16777216      |
+|           | **number edges** |        160240       |       14487995      |      132557200      |
+|           | **number color** |        14-15        |        19-21        |        23-25        |
+|           |    **memory**    |       MISSING       |       MISSING       |       MISSING       |
+|           |                  |                     |                     |                     |
+|     2     |     **read**     |        71241        |       5601547       |       49658319      |
+|           |     **algo**     |        158378       |       15461350      |      146671648      |
+|           |    **writing**   |         7162        |        369101       |       2990850       |
+|           |  **total time**  |        236869       |       21432079      |      199320891      |
+|           |                  |                     |                     |                     |
+|     4     |     **read**     |        37154        |       2932750       |       25810234      |
+|           |     **algo**     |        81442        |       8013869       |       75648107      |
+|           |    **writing**   |         7422        |        404195       |       3045029       |
+|           |  **total time**  |        126076       |       11350886      |      104503442      |
+|           |                  |                     |                     |                     |
+|     8     |     **read**     |        24971        |       1707417       |       14964998      |
+|           |     **algo**     |        57133        |       4385976       |       39750069      |
+|           |    **writing**   |         6824        |        404751       |       3026554       |
+|           |  **total time**  |        88985        |       6498210       |       57741691      |
+|           |                  |                     |                     |                     |
+|     16    |     **read**     |        21898        |       1692205       |       14723158      |
+|           |     **algo**     |        48864        |       2949229       |       27683328      |
+|           |    **writing**   |         7315        |        420123       |       3163329       |
+|           |  **total time**  |        78138        |       5061630       |       45569913      |
+
+<br />
+
+#### **Directional cat1**
+
+<br />
+
+#### **Directional cat2**
+
+<br />
+
+#### **Directional cat3**
+
+<br />
+
+### LDF parallel
+
+## Others
+
+### JP sequential spin-off
+
+### JP parallel v5
 
 # Conclusions
 
