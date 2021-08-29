@@ -274,6 +274,7 @@ During the optimization describeded in the last step we also realized another po
 |     **algo**     |        206276        |          99761         |      30138      |         120466        |       90579       |
 |    **writing**   |         1542         |          2604          |       1962      |          2040         |        1551       |
 |  **total time**  |        269439        |         173380         |      74816      |         196992        |       136089      |
+
 <br />
 
 ### LDF sequential
