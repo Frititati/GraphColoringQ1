@@ -155,8 +155,26 @@ There are basically two main differences between the sequential version and the 
 - Since threads need to access global resources both for reading and writing (such as the `node_color` vector) at the same time, synchronization strategies have become fundamental. We chose to insert two barriers (implemented opportunely by using a mutex, a condition variable and a counter): the first one is put between the first and the second section of the coloring phase (before writing to the node_color vector, it is necessary that all the threads have finished iterating over their local map), the second one, instead, is put at the end of the second section (before proceeding with the next iteration, it is necessary to verify if there are threads that, having finished coloring their map, are going to exit, and update accordingly the number of threads that are still working).
 
 ### JP Writing Phase
+
 Writing phase is exactly the same in both **sequential** and **parallel** versions. Basically, it consists in producing an output file where the resulting `node_color` vector is printed in order, one color per line.</br>
-////// TO BE DESCRIBED IN DETAIL //////
+This part of the algorithm was not paralelized as test showed it did not provide any benefits.
+
+```c++
+string final = to_string(number_nodes) + " " + to_string(number_edges) + "\n";
+int max_color = 0;
+
+for (auto i: node_color) {
+  final += to_string(i) + "\n";
+  if (i > max_color) {
+    max_color = i;
+  }
+}
+
+auto output_file = std::fstream(argv[3], std::ios::out | std::ios::binary);
+output_file.write(final.c_str(), (final.size() * sizeof(char)));
+output_file.close();
+```
+To begin we initialize `final` **std::string** to display the number of vertices (nodes) and edges. After which we loop over the `node_color` vector where all colors from the coloring algorithm are stored: the index of the vector is identical to the index of the vertices. Within the loop we construct `final` to add the color of each vertice. Finally we open a **std::fstream** `output_file` to which we write the entire content of `final` and we close it.
 
 <br />
 
@@ -210,11 +228,54 @@ During the optimization describeded in the last step we also realized another po
 - Instead of using **std::set** as mentioned previously we use **std::vector** to keep all colors these nodes cannot be colored (as they belong to adjacent nodes).
 - The `is_highest` if condition is simplied.
 
+## Parallel Optimization Jones-Plassman
+
+### Algorithm Optimization
+
+Following the extensive optimization from the sequential algorithm for Jones-Plassman we had a clear direction to follow in the parallized version of the algorithm. Initially our objective was to simply take the structure we developed in the sequential and push it to work with a couple of threads (2-3 initially). The reading phase (first part) and writing phase (last part) were untouched, we just wanted to focus solely on the parallization of the algorithm to avoid adding multiple complex operations at the same time. This was accomplised using some **std::map** splitters and some custom made barriers using **std::mutex**, were the spitters took the reading phase **std::map** and split it according to how many threads we had, where as the **std::mutex** and **std::condition_variable** were used to syncronize the threads in a barrier-like fashion. We recognized that the **std::vector** (specifically in this case `node_color`) is thread-safe if all threads are solely reading (no one can write), and is also thread-safe if threads are all writing at the same time (no one can read) but on different sectors (no overlaps in writing). This meant that we had to create barriers-like functions which would enable threads to only read or only write (their specified sector).
+
+```c++
+void wait_single(int name) {
+  // get lock
+  std::unique_lock < std::mutex > lck(barrier_mutex);
+  // lower barrier counter
+  barrier_counter--;
+  // if the barrier_counter is 0 means we are the last thread
+  // reset variable for next barrier
+  if (barrier_counter == 0) {
+    // fix number_threads to adjust for exited threads
+    barrier_counter = number_threads;
+    barrier_cv.notify_all();
+    // leave without going to the condition wait
+    return;
+  }
+  barrier_cv.wait(lck);
+}
+```
+Here is an example of a barrier-like function. There are lots of variables here is a short description:
+- `barrier_mutex` is a mutex used to give exclusive read-write of barrier_counter.
+- `barrier_counter` is an integer (initialized to the number of available threads) used to count the number of threads which already entered this function
+- `number_threads` is an integer is the number of alive threads currently.
+- `barrier_cv` is a condition_variable used to notify threads waiting.
+- `lck` is a unique_lock to lock `barrier_mutex` useful as it is destroyed when it leave the scope.
+
+There are 2 different paths a thread can take when entering this function:
+1. Threads enters, receives the lock, reduces the `barrier_counter` by 1, `barrier_counter` is not 0, therefore it ends up in the last lines where it waits for a notify, the `barrier_cv.wait(lck)` releases the `lck` therefore another thread can enter the function.
+2. Threads enters, receives the lock, reduces the `barrier_counter` by 1, `barrier_counter` is equal to 0, therefore it is garanteed that its the last thread to enter, it resets `barrier_counter` to the `number_threads` for another possible barrier later on in the code, it notifies all waiting threads in (#1), returns to avoid entering the wait condition.  
+
+### Reading Optimization
+
+Optimizating the reading phase was the second objective after the coloring algorithm was successfully paralized. Using the structure of the input graphs, the first line always tells us how many verticies (nodes) to expect in the graph. Therefore we can calculate which sector each thread should read of the input graph and following we can have the reading done indipendently for each thread. Unfortunatelly performance varies as the undirected types of graph generally have a greater advantage to the directed ones, because we need to still syncronize the data on all threads if the graph is directed (place it in a global data structure `node_edge_connections`), this is not required with the undirected graphs.
+Its also important to mention that with the directed type of graphs we need another barrier after the syncronization of the `node_edge_connections` whereas with the undirected type of graphs we can simply start the execution of the coloring algorithm.
 
 # Performance tests
 
-Performance testing were all executed on a Linux machine with the following characteristics:<br />
-/****MISSING****/<br />
+Performance testing were all executed on a Windows Subsystem Linux machine with the following characteristics:<br />
+- AMD Ryzen 1700 8-Core (16 Threads) CPU (~3.5GHz)
+- 32GB 3200MHz RAM
+- SSD Kingston 256GB (where tests were run)
+- Turned off most other programs running
+
 Memory usage was estimated with the tool **runlim**, while execution times, measured in microseconds, were calculated with **std::chrono::steady_clock**.<br />
 Timings for executing each section of each program for each graph were reported as an average of values obtained from five different executions; for the number of used colors we decided to report min and max values instead of the average.<br />
 Tables were grouped first by version of the program (sequential or parallel), then by type of the algorithm (JP or LDF); furthermore, directional graphs are divided by category (large, small sparse, small dense).
