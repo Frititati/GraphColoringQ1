@@ -213,6 +213,13 @@ During the optimization describeded in the last step we also realized another po
 
 # Performance tests
 
+Performance testing were all executed on a Linux machine with the following characteristics:<br />
+/****MISSING****/<br />
+Memory usage was estimated with the tool **runlim**, while execution times, measured in microseconds, were calculated with **std::chrono::steady_clock**.<br />
+Timings for executing each section of each program for each graph were reported as an average of values obtained from five different executions; for the number of used colors we decided to report min and max values instead of the average.<br />
+Tables were grouped first by version of the program (sequential or parallel), then by type of the algorithm (JP or LDF); furthermore, directional graphs are divided by category (large, small sparse, small dense).
+
+
 ## Sequentials
 
 ### JP sequential
