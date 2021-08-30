@@ -764,7 +764,9 @@ By analyzing carefully the results we obtained from performance testing, we can 
 
 The parallel version of Jones-Plassman with better datastructures improves timings of about 18%, either the reading phase or the coloring one. This version could be easily adapted to LDF algorithm, but would require more effort in order to manage also directional graphs.<br />
 
-Regarding the memory usage, we got values that don't always correspond to the expected ones. We supposed that the tool runlim can lack of precision in most of the cases.<br />
+Regarding the memory usage, we got values that don't always correspond to the expected ones. We supposed that the tool runlim can lack of precision in most of the cases.
+Nevertheless, the tests show that the memory usage among different algorithms is nearly the same for undirected graph, but it becomes significantly higher in the specific scenario of parallel algorithms running on large directed graphs.
+This is due to the additional data structures that the algorithms use in order to perform a translation into an undirected graph, since the algorithms were designed to work only on undirected graphs.<br />
 
 Finally, concerning the usage of colors, results confirm our expectations: LDF is better than JP, in the sense that, on average, it adoperates less colors. However, we should remember that executions times are a little higher than JP ones, though.<br />
 
