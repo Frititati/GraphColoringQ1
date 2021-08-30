@@ -301,7 +301,7 @@ During the optimization describeded in the last step we also realized another po
 | **number nodes** |       3774768       |      693947      |    6540401    |     6967956    |         16087295        |         1595444        |
 | **number edges** |       33037894      |      624564      |    30022520   |    69540470    |         32174586        |         3190884        |
 | **number color** |        14-15        |        4-4       |     13-13     |       7-7      |           3-3           |           2-2          |
-|    **memory**    |      1298.3 MB      |     142.0 MB     |    MISSING    |     MISSING    |         3769.8 MB         |        380.8 MB        |
+|    **memory**    |      1298.3 MB      |     142.0 MB     |   1667.6 MB   |    1982.8 MB   |        3769.8 MB        |        380.8 MB        |
 |     **read**     |       43522229      |      3896084     |    62177725   |    48986801    |         60080413        |         5474278        |
 |     **algo**     |      275451370      |      2197507     |   179621417   |    45923767    |         60390692        |         5510356        |
 |    **writing**   |       1618170       |      194565      |    1667433    |     1193044    |         4127553         |         421340         |
@@ -313,7 +313,6 @@ During the optimization describeded in the last step we also realized another po
 
 |              | agrocyc_dag_uniq.gra | amaze_dag_uniq.gra | anthra_dag_uniq.gra | ecoo_dag_uniq.gra | human_dag_uniq.gra | kegg_dag_uniq.gra | mtbrv_dag_uniq.gra | nasa_dag_uniq.gra | vchocyc_dag_uniq.gra | xmark_dag_uniq.gra |
 |:------------:|:--------------------:|:------------------:|:-------------------:|:-----------------:|:------------------:|:-----------------:|:------------------:|:-----------------:|:--------------------:|:------------------:|
-|              |                      |                    |                     |                   |                    |                   |                    |                   |                      |                    |
 | **number nodes** |         12684        |        3710        |        12499        |       12620       |        38811       |        3617       |        9602        |        5605       |         9491         |        6080        |
 | **number edges** |         27314        |        7894        |        26654        |       27150       |        79632       |        8790       |        20876       |       13076       |         20690        |        14102       |
 | **number color** |          4-4         |         4-4        |         4-4         |        4-4        |         5-5        |        3-3        |         4-4        |        4-4        |          4-4         |         4-4        |
