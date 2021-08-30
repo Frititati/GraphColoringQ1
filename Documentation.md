@@ -60,7 +60,7 @@
 
 # Abstract
 
-This document aims to present and discuss in detail the project _Q1: Parallel Graph Coloring_ related to the System and device programming course, teached by professor Quer.<br />
+This document aims to present and discuss in detail the project _Q1: Parallel Graph Coloring_ related to the System and device programming course, taught by professor Quer.<br />
 We'll start by indicating the folders organization and providing the commands necessary to compile and run the submitted programs, then we'll go deep in each of them in order to describe and motivate our approach and choices. Finally, we'll show and compare data obtained from the performance testing we carried out, and draw conclusion from them.<br />
 We remind that all the source files that we provided have been developed in **C++11** language and executed in a **UNIX** environment.<br />
 Here below you can find the basic details related to the three members of the team:
@@ -112,7 +112,7 @@ Both can be compiled and executed by issuing the following commands:<br />
 
 ## Tester
 
-In the folder GraphTest, there is a simple program, developed by ourselves, too, that checks if the output produced either by Jones-Plassman or LDF algorithm is correct with respect to the input graph file. Input parameters are the name of the graph file and the name of the output file. Basically, it verifies if there is any node that has a neighbour node colored with the same color that has been assigned to itself. In that case, it will finally print on the stdout not only the total number of error that it encountered during the scan, but also the specific nodes (and colors) involved in the errors.<br />
+In the folder GraphTest, there is a simple program, developed by ourselves, too, that checks if the output produced either by Jones-Plassman or LDF algorithm is correct with respect to the input graph file. Input parameters are the name of the graph file and the name of the output file. Basically, it verifies if there is any node that has a neighbor node colored with the same color that has been assigned to itself. In that case, it will finally print on the stdout not only the total number of error that it encountered during the scan, but also the specific nodes (and colors) involved in the errors.<br />
 Such a program revealed to be really useful during the implementation phase of our solutions, and can be compiled and executed by issuing the following commands:<br />
    ```sh
    g++ file_name.cpp -o tester
@@ -135,13 +135,13 @@ In the same loop used for the file parsing, at each iteration, a new random numb
 In case the graph is directional, there is one more step where missing connections are added to the global map, basically aiming to obtain the same result of an undirectional graph.
 
 In the **parallel** version of the algorithm, the reading phase has been parallelized as well as the coloring one. In this case, the initialization of the two global vectors `node_random` and `node_color` is done by the main thread; after that, threads are created.<br />
-It is possible to invoke two different reading functions depending on the format of the graph file, that is still verified by the main thread before launching the others. So each thread opens independently the file, since each one has to read a different part of it at the same time. The number of lines to be parsed and the position from which the reading has to start is computed starting from the unique ID that has been assigned to each thread during the creation phase; then, everything proceedes as described in the sequential version, except for the usage of the global `node_edge_connections` map, that is still needed during the reading phase in case the format of the graph is directional (in the undirectional case, each thread populates directly its local `node_assigned` map, that will be used during the coloring phase).<br />
+It is possible to invoke two different reading functions depending on the format of the graph file, that is still verified by the main thread before launching the others. So each thread opens independently the file, since each one has to read a different part of it at the same time. The number of lines to be parsed and the position from which the reading has to start is computed starting from the unique ID that has been assigned to each thread during the creation phase; then, everything proceeds as described in the sequential version, except for the usage of the global `node_edge_connections` map, that is still needed during the reading phase in case the format of the graph is directional (in the undirectional case, each thread populates directly its local `node_assigned` map, that will be used during the coloring phase).<br />
 From a synchronization point of view, a barrier is needed at the end of the reading phase and before proceeding with the coloring one only in case the format of the graph is directional.
 
 ### JP Coloring Phase
 
-The coloring phase consists in a while loop that can be divided in two different sections.
-In the first section of the **sequential** version, we start iterating over the `node_edge_connections` map and, for each of the examined nodes, we iterate over all its connections and compare the examined node with its connected nodes: if the connected node has already been colored, we store its color in the std::set `colors_used_local`, otherwise we check if the random number associated to it (connected node) is higher or lower than the random number of the examined node, in order to determine if the examined node is the highest or not (in case of conflicts, we take in consideration the respective indexes of the nodes). In case the node is the highest one, we store its key and color to be assigned in the `to_be_evaluated` map, that will be used later on during the second section. It’s interesting to note that the color to be assigned to the highest node is choosen by taking the first (and lowest) color from the set derived from the difference between two sets (`colors_used_global` and `colors_used_local`); this operation is done directly by leveraging the set_difference function.<br />
+The coloring phase consists of a while loop that can be divided in two different sections.
+In the first section of the **sequential** version, we start iterating over the `node_edge_connections` map and, for each of the examined nodes, we iterate over all its connections and compare the examined node with its connected nodes: if the connected node has already been colored, we store its color in the std::set `colors_used_local`, otherwise we check if the random number associated to it (connected node) is higher or lower than the random number of the examined node, in order to determine if the examined node is the highest or not (in case of conflicts, we take in consideration the respective indexes of the nodes). In case the node is the highest one, we store its key and color to be assigned in the `to_be_evaluated` map, that will be used later on during the second section. It’s interesting to note that the color to be assigned to the highest node is chosen by taking the first (and lowest) color from the set derived from the difference between two sets (`colors_used_global` and `colors_used_local`); this operation is done directly by leveraging the set_difference function.<br />
 After all the nodes of the `node_edge_connections` map have been analyzed, the second section starts. We iterate over the `to_be_evaluated` map and perform two actions for each node:
 
 - Memorize the color that has been assigned to it in the `node_color` vector;
@@ -151,13 +151,13 @@ In case we’ve colored at least one node with the highest color being in the se
 
 There are basically two main differences between the sequential version and the parallel one.
 
-- In the multhreaded environment, each thread iterates over its own local map of nodes and connections, that is a portion of the global `node_edge_connections` map used in the sequential case.
+- In the multithreaded environment, each thread iterates over its own local map of nodes and connections, that is a portion of the global `node_edge_connections` map used in the sequential case.
 - Since threads need to access global resources both for reading and writing (such as the `node_color` vector) at the same time, synchronization strategies have become fundamental. We chose to insert two barriers (implemented opportunely by using a mutex, a condition variable and a counter): the first one is put between the first and the second section of the coloring phase (before writing to the node_color vector, it is necessary that all the threads have finished iterating over their local map), the second one, instead, is put at the end of the second section (before proceeding with the next iteration, it is necessary to verify if there are threads that, having finished coloring their map, are going to exit, and update accordingly the number of threads that are still working).
 
 ### JP Writing Phase
 
 Writing phase is exactly the same in both **sequential** and **parallel** versions. Basically, it consists in producing an output file where the resulting `node_color` vector is printed in order, one color per line.</br>
-This part of the algorithm was not parallelized as test showed it did not provide any benefits.
+This part of the algorithm was not parallelized, as test showed it did not provide any benefits.
 
 ```c++
 string final = to_string(number_nodes) + " " + to_string(number_edges) + "\n";
@@ -200,11 +200,11 @@ The writing phase coincides exactly with that related to the Jones-Plassman algo
 
 # Development Philosophy
 
-To begin the development of the project, we prepared small achievable objectives in incrementing complexity. The goal was to set up a good basis, such that development would not be unstructured or messy. For example, we developed a file parser for the DIMACS and DIMACS10 formats, the basic data structure to store node-data, and a graph tester, such that any algorithm we would end up developing could be tested, in order to be sure that it colored graphs correctly. Furthermore, after the base structure was completed, we focused solely on implementing the algorithm, this was the Jones-Plassman approach to graph coloring. We began with a sequential unoptimized approach following the literature, this was to get familiarized with the algorithm. Fortunately we had the graph tester as many of the initial outputs seemed to be correct but actually produced wrongful results. After a fully working first version of the Jones-Plassman sequantial algorithm, only at that point we looked towards optimizing it.
+To begin the development of the project, we prepared small achievable objectives in incrementing complexity. The goal was to set up a good basis, such that development would not be unstructured or messy. For example, we developed a file parser for the DIMACS and DIMACS10 formats, the basic data structure to store node-data, and a graph tester, such that any algorithm we would end up developing could be tested, in order to be sure that it colored graphs correctly. Furthermore, after the base structure was completed, we focused solely on implementing the algorithm, this was the Jones-Plassman approach to graph coloring. We began with a sequential unoptimized approach following the literature, this was to get familiarized with the algorithm. Fortunately we had the graph tester as many of the initial outputs seemed to be correct but actually produced wrongful results. After a fully working first version of the Jones-Plassman sequential algorithm, only at that point we looked towards optimizing it.
 
 ## Sequential Optimization Jones-Plassman
 
-The approach we took when optimizing always began with looking at the loops the algorithm had to accomplish during its execution. We attempted to reduce these occurrences or place multiple functions in the same loop (to avoid repeating them). This was not necessarily the case with the first sequential optimization of the Jones-Plassman sequential however this didn't discourage us from looking at other potential improvements. Then we looked at the various data structures present in the algorithm, in our experience this approach yielded better result. For example, the first data structures we utilized (present in the std namespace) is the **std::set**. This not only provided a better data structure but also rendered the code simpler, especially within the iterative step.
+The approach we took when optimizing always began with looking at the loops the algorithm had to accomplish during its execution. We attempted to reduce these occurrences or place multiple functions in the same loop (to avoid repeating them). This was not necessarily the case with the first sequential optimization of the Jones-Plassman sequential, however, this didn't discourage us from looking at other potential improvements. Then we looked at the various data structures present in the algorithm, in our experience this approach yielded better result. For example, the first data structures we utilized (present in the std namespace) is the **std::set**. This not only provided a better data structure, but also rendered the code simpler, especially within the iterative step.
 
 ```c++
 if (is_highest)
@@ -216,7 +216,7 @@ if (is_highest)
 }
 ```
 This code snippet is taken from **'sequential_second_attempt.cpp'**. This is at the end of the iterative step for a node, which the algorithm has recognized as the highest in its local area, this is denoted by the `is_highest` boolean. In the 3<sup>rd</sup>-5<sup>th</sup> line we use 3 different **std::set**: `colors_used_iteration` is the set where the smallest (first index) available color is selected, `colors_used_global` is the set where all available colors are present, `colors_used_local` is the set of all colors this node cannot be colored (as they belong to adjacent nodes). Here the **std::set** comes in very useful as the built-in function `set_difference` is not only faster of possible custom loops but also sorts the possible colors which means we can always take the first of the list in the following operation. Here is a list of reasons why we switched from **std::vector** to **std::set**:
-- **std::set** is a data structure that only keeps unique values, this is useful as we used it primarely for colors which don't need to be counted, also if we were to try to insert the same color twice it would simply not add it without returning an error.
+- **std::set** is a data structure that only keeps unique values, this is useful as we used it primarily for colors which don't need to be counted, also if we were to try to insert the same color twice it would simply not add it without returning an error.
 - **std::set** are sorted such that when using colors we can always take the smallest available (first index).
 - **std::set** has the set_difference built-in function which compares 2 sets and outputs another sorted set with the difference between the two input sets.
 
@@ -226,7 +226,7 @@ During the optimization described in the last step we also realized another pote
 
 - Nodes are colored all together (the same color) at the end of the iterative step, this differs from the classical approach where nodes are colored differently at the end of the iterative step.
 - Instead of using **std::set** as mentioned previously we use **std::vector** to keep all colors these nodes cannot be colored (as they belong to adjacent nodes).
-- The `is_highest` if condition is simplied.
+- The `is_highest` if condition is simplified.
 
 ## Parallel Optimization Jones-Plassman
 
@@ -277,7 +277,7 @@ Performance testing were all executed on a Windows Subsystem Linux machine with 
 - Turned off most other programs running
 
 Memory usage was estimated with the tool **runlim**, while execution times, measured in microseconds, were calculated with **std::chrono::steady_clock**.<br />
-Timings for executing each section of each program for each graph were reported as an average of values obtained from five different executions; for the number of used colors we decided to report min and max values instead of the average.<br />
+Timings for executing each section of each program for each graph were reported as an average of values obtained from five different executions; for the number of used colors, we decided to report min and max values instead of the average.<br />
 Tables were grouped first by version of the program (sequential or parallel), then by type of the algorithm (JP or LDF); furthermore, directional graphs are divided by category (large, small sparse, small dense).
 
 
