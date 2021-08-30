@@ -51,8 +51,8 @@
     + [JP parallel](#jp-parallel)
     + [LDF parallel](#ldf-parallel)
   + [Others](#others)
-    + [JP sequential spin-off](#jp-sequential-spin-off)
-    + [JP parallel v5](#jp-parallel-v5)
+    + [JP sequential (spin-off)](#jp-sequential-spin-off)
+    + [JP parallel (improved datastructures)](#jp-parallel-improved-datastructures)
 - [Conclusions](#conclusions)
 
 </details>
@@ -157,7 +157,7 @@ There are basically two main differences between the sequential version and the 
 ### JP Writing Phase
 
 Writing phase is exactly the same in both **sequential** and **parallel** versions. Basically, it consists in producing an output file where the resulting `node_color` vector is printed in order, one color per line.</br>
-This part of the algorithm was not paralelized as test showed it did not provide any benefits.
+This part of the algorithm was not parallelized as test showed it did not provide any benefits.
 
 ```c++
 string final = to_string(number_nodes) + " " + to_string(number_edges) + "\n";
@@ -174,7 +174,7 @@ auto output_file = std::fstream(argv[3], std::ios::out | std::ios::binary);
 output_file.write(final.c_str(), (final.size() * sizeof(char)));
 output_file.close();
 ```
-To begin, we initialize `final` **std::string** to display the number of vertices (nodes) and edges. After which we loop over the `node_color` vector where all colors from the coloring algorithm are stored: the index of the vector is identical to the index of the vertices. Within the loop, we construct `final` to add the color of each vertices. Finally we open a **std::fstream** `output_file` to which we write the entire content of `final`, and we close it.
+To begin, we initialize `final` **std::string** to display the number of nodes and edges. After that, we loop over the `node_color` vector where all colors from the coloring algorithm are stored. Within the loop, we construct `final` to add the color of each node. Finally we open a **std::fstream** `output_file` to which we write the entire content of `final`, and then we close it.
 
 <br />
 
@@ -200,11 +200,11 @@ The writing phase coincides exactly with that related to the Jones-Plassman algo
 
 # Development Philosophy
 
-To begin the development of the project, we prepared small achievable objectives in incrementing complexity. The goal was to set up a good basis, such that development would not be unstructured or messy. For example we developed a file parser for the DIMACS and DIMACS10 formats, the basic data structure to store node-data, and a graph tester such that any algorithm we would end up developing could be tested (whether it colored graphs correctly). Furthermore, after the base structure was completed, we focused solely on implementing one algorithm, this was the Jones-Plassman approach to graph coloring. We began with a sequential unoptimized approach following the literature, this was to get familiarized with the algorithm. Fortunately we had the graph tester as many of the initial outputs seemed to be correct but actually produced wrongful results. After a fully working first version of the Jones-Plassman sequantial algorithm, we then looked towards optimizing it.
+To begin the development of the project, we prepared small achievable objectives in incrementing complexity. The goal was to set up a good basis, such that development would not be unstructured or messy. For example, we developed a file parser for the DIMACS and DIMACS10 formats, the basic data structure to store node-data, and a graph tester, such that any algorithm we would end up developing could be tested, in order to be sure that it colored graphs correctly. Furthermore, after the base structure was completed, we focused solely on implementing the algorithm, this was the Jones-Plassman approach to graph coloring. We began with a sequential unoptimized approach following the literature, this was to get familiarized with the algorithm. Fortunately we had the graph tester as many of the initial outputs seemed to be correct but actually produced wrongful results. After a fully working first version of the Jones-Plassman sequantial algorithm, only at that point we looked towards optimizing it.
 
 ## Sequential Optimization Jones-Plassman
 
-The approach we took when optimizing always began with looking at the loops the algorithm had to accomplish during its execution. We attempted to reduce these occurrences or place multiple functions in the same loop (to avoid repeating them). This was not necessarely the case with the first sequential optimization of the Jones-Plassman sequential however this didn't discourage us from looking at other potential improvements. We then looked at the various data structures present in the algorithm, in our experience this approach yielded better result. For example, the first data structures we utilized (present in the std namespace) is the **std::set**. This not only provided a better data structure but also rendered the code simpler, especially within the iterative step.
+The approach we took when optimizing always began with looking at the loops the algorithm had to accomplish during its execution. We attempted to reduce these occurrences or place multiple functions in the same loop (to avoid repeating them). This was not necessarily the case with the first sequential optimization of the Jones-Plassman sequential however this didn't discourage us from looking at other potential improvements. Then we looked at the various data structures present in the algorithm, in our experience this approach yielded better result. For example, the first data structures we utilized (present in the std namespace) is the **std::set**. This not only provided a better data structure but also rendered the code simpler, especially within the iterative step.
 
 ```c++
 if (is_highest)
@@ -218,11 +218,11 @@ if (is_highest)
 This code snippet is taken from **'sequential_second_attempt.cpp'**. This is at the end of the iterative step for a node, which the algorithm has recognized as the highest in its local area, this is denoted by the `is_highest` boolean. In the 3<sup>rd</sup>-5<sup>th</sup> line we use 3 different **std::set**: `colors_used_iteration` is the set where the smallest (first index) available color is selected, `colors_used_global` is the set where all available colors are present, `colors_used_local` is the set of all colors this node cannot be colored (as they belong to adjacent nodes). Here the **std::set** comes in very useful as the built-in function `set_difference` is not only faster of possible custom loops but also sorts the possible colors which means we can always take the first of the list in the following operation. Here is a list of reasons why we switched from **std::vector** to **std::set**:
 - **std::set** is a data structure that only keeps unique values, this is useful as we used it primarely for colors which don't need to be counted, also if we were to try to insert the same color twice it would simply not add it without returning an error.
 - **std::set** are sorted such that when using colors we can always take the smallest available (first index).
-- **std::set** has the set_difference built-in function which compares 2 sets and outputs another sorted set.
+- **std::set** has the set_difference built-in function which compares 2 sets and outputs another sorted set with the difference between the two input sets.
 
 ## Sequential Spin Off Optimization
 
-During the optimization describeded in the last step we also realized another potential area where there were overheads in processing was the selection of the color. We ask whether instead of assigning different colors to all nodes in the same iterative step was less efficient than assign the same color to all of them. This turned out to be true and a potential optimization. However it is important to mention that by doing so we are not following the Jones-Plassman algorithm anymore. This new algorithm focuses on improving the execution time disregarding completely the number of colors used. Here are the main difference between the classical approach (Jones-Plassman) **'sequential_second_attempt.cpp'** to the new algorithm **'sequential_second_spinoff_attempt.cpp'**:
+During the optimization described in the last step we also realized another potential area where there were overheads in processing was the selection of the color. We ask whether instead of assigning different colors to all nodes in the same iterative step was less efficient than assign the same color to all of them. This turned out to be true and a potential optimization. However it is important to mention that by doing so we are not following the Jones-Plassman algorithm anymore. This new algorithm focuses on improving the execution time disregarding completely the number of colors used. Here are the main difference between the classical approach (Jones-Plassman) **'sequential_second_attempt.cpp'** to the new algorithm **'sequential_second_spinoff_attempt.cpp'**:
 
 - Nodes are colored all together (the same color) at the end of the iterative step, this differs from the classical approach where nodes are colored differently at the end of the iterative step.
 - Instead of using **std::set** as mentioned previously we use **std::vector** to keep all colors these nodes cannot be colored (as they belong to adjacent nodes).
@@ -265,7 +265,7 @@ There are 2 different paths a thread can take when entering this function:
 
 ### Reading Optimization
 
-Optimizing the reading phase was the second objective after the coloring algorithm was successfully parallelize. Using the structure of the input graphs, the first line always tells us how many vertices (nodes) to expect in the graph. Therefore, we can calculate which sector each thread should read of the input graph and following we can have the reading done independently for each thread. Unfortunately performance varies as the undirected types of graph generally have a greater advantage to the directed ones, because we need to still synchronize the data on all threads if the graph is directed (place it in a global data structure `node_edge_connections`), this is not required with the undirected graphs.
+Optimizing the reading phase was the second objective after the coloring algorithm was successfully parallelized. Using the structure of the input graphs, the first line always tells us how many vertices (nodes) to expect in the graph. Therefore, we can calculate which sector each thread should read of the input graph and following we can have the reading done independently for each thread. Unfortunately performance varies as the undirected types of graph generally have a greater advantage to the directed ones, because we need to still synchronize the data on all threads if the graph is directed (place it in a global data structure `node_edge_connections`), this is not required with the undirected graphs.
 It's also important to mention that with the directed type of graphs we need another barrier after the synchronization of the `node_edge_connections` whereas with the undirected type of graphs we can simply start the execution of the coloring algorithm.
 
 # Performance tests
@@ -632,7 +632,7 @@ Tables were grouped first by version of the program (sequential or parallel), th
 
 ## Others
 
-### JP sequential spin-off
+### JP sequential (spin-off)
 
 #### **Undirectional**
 
@@ -695,7 +695,7 @@ Tables were grouped first by version of the program (sequential or parallel), th
 
 <br />
 
-### JP parallel v5
+### JP parallel (improved datastructures)
 
 |**threads**|            |rgg_n_2_15_s0.graph|rgg_n_2_21_s0.graph|rgg_n_2_24_s0.graph|
 |:------:|:------------:|:-------------------:|:-------------------:|:-------------------:|
