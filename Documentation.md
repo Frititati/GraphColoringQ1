@@ -174,7 +174,7 @@ auto output_file = std::fstream(argv[3], std::ios::out | std::ios::binary);
 output_file.write(final.c_str(), (final.size() * sizeof(char)));
 output_file.close();
 ```
-To begin we initialize `final` **std::string** to display the number of vertices (nodes) and edges. After which we loop over the `node_color` vector where all colors from the coloring algorithm are stored: the index of the vector is identical to the index of the vertices. Within the loop we construct `final` to add the color of each vertice. Finally we open a **std::fstream** `output_file` to which we write the entire content of `final` and we close it.
+To begin, we initialize `final` **std::string** to display the number of vertices (nodes) and edges. After which we loop over the `node_color` vector where all colors from the coloring algorithm are stored: the index of the vector is identical to the index of the vertices. Within the loop, we construct `final` to add the color of each vertices. Finally we open a **std::fstream** `output_file` to which we write the entire content of `final`, and we close it.
 
 <br />
 
@@ -232,7 +232,7 @@ During the optimization describeded in the last step we also realized another po
 
 ### Algorithm Optimization
 
-Following the extensive optimization from the sequential algorithm for Jones-Plassman we had a clear direction to follow in the parallized version of the algorithm. Initially our objective was to simply take the structure we developed in the sequential and push it to work with a couple of threads (2-3 initially). The reading phase (first part) and writing phase (last part) were untouched, we just wanted to focus solely on the parallization of the algorithm to avoid adding multiple complex operations at the same time. This was accomplised using some **std::map** splitters and some custom made barriers using **std::mutex**, were the spitters took the reading phase **std::map** and split it according to how many threads we had, where as the **std::mutex** and **std::condition_variable** were used to syncronize the threads in a barrier-like fashion. We recognized that the **std::vector** (specifically in this case `node_color`) is thread-safe if all threads are solely reading (no one can write), and is also thread-safe if threads are all writing at the same time (no one can read) but on different sectors (no overlaps in writing). This meant that we had to create barriers-like functions which would enable threads to only read or only write (their specified sector).
+Following the extensive optimization from the sequential algorithm for Jones-Plassman we had a clear direction to follow in the parallelized version of the algorithm. Initially, our objective was to simply take the structure we developed in the sequential and push it to work with a couple of threads (2-3 initially). The reading phase (first part) and writing phase (last part) were untouched, we just wanted to focus solely on the parallelization of the algorithm to avoid adding multiple complex operations at the same time. This was accomplished using some **std::map** splitters and some custom-made barriers using **std::mutex**, were the spitters took the reading phase **std::map** and split it according to how many threads we had, whereas the **std::mutex** and **std::condition_variable** were used to synchronize the threads in a barrier-like fashion. We recognized that the **std::vector** (specifically in this case `node_color`) is thread-safe if all threads are solely reading (no one can write), and is also thread-safe if threads are all writing at the same time (no one can read) but on different sectors (no overlaps in writing). This meant that we had to create barriers-like functions which would enable threads to only read or only write (their specified sector).
 
 ```c++
 void wait_single(int name) {
@@ -252,21 +252,21 @@ void wait_single(int name) {
   barrier_cv.wait(lck);
 }
 ```
-Here is an example of a barrier-like function. There are lots of variables here is a short description:
+Here is an example of a barrier-like function. There are lots of variables, here is a short description:
 - `barrier_mutex` is a mutex used to give exclusive read-write of barrier_counter.
 - `barrier_counter` is an integer (initialized to the number of available threads) used to count the number of threads which already entered this function
 - `number_threads` is an integer is the number of alive threads currently.
 - `barrier_cv` is a condition_variable used to notify threads waiting.
-- `lck` is a unique_lock to lock `barrier_mutex` useful as it is destroyed when it leave the scope.
+- `lck` is a unique_lock used to lock `barrier_mutex`, useful as it is destroyed when it leave the scope.
 
 There are 2 different paths a thread can take when entering this function:
-1. Threads enters, receives the lock, reduces the `barrier_counter` by 1, `barrier_counter` is not 0, therefore it ends up in the last lines where it waits for a notify, the `barrier_cv.wait(lck)` releases the `lck` therefore another thread can enter the function.
-2. Threads enters, receives the lock, reduces the `barrier_counter` by 1, `barrier_counter` is equal to 0, therefore it is garanteed that its the last thread to enter, it resets `barrier_counter` to the `number_threads` for another possible barrier later on in the code, it notifies all waiting threads in (#1), returns to avoid entering the wait condition.  
+1. Thread enters, receives the lock, reduces the `barrier_counter` by 1, `barrier_counter` is not 0, therefore it ends up in the last lines where it waits to be notified, the `barrier_cv.wait(lck)` releases the `lck` therefore another thread can enter the function.
+2. Thread enters, receives the lock, reduces the `barrier_counter` by 1, `barrier_counter` is equal to 0, therefore it is guaranteed that it's the last thread to enter, it resets `barrier_counter` to the `number_threads` for another possible barrier later on in the code, it notifies all waiting threads in (#1), returns to avoid entering the wait condition (`barrier_cv.wait(lck)`).  
 
 ### Reading Optimization
 
-Optimizating the reading phase was the second objective after the coloring algorithm was successfully paralized. Using the structure of the input graphs, the first line always tells us how many verticies (nodes) to expect in the graph. Therefore we can calculate which sector each thread should read of the input graph and following we can have the reading done indipendently for each thread. Unfortunatelly performance varies as the undirected types of graph generally have a greater advantage to the directed ones, because we need to still syncronize the data on all threads if the graph is directed (place it in a global data structure `node_edge_connections`), this is not required with the undirected graphs.
-Its also important to mention that with the directed type of graphs we need another barrier after the syncronization of the `node_edge_connections` whereas with the undirected type of graphs we can simply start the execution of the coloring algorithm.
+Optimizing the reading phase was the second objective after the coloring algorithm was successfully parallelize. Using the structure of the input graphs, the first line always tells us how many vertices (nodes) to expect in the graph. Therefore, we can calculate which sector each thread should read of the input graph and following we can have the reading done independently for each thread. Unfortunately performance varies as the undirected types of graph generally have a greater advantage to the directed ones, because we need to still synchronize the data on all threads if the graph is directed (place it in a global data structure `node_edge_connections`), this is not required with the undirected graphs.
+It's also important to mention that with the directed type of graphs we need another barrier after the synchronization of the `node_edge_connections` whereas with the undirected type of graphs we can simply start the execution of the coloring algorithm.
 
 # Performance tests
 
