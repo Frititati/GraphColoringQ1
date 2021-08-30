@@ -282,7 +282,7 @@ During the optimization describeded in the last step we also realized another po
 #### **Undirectional**
 
 |              | rgg_n_2_15_s0.graph | rgg_n_2_21_s0.graph | rgg_n_2_24_s0.graph |   
-|:------------:|:-------------------:|:-------------------:|:-------------------:|---|
+|:------------:|:-------------------:|:-------------------:|:-------------------:|
 | **number nodes** |        32768        |       2097152       |       16777216      |   
 | **number edges** |        160240       |       14487995      |      132557200      |   
 | **number color** |        13-14        |        19-19        |        21-22        |   
