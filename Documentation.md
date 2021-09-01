@@ -776,13 +776,13 @@ Tables were grouped first by version of the program (sequential or parallel), th
 In this section we want to show comparisons of the Jones-Plassman to the LDF.<br>
 There are 4 different Figures, each compares the effiency (in number of colors) between different subsets of graph types.
 
-![Undirectionals colors usage](images/jp_ldf_colors/undirectionals.png)
+![Undirectionals colors usage](images/jp_ldf_colors/undirectionals.png)<br>
 *Figure 1: compares the 3 different baselines of undirected graphs*
 <br>
-![Directionals large colors usage](images/jp_ldf_colors/directionals_l.png)
+![Directionals large colors usage](images/jp_ldf_colors/directionals_l.png)<br>
 *Figure 2: compares the directional large graphs*
 <br>
-![Directionals small sparse colors usage](images/jp_ldf_colors/directionals_ss.png)
+![Directionals small sparse colors usage](images/jp_ldf_colors/directionals_ss.png)<br>
 *Figure 3: compares the directional small sparse graphs*
 <br>
 ![Directionals small dense colors usage](images/jp_ldf_colors/directionals_sd.png)<br>
