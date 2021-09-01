@@ -43,6 +43,7 @@
     + [LDF Writing phase](#ldf-writing-phase)
 - [Development Philosophy](#development-philosophy)
   + [Sequential Optimization Jones-Plassman](#sequential-optimization-jones\-plassman)
+  + [Sequential Spin-Off Optimization](#sequential-optimization-jones\-plassman)
 - [Performance tests](#performance-tests)
   + [Sequentials](#sequentials)
     + [JP sequential](#jp-sequential)
@@ -71,7 +72,7 @@ Here below you can find the basic details related to the three members of the te
 
 <br />
 
-# Folders organization
+# Folders Organization
 
 In the main folder of the project, you can find three different subfolders:
 
@@ -80,7 +81,7 @@ In the main folder of the project, you can find three different subfolders:
 
 <br />
 
-# Program execution
+# Program Execution
 
 The solutions that we’ve developed so far are compatible to work both with DIMACS and DIMACS10 graph formats that have been provided.
 The algorithms we decided to implement are the Jones-Plassman and the Largest Degree First. You can find both sequential and parallel versions of them.
@@ -178,7 +179,7 @@ To begin, we initialize `final` **std::string** to display the number of nodes a
 
 <br />
 
-## Largest Degree First
+## Largest Degree First (LDF)
 
 The Largest Degree First algorithm can be considered as an optimization of the Jones-Plassman: differently from Jones-Plassman, it first looks at the degree (i.e. number of connections) of each node, and starts coloring nodes in order of decreasing degree; random numbers are still used in order to avoid possible conflicts that may arise in case we compare nodes that have exactly the same degree.<br />
 Since LDF implementation started from Jones-Plassman one, the structure of both sequential and parallel versions is practically the same. We’ll report in detail the main differences in the next paragraphs.
@@ -220,7 +221,7 @@ This code snippet is taken from **'sequential_second_attempt.cpp'**. This is at 
 - **std::set** are sorted such that when using colors we can always take the smallest available (first index).
 - **std::set** has the set_difference built-in function which compares 2 sets and outputs another sorted set with the difference between the two input sets.
 
-## Sequential Spin Off Optimization
+## Sequential Spin-Off
 
 During the optimization described in the last step we also realized another potential area where there were overheads in processing was the selection of the color. We ask whether assigning different colors to all nodes in the same iterative step was less efficient than assigning the same color to all nodes (at the same time). This turned out to be true and suggested a potential optimization. However, it is important to mention that by doing so we are not following the Jones-Plassman algorithm anymore. This new algorithm focuses on improving the execution time disregarding completely the number of colors used. Here are the main difference between the classical approach (Jones-Plassman) **'sequential_second_attempt.cpp'** to the new algorithm **'sequential_second_spinoff_attempt.cpp'**:
 
@@ -232,7 +233,7 @@ To conclude, we did not deliver a parallelized version of this new algorithm, as
 
 ## Parallel Optimization Jones-Plassman
 
-### Algorithm Optimization
+### Coloring Optimization
 
 Following the extensive optimization from the sequential algorithm for Jones-Plassman, we had a clear direction to follow in the parallelized version of the algorithm. Initially, our objective was to simply take the structure we developed in the sequential version and push it to work with a couple of threads (2-3 initially). The reading phase (first part) and writing phase (last part) were untouched, we just wanted to focus solely on the parallelization of the algorithm to avoid adding multiple complex operations at the same time. This was accomplished using some **std::map** splitters and some custom-made barriers using **std::mutex**, were the spitters took the reading phase **std::map** and split it according to how many threads we had, whereas the **std::mutex** and **std::condition_variable** were used to synchronize the threads in a barrier-like fashion. We recognized that the **std::vector** (specifically in this case `node_color`) is thread-safe if all threads are solely reading (no one can write), and is also thread-safe if threads are all writing at the same time (no one can read) but on different sectors (no overlaps in writing). This meant that we had to create barriers-like functions which would enable threads to only read or only write (their specified sector).
 
@@ -283,7 +284,7 @@ struct node_struct {
 `node_struct` has three fields, an `index` to identify the node, a `size` to describe how many `connections` are present.We needed an array of `node_struct` to fully replace the **std::map** that was present before, so this changed the reading and coloring phases of the algorithm. Also with an array of `node_struct` (`node_assigned`) we couldn't use iterators anymore, so we needed to create a complementary **std::set** (`nodes_iteration`) which we could exploit for the iterators and the ability to easily delete indexes without having the rewrite the array. This was all crucial to maintain the core algorithm the same as before but with an array instead of **std::map**.<br>
 This algorithm proved to perform better than its predecessor, seeing improvements in the reading and coloring phases (see below in Performance tests). However, it suffers a big flaw, it is only good with undirected graphs, as the directed graphs requires a synchronization of all the `node_assigned` arrays, this would remove all benefits of this solution.
 
-# Performance tests
+# Performance Tests
 
 Performance testing were all executed on a Windows Subsystem Linux machine with the following characteristics:<br />
 - AMD Ryzen 1700 8-Core (16 Threads) CPU (~3.5GHz);
@@ -298,7 +299,7 @@ Tables were grouped first by version of the program (sequential or parallel), th
 
 ## Sequentials
 
-### JP sequential
+### JP Sequential
 
 #### **Undirectional**
 
@@ -360,7 +361,7 @@ Tables were grouped first by version of the program (sequential or parallel), th
 
 <br />
 
-### LDF sequential
+### LDF Sequential
 
 #### **Undirectional**
 
@@ -423,7 +424,7 @@ Tables were grouped first by version of the program (sequential or parallel), th
 
 ## Parallels
 
-### JP parallel
+### JP Parallel
 
 #### **Undirectional**
 
@@ -679,7 +680,7 @@ Tables were grouped first by version of the program (sequential or parallel), th
 
 ## Others
 
-### JP sequential (spin-off)
+### JP Sequential Spin-Off
 
 #### **Undirectional**
 
@@ -742,7 +743,7 @@ Tables were grouped first by version of the program (sequential or parallel), th
 
 <br />
 
-### JP parallel (improved datastructures)
+### JP Parallel (improved datastructures)
 
 |**threads**|            |rgg_n_2_15_s0.graph|rgg_n_2_21_s0.graph|rgg_n_2_24_s0.graph|
 |:------:|:------------:|:-------------------:|:-------------------:|:-------------------:|
@@ -788,6 +789,7 @@ There are 4 different Figures, each compares the effiency (in number of colors) 
 ![Directionals small dense colors usage](images/jp_ldf_colors/directionals_sd.png)<br>
 *Figure 4: compares the directional small dense graphs*
 <br>
+
 # Conclusions
 
 By analyzing carefully the results we obtained from the performance tests, we can surely affirm that, as expected, parallel versions perform better than sequential ones, especially if we maximize the number of threads the machine supports (no more than 16); however, for some directional graphs (e.g. all belonging to the small sparse category), we have observed that execution times are higher if we employ a number of threads greater than 4 or 8, depending on the specific case. We think the reason may be strictly related to the specific type of graph.<br />
@@ -800,8 +802,8 @@ This is due to the additional data structures that the algorithms use in order t
 
 Finally, concerning the usage of colors, results confirm our expectations: LDF is better than Jones-Plassman, in the sense that, on average, it uses less colors. However, we should also remember that LDF takes a longer time to execute than Jones-Plassman.<br />
 
-The following graphs shows clearly the results we gained about usage of colors in both JP and LDF.<br />
+The following graphs shows clearly the results we gained about usage of colors in both Jones-Plassman and LDF.<br />
 
-## References
+# References
 
 Project Link: [https://github.com/Frititati/GraphColoringQ1](https://github.com/Frititati/GraphColoringQ1)
