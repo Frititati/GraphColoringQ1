@@ -32,7 +32,7 @@
   + [Sequential](#sequential)
   + [Parallel](#parallel)
   + [Tester](#tester)
-- [Development details](#development-details)
+- [Development Details](#development-details)
   + [Jones-Plassman (JP)](#jones-plassman)
     + [JP Reading phase](#jp-reading-phase)
     + [JP Coloring phase](#jp-coloring-phase)
@@ -124,7 +124,7 @@ Such a program revealed to be really useful during the implementation phase of o
 
 # Development Details
 
-## Jones-Plassman
+## Jones-Plassman (JP)
 
 This algorithm improves upon the MIS algorithm, which creates a new random permutation of the nodes every time an independent set needs to be calculated. Jones-Plassman, instead, constructs a single set of unique random weights at the beginning and uses it through-out the coloring algorithm. This can easily be done by assigning random numbers to each of the vertices and using the unique vertex index to resolve a conflict in the unlikely event of neighboring vertices getting the same random number. Nodes are then colored individually using the smallest available color.
 
@@ -196,8 +196,6 @@ The coloring phase of the LDF algorithm differs from the Jones-Plassman one only
 ### LDF Writing Phase
 
 The writing phase coincides exactly with that related to the Jones-Plassman algorithm, described in detail in the corresponded paragraph of the previous section.
-
-<br />
 
 # Development Philosophy
 
