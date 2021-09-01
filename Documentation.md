@@ -47,7 +47,7 @@
   + [Parallel Optimization Jones-Plassman](#parallel-optimization-jones-plassman)
     + [Coloring Optimization](#coloring-optimization)
     + [Reading Optimization](#reading-optimization)
-  + [Jones-Plassman Improved Datastructure](#jones-plassman-improved-datastructure)
+  + [Jones-Plassman Improved Datastructures](#jones-plassman-improved-datastructures)
 - [Performance tests](#performance-tests)
   + [Sequentials](#sequentials)
     + [JP sequential](#jp-sequential)
@@ -58,7 +58,7 @@
   + [Others](#others)
     + [JP Sequential Spin-Off](#jp-sequential-spin-off)
     + [JP Parallel (improved datastructures)](#jp-parallel-improved-datastructures)
-  + [Figures](#figures)
+  + [Usage of colors](#usage-of-colors)
 - [Conclusions](#conclusions)
 - [References](#references)
 
@@ -68,7 +68,7 @@
 # Abstract
 
 This document aims to present and discuss in detail the project _Q1: Parallel Graph Coloring_ related to the System and device programming course, taught by professor Quer.<br />
-We'll start by indicating the folders organization and providing the commands necessary to compile and run the submitted programs, then we'll go deep in each of them in order to describe and motivate our approach and choices. Finally, we'll show and compare data obtained from the performance testing we carried out, and draw conclusion from them.<br />
+We'll start by indicating the folders organization and providing the commands necessary to compile and run the submitted programs, then we'll go deep in each of them in order to describe and motivate our approach and choices. Finally, we'll show and compare data obtained from the performance testing we carried out, and draw conclusions from them.<br />
 We remind that all the source files that we provided have been developed in **C++11** language and executed in a **UNIX** environment.<br />
 Here below you can find the basic details related to the three members of the team:
 
@@ -80,7 +80,7 @@ Here below you can find the basic details related to the three members of the te
 
 # Folders Organization
 
-In the main folder of the project, you can find three different subfolders:
+In the main folder of the project, you can find two different subfolders:
 
 - **Officials**, that contains all the complete and definitive versions of the algorithms, divided again in subfolders: Sequentials, Parallels and Tester.
 - **Others**, where we put some attempts of optimization (even though not totally satisfactory, for different reasons), together with the original .csv files used for conducting performance testing.
@@ -96,6 +96,8 @@ Here below the command (and link) for cloning the GitHub repository:
    ```sh
    git clone https://github.com/Frititati/GraphColoringQ1
    ```
+
+Note that the repository was used during the development of the project, therefore there are more folders and executables with respects to the .zip file.
 
 ## Sequential
 
@@ -159,7 +161,7 @@ In case we’ve colored at least one node with the highest color being in the se
 There are basically two main differences between the sequential version and the parallel one.
 
 - In the multithreaded environment, each thread iterates over its own local map of nodes and connections, that is a portion of the global `node_edge_connections` map used in the sequential case.
-- Since threads need to access global resources both for reading and writing (such as the `node_color` vector) at the same time, synchronization strategies have become fundamental. We chose to insert two barriers (implemented opportunely by using a mutex, a condition variable and a counter): the first one is put between the first and the second section of the coloring phase (before writing to the node_color vector, it is necessary that all the threads have finished iterating over their local map), the second one, instead, is put at the end of the second section (before proceeding with the next iteration, it is necessary to verify if there are threads that, having finished coloring their map, are going to exit, and update accordingly the number of threads that are still working).
+- Since threads need to access global resources both for reading and writing (such as the `node_color` vector) at the same time, synchronization strategies have become fundamental. We chose to insert two barriers (implemented opportunely by using a mutex, a condition variable and a counter): the first one is put between the first and the second section of the coloring phase (before writing to the `node_color` vector, it is necessary that all the threads have finished iterating over their local map), the second one, instead, is put at the end of the second section (before proceeding with the next iteration, it is necessary to verify if there are threads that, having finished coloring their map, are going to exit, and update accordingly the number of threads that are still working).
 
 ### JP Writing Phase
 
@@ -181,7 +183,7 @@ auto output_file = std::fstream(argv[3], std::ios::out | std::ios::binary);
 output_file.write(final.c_str(), (final.size() * sizeof(char)));
 output_file.close();
 ```
-To begin, we initialize `final` **std::string** to display the number of nodes and edges. After that, we loop over the `node_color` vector where all colors from the coloring algorithm are stored. Within the loop, we construct `final` to add the color of each node. Finally we open a **std::fstream** `output_file` to which we write the entire content of `final`, and then we close it.
+To begin, we initialize `final` std::string to display the number of nodes and edges. After that, we loop over the `node_color` vector where all colors from the coloring algorithm are stored. Within the loop, we construct `final` to add the color of each node. Finally we open a std::fstream `output_file` to which we write the entire content of `final`, and then we close it.
 
 <br />
 
@@ -233,7 +235,7 @@ During the optimization described in the last step we also realized another pote
 - Instead of using **std::set** as mentioned previously we use **std::vector** to keep all colors these nodes cannot be colored (as they belong to adjacent nodes).
 - The `is_highest` if condition is simplified.
 
-To conclude, we did not deliver a parallelized version of this new algorithm, as it had two fatal flaws. The first reason was that the parallelized version would not have the same benefits as the sequential. The second reason was that it used too many colors, it was against our objective to pursue an algorithm that would use the least colors possible.
+To conclude, we did not deliver a parallelized version of this new algorithm, as it had two fatal flaws. The first reason was that the parallelized version would not have the same benefits as the sequential one. The second reason was that it used too many colors, it was against our objective to pursue an algorithm that would use the least colors possible.
 
 ## Parallel Optimization Jones-Plassman
 
@@ -264,7 +266,7 @@ Here is an example of a barrier-like function. There are lots of variables, here
 - `barrier_counter` is an integer (initialized to the number of available threads) used to count the number of threads which already entered this function
 - `number_threads` is an integer is the number of alive threads currently.
 - `barrier_cv` is a condition_variable used to notify threads waiting.
-- `lck` is a unique_lock used to lock `barrier_mutex`, useful as it is destroyed when it leave the scope.
+- `lck` is a unique_lock used to lock `barrier_mutex`, useful as it is destroyed when it leaves the scope.
 
 There are 2 different paths a thread can take when entering this function:
 1. Thread enters, receives the lock, reduces the `barrier_counter` by 1, `barrier_counter` is not 0, therefore it ends up in the last lines where it waits to be notified, the `barrier_cv.wait(lck)` releases the `lck` therefore another thread can enter the function.
@@ -272,12 +274,12 @@ There are 2 different paths a thread can take when entering this function:
 
 ### Reading Optimization
 
-Optimizing the reading phase was the second objective after the coloring algorithm was successfully parallelized. Using the structure of the input graphs, the first line always tells us how many vertices (nodes) are to be expected in the graph, so we can calculate which sector each thread should read of the input graph and then we can have the reading done independently by each thread. Unfortunately, performance varies as the undirected types of graph generally have a greater advantage to the directed ones, because we need to still synchronize the data on all threads if the graph is directed (place it in a global data structure `node_edge_connections`), this is not required with the undirected graphs.
-It's also important to mention that with the directed type of graphs we need another barrier after the synchronization of the `node_edge_connections` whereas with the undirected type of graphs we can simply start the execution of the coloring algorithm.
+Optimizing the reading phase was the second objective after the coloring algorithm was successfully parallelized. Using the structure of the input graphs, the first line always tells us how many vertices (nodes) are to be expected in the graph, so we can calculate which sector each thread should read of the input graph and then we can have the reading done independently by each thread. Unfortunately, performance varies as the undirectional types of graph generally have a greater advantage to the directional ones, because we need to still synchronize the data on all threads if the graph is directional (place it in a global data structure `node_edge_connections`), this is not required with the undirectional graphs.
+It's also important to mention that with the directional type of graphs we need another barrier after the synchronization of the `node_edge_connections` whereas with the undirectional type of graphs we can simply start the execution of the coloring algorithm.
 
-## Jones-Plassman Improved Datastructure
+## Jones-Plassman Improved Datastructures
 
-Another avevue we looked into when developing the parallelized version of the algorithm was to change the base datastructures. We initially focused on the data structures where the nodes calculated data would be stored, these are `node_color` and `node_random`, however there not much could be done as the **std::vector** library is already very perfomant and any changes we attempted didn't yield any leaps in performance. We also looked at the the data structure that kept node data (usually called `node_edge_connections`), this was an **std::map** with an index (int) and **std::vector** within it to store all connected nodes. Our attempt was too see whether a **struct** especially made could perform better, it did.
+Another avenue we looked into when developing the parallelized version of the algorithm was to change the base data structures. We initially focused on the data structures where the nodes calculated data would be stored, these are `node_color` and `node_random`, however there wasn't much to be done, as the **std::vector** library is already very perfomant and any changes we attempted didn't yield any leaps in performance. We also looked at the the data structure that kept node data (usually called `node_edge_connections`), this was an **std::map** with an index (int) and **std::vector** within it to store all connected nodes. Our attempt was too see whether a **struct** especially made could perform better, it did.
 ```c++
 struct node_struct {
   int index;
@@ -285,8 +287,8 @@ struct node_struct {
   int * connections;
 };
 ```
-`node_struct` has three fields, an `index` to identify the node, a `size` to describe how many `connections` are present.We needed an array of `node_struct` to fully replace the **std::map** that was present before, so this changed the reading and coloring phases of the algorithm. Also with an array of `node_struct` (`node_assigned`) we couldn't use iterators anymore, so we needed to create a complementary **std::set** (`nodes_iteration`) which we could exploit for the iterators and the ability to easily delete indexes without having the rewrite the array. This was all crucial to maintain the core algorithm the same as before but with an array instead of **std::map**.<br>
-This algorithm proved to perform better than its predecessor, seeing improvements in the reading and coloring phases (see below in Performance tests). However, it suffers a big flaw, it is only good with undirected graphs, as the directed graphs requires a synchronization of all the `node_assigned` arrays, this would remove all benefits of this solution.
+`node_struct` has three fields, an `index` to identify the node, a `size` to describe how many `connections` are present. We needed an array of `node_struct` to fully replace the **std::map** that was present before, so this changed the reading and coloring phases of the algorithm. Also, with an array of `node_struct` (`node_assigned`) we couldn't use iterators anymore, so we needed to create a complementary **std::set** (`nodes_iteration`) which we could exploit for the iterators and the ability to easily delete indexes without having to rewrite the array. This was all crucial to maintain the core algorithm the same as before but with an array instead of **std::map**.<br>
+This algorithm proved to perform better than its predecessor, seeing improvements in the reading and coloring phases in terms of execution times (see below in Performance tests). However, it suffers a big flaw, it is only good with undirectional graphs, as the directional graphs require a synchronization of all the `node_assigned` arrays, this would remove all benefits of this solution.
 
 # Performance Tests
 
@@ -776,37 +778,36 @@ Tables were grouped first by version of the program (sequential or parallel), th
 |      |**writing**     |6585               |408586             |3024459            |
 |      |**total time**  |52438              |4045484            |36841809           |
 
-## Figures
+## Usage of colors
 
-In this section we want to show comparisons of the Jones-Plassman to the LDF.<br>
-There are 4 different Figures, each compares the effiency (in number of colors) between different subsets of graph types.
+In this section we want to show comparisons of the Jones-Plassman to the LDF regarding the usage of colors.<br>
+There are 4 different Figures, each comparing the effiency (in number of used colors) between different subsets of graph types.
 
-![Undirectionals colors usage](images/jp_ldf_colors/undirectionals.png)<br>
-*Figure 1: compares the 3 different baselines of undirected graphs*
-<br>
-![Directionals large colors usage](images/jp_ldf_colors/directionals_l.png)<br>
-*Figure 2: compares the directional large graphs*
-<br>
-![Directionals small sparse colors usage](images/jp_ldf_colors/directionals_ss.png)<br>
-*Figure 3: compares the directional small sparse graphs*
-<br>
-![Directionals small dense colors usage](images/jp_ldf_colors/directionals_sd.png)<br>
-*Figure 4: compares the directional small dense graphs*
-<br>
+![Undirectionals colors usage](images/jp_ldf_colors/undirectionals.png)<br />
+*Figure 1: comparison of the 3 different baselines of undirectional graphs*
+<br /><br />
+![Directionals large colors usage](images/jp_ldf_colors/directionals_l.png)<br />
+*Figure 2: comparison of the directional large graphs*
+<br /><br />
+![Directionals small sparse colors usage](images/jp_ldf_colors/directionals_ss.png)<br />
+*Figure 3: comparison of the directional small sparse graphs*
+<br /><br />
+![Directionals small dense colors usage](images/jp_ldf_colors/directionals_sd.png)<br />
+*Figure 4: comparison of the directional small dense graphs*
+<br /><br />
 
 # Conclusions
 
-By analyzing carefully the results we obtained from the performance tests, we can surely affirm that, as expected, parallel versions perform better than sequential ones, especially if we maximize the number of threads the machine supports (no more than 16); however, for some directional graphs (e.g. all belonging to the small sparse category), we have observed that execution times are higher if we employ a number of threads greater than 4 or 8, depending on the specific case. We think the reason may be strictly related to the specific type of graph.<br />
+By analyzing carefully the results we obtained from the performance tests, we can surely affirm that, as expected, parallel versions perform better than sequential ones, especially if we maximize the number of threads the machine supports (no more than 16); however, for some directional graphs (e.g., all belonging to the small sparse category), we have observed that execution times are higher if we employ a number of threads greater than 4 or 8, depending on the specific case. We think the reason may be strictly related to the specific type of graph.<br />
 
 The parallel version of Jones-Plassman with improved data structures improves timings of about 18%, either in the reading phase or the coloring one. This version could be easily adapted to LDF algorithm, but would require more effort in order to manage also directional graphs.<br />
 
 Regarding the memory usage, we got values that don't always correspond to the expected ones. We supposed that the tool runlim can lack of precision in most of the cases.
-Nevertheless, the tests show that the memory usage among different algorithms is nearly the same for undirected graph, but it becomes significantly higher in the specific scenario of parallel algorithms running on large directed graphs.
-This is due to the additional data structures that the algorithms use in order to perform a translation into an undirected graph, since the algorithms were designed to work only on undirected graphs.<br />
+Nevertheless, the tests show that the memory usage among different algorithms is nearly the same for undirectional graphs, but it becomes significantly higher in the specific scenario of parallel algorithms running on large directional graphs.
+This is due to the additional data structures that the algorithms use in order to perform a translation into an undirectional graph, since the algorithms were designed to work only on undirectional graphs.<br />
 
-Finally, concerning the usage of colors, results confirm our expectations: LDF is better than Jones-Plassman, in the sense that, on average, it uses less colors. However, we should also remember that LDF takes a longer time to execute than Jones-Plassman.<br />
+Finally, concerning the usage of colors, results confirm our expectations: LDF is better than Jones-Plassman, in the sense that, on average, it uses less colors. However, we should also remember that LDF takes a longer time to execute than Jones-Plassman.<br /><br />
 
-The following graphs shows clearly the results we gained about usage of colors in both Jones-Plassman and LDF.<br />
 
 # References
 
