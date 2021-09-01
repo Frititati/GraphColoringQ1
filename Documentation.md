@@ -83,7 +83,7 @@ Here below you can find the basic details related to the three members of the te
 In the main folder of the project, you can find two different subfolders:
 
 - **Officials**, that contains all the complete and definitive versions of the algorithms, divided again in subfolders: Sequentials, Parallels and Tester.
-- **Others**, where we put some attempts of optimization (even though not totally satisfactory, for different reasons), together with the original .csv files used for conducting performance testing.
+- **Others**, where we put some attempts of optimization (even though not totally satisfactory, for different reasons).
 
 <br />
 
