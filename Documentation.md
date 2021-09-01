@@ -785,7 +785,7 @@ There are 4 different Figures, each compares the effiency (in number of colors) 
 ![Directionals small sparse colors usage](images/jp_ldf_colors/directionals_ss.png)
 *Figure 3: compares the directional small sparse graphs*
 <br>
-![Directionals small dense colors usage](images/jp_ldf_colors/directionals_sd.png)
+![Directionals small dense colors usage](images/jp_ldf_colors/directionals_sd.png)<br>
 *Figure 4: compares the directional small dense graphs*
 <br>
 # Conclusions
