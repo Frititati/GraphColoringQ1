@@ -778,16 +778,16 @@ There are 4 different Figures, each compares the effiency (in number of colors) 
 
 ![Undirectionals colors usage](images/jp_ldf_colors/undirectionals.png)
 *Figure 1: compares the 3 different baselines of undirected graphs*
-
+<br>
 ![Directionals large colors usage](images/jp_ldf_colors/directionals_l.png)
 *Figure 2: compares the directional large graphs*
-
+<br>
 ![Directionals small sparse colors usage](images/jp_ldf_colors/directionals_ss.png)
 *Figure 3: compares the directional small sparse graphs*
-
+<br>
 ![Directionals small dense colors usage](images/jp_ldf_colors/directionals_sd.png)
 *Figure 4: compares the directional small dense graphs*
-
+<br>
 # Conclusions
 
 By analyzing carefully the results we obtained from the performance tests, we can surely affirm that, as expected, parallel versions perform better than sequential ones, especially if we maximize the number of threads the machine supports (no more than 16); however, for some directional graphs (e.g. all belonging to the small sparse category), we have observed that execution times are higher if we employ a number of threads greater than 4 or 8, depending on the specific case. We think the reason may be strictly related to the specific type of graph.<br />
