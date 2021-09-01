@@ -114,7 +114,7 @@ Both can be compiled and executed by issuing the following commands:<br />
 In the folder Parallel, there are multithreaded versions of both Jones-Plassman and LDF coloring algorithms. Input parameters are the name of the graph file, the number of threads and (optionally) the name of the output file.<br />
 Both can be compiled and executed by issuing the following commands:<br />
    ```sh
-   g++ file_name.cpp -o executable_name -pthread -std=c++11
+   g++ file_name.cpp -o executable_name -pthread
 
    ./executable_name <graphFile> <threadNum> [<outputFile>]
    ```
