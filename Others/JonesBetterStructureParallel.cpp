@@ -365,7 +365,6 @@ int main(int argc, char ** argv) {
 	thread thread_array[number_threads];
 
 	for (int i = 0; i < number_threads; ++i) {
-		// cout << "generated thread: " << (i + 1) << endl;
 		thread_array[i] = thread(jones_thread, i + 1);
 		reading_times.push_back((chrono::microseconds) 0);
 	}
@@ -399,9 +398,11 @@ int main(int argc, char ** argv) {
 		}
 	}
 
-	auto output_file = std::fstream(argv[3], std::ios::out | std::ios::binary);
-	output_file.write(final.c_str(), (final.size() * sizeof(char)));
-	output_file.close();
+	if (argc == 4) {
+		auto output_file = std::fstream(argv[3], std::ios::out | std::ios::binary);
+		output_file.write(final.c_str(), (final.size() * sizeof(char)));
+		output_file.close();
+	}
 
 	auto end_write = chrono::steady_clock::now();
 
@@ -413,6 +414,8 @@ int main(int argc, char ** argv) {
 	// unsigned int n = std::thread::hardware_concurrency();
 	// std::cout << n << " concurrent threads are supported.\n";
 	// cout << "number of edges: " << number_edges << endl;
+
+	cout << "Number of colors used: " << max_color << endl;
 	
 	// std::ofstream results_file;
 	// results_file.open("jones_multi_5.csv", std::ios_base::app);

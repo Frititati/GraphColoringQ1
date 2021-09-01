@@ -346,8 +346,6 @@ void jones_thread(int thread_index) {
 			colors_used_global.insert(color);
 		}
 
-		// se (to_be_evaluated.size() == 0) nemmeno entra nel for
-		// per cui inutile mettere il mutex fuori dal for
 		for (map < int, int > ::const_iterator node_interator = to_be_evaluated.begin(); node_interator != to_be_evaluated.end(); ++node_interator) {
 			node_color[node_interator -> first - 1] = node_interator -> second;
 			node_assigned.erase(node_interator -> first);
@@ -480,18 +478,20 @@ int main(int argc, char ** argv) {
 	// std::cout << n << " concurrent threads are supported.\n";
 	// cout << "number of edges: " << number_edges << endl;
 
-	std::ofstream results_file;
-	results_file.open("jones_multi_3.csv", std::ios_base::app);
-	results_file << graph_path.substr(graph_path.find_last_of("/\\") + 1) << "," <<
-		number_nodes << "," <<
-		number_edges << "," <<
-		argv[2] << "," <<
-		max_color << "," <<
-		chrono::duration_cast < chrono::microseconds > (end_write - start_main).count() << "," <<
-		read_time_average << "," <<
-		algo_time << "," <<
-		chrono::duration_cast < chrono::microseconds > (end_write - start_write).count() << ",\n";
-	results_file.close();
+	cout << "number of colors used: " << max_color << endl;
+
+	// std::ofstream results_file;
+	// results_file.open("jones_multi_3.csv", std::ios_base::app);
+	// results_file << graph_path.substr(graph_path.find_last_of("/\\") + 1) << "," <<
+	// 	number_nodes << "," <<
+	// 	number_edges << "," <<
+	// 	argv[2] << "," <<
+	// 	max_color << "," <<
+	// 	chrono::duration_cast < chrono::microseconds > (end_write - start_main).count() << "," <<
+	// 	read_time_average << "," <<
+	// 	algo_time << "," <<
+	// 	chrono::duration_cast < chrono::microseconds > (end_write - start_write).count() << ",\n";
+	// results_file.close();
 
 	return 0;
 }

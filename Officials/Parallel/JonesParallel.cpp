@@ -346,8 +346,6 @@ void jones_thread(int thread_index) {
 			colors_used_global.insert(color);
 		}
 
-		// se (to_be_evaluated.size() == 0) nemmeno entra nel for
-		// per cui inutile mettere il mutex fuori dal for
 		for (map < int, int > ::const_iterator node_interator = to_be_evaluated.begin(); node_interator != to_be_evaluated.end(); ++node_interator) {
 			node_color[node_interator -> first - 1] = node_interator -> second;
 			node_assigned.erase(node_interator -> first);
@@ -465,9 +463,11 @@ int main(int argc, char ** argv) {
 		}
 	}
 
-	auto output_file = std::fstream(argv[3], std::ios::out | std::ios::binary);
-	output_file.write(final.c_str(), (final.size() * sizeof(char)));
-	output_file.close();
+	if (argc == 4) {
+		auto output_file = std::fstream(argv[3], std::ios::out | std::ios::binary);
+		output_file.write(final.c_str(), (final.size() * sizeof(char)));
+		output_file.close();
+	}
 
 	auto end_write = chrono::steady_clock::now();
 
@@ -479,6 +479,8 @@ int main(int argc, char ** argv) {
 	// unsigned int n = std::thread::hardware_concurrency();
 	// std::cout << n << " concurrent threads are supported.\n";
 	// cout << "number of edges: " << number_edges << endl;
+
+	cout << "Number of colors used: " << max_color << endl;
 
 	// std::ofstream results_file;
 	// results_file.open("jones_multi_3.csv", std::ios_base::app);

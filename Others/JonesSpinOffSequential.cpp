@@ -158,7 +158,6 @@ int jones_sequential() {
 		}
 	}
 
-	cout << "Colors used: " << to_string(color) << endl;
 	return 0;
 }
 
@@ -281,9 +280,11 @@ int main(int argc, char ** argv) {
 		}
 	}
 
-	auto output_file = std::fstream(argv[2], std::ios::out | std::ios::binary);
-	output_file.write(final.c_str(), (final.size() * sizeof(char)));
-	output_file.close();
+	if (argc == 3) {
+		auto output_file = std::fstream(argv[2], std::ios::out | std::ios::binary);
+		output_file.write(final.c_str(), (final.size() * sizeof(char)));
+		output_file.close();
+	}
 
 	auto end_write = chrono::steady_clock::now();
 
@@ -291,6 +292,8 @@ int main(int argc, char ** argv) {
 	cout << "Elapsed algo time in microseconds: " << chrono::duration_cast < chrono::microseconds > (start_write - start_algo).count() << " µs" << endl;
 	cout << "Elapsed writing time in microseconds: " << chrono::duration_cast < chrono::microseconds > (end_write - start_write).count() << " µs" << endl;
 	cout << "Elapsed time in microseconds: " << chrono::duration_cast < chrono::microseconds > (end_write - start_read).count() << " µs" << endl;
+
+	cout << "Number of colors used: " << max_color << endl;
 
 	// std::ofstream results_file;
 	// results_file.open("jones_seq_2_spinoff.csv", std::ios_base::app);

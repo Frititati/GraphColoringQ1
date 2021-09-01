@@ -210,12 +210,11 @@ int main(int argc, char ** argv) {
 		while (getline(graph_file, line)) {
 			// parsing node line
 			vector < int > temp;
-			if (directed)
+			if (directed) {
 				temp = split_to_int_mod(line, " ");
-			else
+			} else {
 				temp = split_to_int(line, " ");
-			// cout << "node number :" << to_string(new_node_index) << endl;
-			// for (auto i : temp) cout << "conn " << to_string(i) << endl;
+			}
 
 			node_edge_connections.insert(std::pair < int, vector < int > > (new_node_index, temp));
 
@@ -223,7 +222,6 @@ int main(int argc, char ** argv) {
 			node_random.push_back(rand() % 100 + 1);
 			// add color 0
 			node_color.push_back(0);
-			// cout << "Degree of node " << new_node_index << " is " << temp.size() << endl;
 			if (!directed) {
 				node_degree.push_back(temp.size());
 			}
@@ -256,7 +254,6 @@ int main(int argc, char ** argv) {
 		// compute number_edges and degrees
 
 		for (map < int, vector < int > > ::const_iterator it = node_edge_connections.begin(); it != node_edge_connections.end(); ++it) {
-			// cout << "number_edges: " << number_edge
 			//edges
 			number_edges += it -> second.size();
 			//degree
@@ -284,9 +281,11 @@ int main(int argc, char ** argv) {
 		}
 	}
 
-	auto output_file = std::fstream(argv[2], std::ios::out | std::ios::binary);
-	output_file.write(final.c_str(), (final.size() * sizeof(char)));
-	output_file.close();
+	if (argc == 3) {
+		auto output_file = std::fstream(argv[2], std::ios::out | std::ios::binary);
+		output_file.write(final.c_str(), (final.size() * sizeof(char)));
+		output_file.close();
+	}
 
 	auto end_write = chrono::steady_clock::now();
 
@@ -294,6 +293,8 @@ int main(int argc, char ** argv) {
 	cout << "Elapsed algo time in microseconds: " << chrono::duration_cast < chrono::microseconds > (start_write - start_algo).count() << " µs" << endl;
 	cout << "Elapsed writing time in microseconds: " << chrono::duration_cast < chrono::microseconds > (end_write - start_write).count() << " µs" << endl;
 	cout << "Elapsed time in microseconds: " << chrono::duration_cast < chrono::microseconds > (end_write - start_read).count() << " µs" << endl;
+
+	cout << "Number of colors used: " << max_color << endl;
 
 	// std::ofstream results_file;
 	// results_file.open("ldf_seq_1.csv", std::ios_base::app);
