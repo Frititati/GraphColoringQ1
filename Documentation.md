@@ -228,7 +228,7 @@ During the optimization described in the last step we also realized another pote
 - Instead of using **std::set** as mentioned previously we use **std::vector** to keep all colors these nodes cannot be colored (as they belong to adjacent nodes).
 - The `is_highest` if condition is simplified.
 
-//////Aggiungere: non si può parallelizzare + usa troppi colori in più rispetto a JP classico///////
+To conclude, we did not deliver a parallelized version of this new algorithm, as it had two fatal flaws. The first reason was that the parallelized version would not have the same benefits as the sequential. The second reason was that it used too many colors, it was against our objective to pursue an algorithm that would use the least colors possible.
 
 ## Parallel Optimization Jones-Plassman
 
@@ -269,6 +269,19 @@ There are 2 different paths a thread can take when entering this function:
 
 Optimizing the reading phase was the second objective after the coloring algorithm was successfully parallelized. Using the structure of the input graphs, the first line always tells us how many vertices (nodes) are to be expected in the graph, so we can calculate which sector each thread should read of the input graph and then we can have the reading done independently by each thread. Unfortunately, performance varies as the undirected types of graph generally have a greater advantage to the directed ones, because we need to still synchronize the data on all threads if the graph is directed (place it in a global data structure `node_edge_connections`), this is not required with the undirected graphs.
 It's also important to mention that with the directed type of graphs we need another barrier after the synchronization of the `node_edge_connections` whereas with the undirected type of graphs we can simply start the execution of the coloring algorithm.
+
+## Jones-Plassman Improved Datastructure
+
+Another avevue we looked into when developing the parallelized version of the algorithm was to change the base datastructures. We initially focused on the data structures where the nodes calculated data would be stored, these are `node_color` and `node_random`, however there not much could be done as the **std::vector** library is already very perfomant and any changes we attempted didn't yield any leaps in performance. We also looked at the the data structure that kept node data (usually called `node_edge_connections`), this was an **std::map** with an index (int) and **std::vector** within it to store all connected nodes. Our attempt was too see whether a **struct** especially made could perform better, it did.
+```c++
+struct node_struct {
+  int index;
+  int size;
+  int * connections;
+};
+```
+`node_struct` has three fields, an `index` to identify the node, a `size` to describe how many `connections` are present.We needed an array of `node_struct` to fully replace the **std::map** that was present before, so this changed the reading and coloring phases of the algorithm. Also with an array of `node_struct` (`node_assigned`) we couldn't use iterators anymore, so we needed to create a complementary **std::set** (`nodes_iteration`) which we could exploit for the iterators and the ability to easily delete indexes without having the rewrite the array. This was all crucial to maintain the core algorithm the same as before but with an array instead of **std::map**.<br>
+This algorithm proved to perform better than its predecessor, seeing improvements in the reading and coloring phases (see below in Performance tests). However, it suffers a big flaw, it is only good with undirected graphs, as the directed graphs requires a synchronization of all the `node_assigned` arrays, this would remove all benefits of this solution.
 
 # Performance tests
 
@@ -758,29 +771,36 @@ Tables were grouped first by version of the program (sequential or parallel), th
 |      |**writing**     |6585               |408586             |3024459            |
 |      |**total time**  |52438              |4045484            |36841809           |
 
+## Figures
+
+In this section we want to show comparisons of the Jones-Plassman to the LDF.<br>
+There are 4 different Figures, each compares the effiency (in number of colors) between different subsets of graph types.
+
+![Undirectionals colors usage](images/jp_ldf_colors/undirectionals.png)
+*Figure 1: compares the 3 different baselines of undirected graphs*
+
+![Directionals large colors usage](images/jp_ldf_colors/directionals_l.png)
+*Figure 2: compares the directional large graphs*
+
+![Directionals small sparse colors usage](images/jp_ldf_colors/directionals_ss.png)
+*Figure 3: compares the directional small sparse graphs*
+
+![Directionals small dense colors usage](images/jp_ldf_colors/directionals_sd.png)
+*Figure 4: compares the directional small dense graphs*
+
 # Conclusions
 
-By analyzing carefully the results we obtained from performance testing, we can surely adfirm that, as expected, parallel versions perform really better than sequential ones, especially if we maximize the number of threads the machine supports (no more than 16); however, for some directional graphs (e.g. all belonging to the small sparse category), we have observed that execution times are higher if we adoperate a number of threads greater than 4 or 8, depending on the specific case. We think the reason may be stricly related to the specific type of the graph.<br />
+By analyzing carefully the results we obtained from the performance tests, we can surely affirm that, as expected, parallel versions perform better than sequential ones, especially if we maximize the number of threads the machine supports (no more than 16); however, for some directional graphs (e.g. all belonging to the small sparse category), we have observed that execution times are higher if we employ a number of threads greater than 4 or 8, depending on the specific case. We think the reason may be strictly related to the specific type of graph.<br />
 
-The parallel version of Jones-Plassman with better datastructures improves timings of about 18%, either the reading phase or the coloring one. This version could be easily adapted to LDF algorithm, but would require more effort in order to manage also directional graphs.<br />
+The parallel version of Jones-Plassman with improved data structures improves timings of about 18%, either in the reading phase or the coloring one. This version could be easily adapted to LDF algorithm, but would require more effort in order to manage also directional graphs.<br />
 
 Regarding the memory usage, we got values that don't always correspond to the expected ones. We supposed that the tool runlim can lack of precision in most of the cases.
 Nevertheless, the tests show that the memory usage among different algorithms is nearly the same for undirected graph, but it becomes significantly higher in the specific scenario of parallel algorithms running on large directed graphs.
 This is due to the additional data structures that the algorithms use in order to perform a translation into an undirected graph, since the algorithms were designed to work only on undirected graphs.<br />
 
-Finally, concerning the usage of colors, results confirm our expectations: LDF is better than JP, in the sense that, on average, it adoperates less colors. However, we should remember that executions times are a little higher than JP ones, though.<br />
+Finally, concerning the usage of colors, results confirm our expectations: LDF is better than Jones-Plassman, in the sense that, on average, it uses less colors. However, we should also remember that LDF takes a longer time to execute than Jones-Plassman.<br />
 
-The following graphs shows clearly the results we gained about usage of colors in both JP and LDF.<br /><br />
-
-![Undirectionals colors usage](images/jp_ldf_colors/undirectionals.png)
-<br />
-![Directionals large colors usage](images/jp_ldf_colors/directionals_l.png)
-<br />
-![Directionals small sparse colors usage](images/jp_ldf_colors/directionals_ss.png)
-<br />
-![Directionals small dense colors usage](images/jp_ldf_colors/directionals_sd.png)
-  
-<br />
+The following graphs shows clearly the results we gained about usage of colors in both JP and LDF.<br />
 
 ## References
 
