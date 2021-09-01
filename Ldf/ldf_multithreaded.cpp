@@ -512,7 +512,7 @@ int main(int argc, char** argv) {
 
 	for (int i = 0; i < number_threads; ++i)
 	{
-		cout << "generated thread: " << (i + 1) << endl;
+		// cout << "generated thread: " << (i + 1) << endl;
 		thread_array[i] = thread(ldf_thread, i + 1);
 		reading_times.push_back((chrono::microseconds) 0);
 	}

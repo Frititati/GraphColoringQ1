@@ -313,7 +313,7 @@ int main(int argc, char ** argv) {
 	thread thread_array[number_threads];
 
 	for (int i = 0; i < number_threads; ++i) {
-		cout << "generated thread: " << (i + 1) << endl;
+		// cout << "generated thread: " << (i + 1) << endl;
 		thread_array[i] = thread(jones_thread, i + 1);
 		reading_times.push_back((chrono::microseconds) 0);
 	}
